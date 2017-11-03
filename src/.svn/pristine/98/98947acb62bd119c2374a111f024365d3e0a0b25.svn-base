@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+</head>
+<body>
+    <div class="login_head banxin">
+        <div class="pic">
+            <img src="..." alt="">
+        </div>
+        <div class="title">
+            <p>用户登录</p>
+        </div>
+    </div>
+    <div class="login_content"></div>
+</body>
+</html>

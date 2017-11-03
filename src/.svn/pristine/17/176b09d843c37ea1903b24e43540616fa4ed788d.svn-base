@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>阿里通</title>
+	<link rel="stylesheet" href="../../css/alitong/alitong_introduce.css">
+</head>
+<body>
+
+
+
+
+	<!-- Swiper -->
+    <div class="swiper-container swiper-container-vertical" id="o-c">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-active" style="height: 100%;">
+            	<div class="banner">
+            		<div class="bannerpic banxin" style="background: url(../../img/pic/alitong/introduce.png) center center no-repeat;"></div>
+	            	<div class="banner_center banxin" >
+						<i class="iconfont_2"></i>
+						<div class="title">
+							<div class="title_big">
+								阿里通
+							</div>
+							<div class="title_mall">
+								<p>到底顶顶顶顶多</p>
+								<p>到底顶顶顶顶多</p>
+							</div>
+						</div>
+						<div class="alitong_btn">
+							<button>免费开通</button>
+						</div>
+					</div>
+            	</div>
+            </div>
+            <div class="swiper-slide swiper-slide-next" style="height: 300px;">
+                 <div class="swiper-container swiper-container-vertical swiper-container-free-mode" id="i-c1">
+                        <div class="swiper-wrapper">
+                             <div class="swiper-slide swiper-slide-active">
+								
+                             </div>
+                        </div>
+                        <div class="swiper-scrollbar" style="opacity: 0;"><div class="swiper-scrollbar-drag" style="height: 176.4px;"></div></div>
+                 </div>
+            </div>
+            <div class="swiper-slide" style="height: 300px;">Slide 3</div>
+            <div class="swiper-slide" style="height: 300px;">Slide 4</div>
+            <div class="swiper-slide" style="height: 300px;">Slide 5</div>
+            <div class="swiper-slide" style="height: 300px;">Slide 6</div>
+            <div class="swiper-slide" style="height: 300px;">Slide 7</div>
+            <div class="swiper-slide" style="height: 300px;">Slide 8</div>
+        </div>
+    </div>
+
+<script src="../../js/lib/require.js"></script>
+<script>
+	require(['../../js/main'],function () {
+		require(['alitong_introduce']);
+	})
+</script>
+</body>
+</html>

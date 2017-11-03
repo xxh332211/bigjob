@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../../css/alitong/alitong_index.css">
+</head>
+<body>
+<!-- sidbar_r -s -->
+<div class="place_holder">
+	<div class="inpaper_list">
+		<div class="inpaper_head">
+			<span class="cheack"></span>
+			<span>全选</span>
+			<span>数量</span>
+			<span>价格</span>
+			<span>删除</span>
+		</div>
+		<ul>
+			<li>
+				<span class="cheack"></span>
+				<span class="pic">
+					<img src="..." alt="">
+				</span>
+				<span class="setnum">
+					<input type="button" value="-" class="reduce">
+					<input type="text" class="inpaper_num" value="10">
+					<input type="button" value="+" class="add">
+				</span>
+				<span class="price">2对对对4.5</span>
+				<b class="del">x</b>
+			</li>
+			<li>
+				<span class="cheack"></span>
+				<span class="pic">
+					<img src="..." alt="">
+				</span>
+				<span class="setnum">
+					<input type="button" value="-" class="reduce">
+					<input type="text" class="inpaper_num" value="10">
+					<input type="button" value="+" class="add">
+				</span>
+				<span class="price">2对对对4.5</span>
+				<b class="del">x</b>
+			</li>
+			<li>
+				<span class="cheack"></span>
+				<span class="pic">
+					<img src="..." alt="">
+				</span>
+				<span class="setnum">
+					<input type="button" value="-" class="reduce">
+					<input type="text" class="inpaper_num" value="10">
+					<input type="button" value="+" class="add">
+				</span>
+				<span class="price">2对对对4.5</span>
+				<b class="del">x</b>
+			</li>
+		</ul>
+	</div>
+    <div class="sidebar_right">
+        <ul class="sidebar_nav">
+            <li>
+                <div class="info_box">用户中心</div>
+                <a href="">
+                	<i class="icon_center_nor nor"></i>
+                	<i class="icon_center_click click"></i>
+                </a>
+            </li>
+            <li class="inpaper">
+                <a href="">
+                	<i class="icon_list_nor_orange nor"></i>
+                	<i class="icon_list_click_white click"></i>
+                </a>
+				<span>进<br/>货<br/>单</span>
+				<b>10</b>
+            </li>
+        </ul>
+        <div class="back_top clearfix">
+             <ul>
+	            <li>
+	                <div class="info_box">意见反馈</div>
+	                <a href="javascript:void(0)">
+	                	<i class="icon_opinion_nor nor"></i>
+	                	<i class="icon_opinion_click click"></i>
+	                </a>
+	            </li>
+	            <li>
+	                <div class="info_box">在线客服</div>
+	                <a href="javascript:void(0)">
+	                	<i class="icon_customer_nor nor"></i>
+	                	<i class="icon_customer_click click"></i>
+	                </a>
+	            </li>
+	            <li>
+	                <div class="quickmark">
+                		<img src="../../img/pic/index/code_sidebar.png" alt="">
+                	</div>
+	                <a href="javascript:void(0)">
+	                	<i class="icon_phone_click click"></i>
+	                	<i class="icon_phone_nor nor"></i>
+	                </a>
+	            </li>
+	            <li class="backtotop_btn">
+	                <div class="info_box">返回顶部</div>
+	                <a href="javascript:void(0)">
+	                	<i class="icon_top_nor nor"></i>
+	                	<i class="icon_top_click click"></i>
+	                </a>
+	            </li>
+             </ul>
+        </div>
+    </div>
+</div>
+<!-- sidbar_r -e -->
+	<!-- head_container -e -->
+	<div class="head_container">
+		<!-- 头部 -s -->
+		<div class="head">
+			<div class="head_content clearfix banxin">
+			<!-- 头部左边 -s -->
+				<div class="head_content_l fl">
+					<dl class="clearfix">
+						<dt><i class="icon_phone"></i><a href="javascript:void(0)">手机大袜网</a></dt>
+						<dd><a href="javascript:void(0)">请登录</a></dd>
+						<dd><a href="javascript:void(0)">立即注册</a></dd>
+					</dl>
+				</div>
+			<!-- 头部左边 -e -->
+			<!-- 头部右边 -s -->
+				<div class="head_content_r fr">
+					<ul class="clearfix">
+						<li>
+							<a href="javascript:void(0)">我是采购商<i class="trangle_down"></i></a>
+							<div class="dropdown">
+								<ul class="clearfix">
+									<li><a href="javascript:void(0)">我的订单</a></li>
+									<li><a href="javascript:void(0)">我的收藏</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0)">我是供应商<i class="trangle_down"></i></a>
+							<div class="dropdown">
+								<ul class="clearfix">
+									<li><a href="javascript:void(0)">申请供应</a></li>
+									<li><a href="javascript:void(0)">供应商结算</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0)" class="addcollect"><i class="iconfont">&#xe614;</i>大袜网首页</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">客服中心<i class="trangle_down"></i></a>
+							<div class="dropdown">
+								<ul class="clearfix">
+									<li><a href="javascript:void(0)">新手入门</a></li>
+									<li><a href="javascript:void(0)">在线客服</a></li>
+								</ul>
+							</div>
+						</li>
+						<li><a href="javascript:void(0)">品牌合作</a></li>
+					</ul>
+				</div>
+			<!-- 头部右边 -e -->
+			</div>
+		</div>
+		<!-- 头部 -e -->
+		<!-- logo -s -->
+		<div class="logo banxin clearfix">
+			<div class="logo_pic fl">
+				<div class="pic_img">
+					<a href="#">
+						<img src="../../img/pic/alitong/alitong_index_logo.png" height="29" width="149" alt="欢迎光临大袜阿里通~">
+					</a>
+				</div>
+			</div>
+			<div class="logo_search fl clearfix ">
+				<div class="cover middle">
+					<input type="text" class="search fl" placeholder="搜索商品">
+					<a href="#" class="search_btn">
+						<i class="iconfont">&#xe651;</i>
+					</a>
+				</div>
+			</div>
+			<div class="logo_right fr">
+				<div class="cover middle">
+					<a href="#" class="clearfix">
+						<div class="logo_cube fr">
+							<i class="icon_list_nor"></i>
+							<span>商品订单管理</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- logo -e -->
+		<!-- nav -s -->
+		<div class="nav">
+			<div class="nav_container banxin">
+			    <dl class="clearfix">
+			        <dt>
+			        	<span>商品分类</span>
+			        	<i class="iconfont">&#xe631;</i>
+			        </dt>
+			        <dd><a href="javascript:void(0)" class="activity">全网热销<i class="icon_nav"></i></a></dd>
+			        <dd><a href="javascript:void(0)" class="activity">袜巨划算<i class="icon_nav"></i></a></dd>
+			        <dd><a href="javascript:void(0)" class="activity">品牌馆<i class="icon_nav"></i></a></dd>
+			        <dd><a href="javascript:void(0)">裸袜<i class="icon_nav"></i></a></dd>
+			        <dd><a href="javascript:void(0)">新品上线<i class="icon_nav icon_new"></i></a></dd>
+			        <dd><a href="javascript:void(0)">大袜爆款<i class="icon_nav icon_fire"></i></a></dd>
+			        <dd><a href="javascript:void(0)">活动区<i class="icon_nav"></i></a></dd>
+			        <dd><a href="javascript:void(0)">降价专区<i class="icon_nav"></i></a></dd>
+			        <dd><a href="javascript:void(0)" class="sparate">|</a></dd>
+			        <dd><a href="javascript:void(0)">个性定制<i class="icon_nav icon_dingzhi"></i></a></dd>
+			        <dd><a href="javascript:void(0)">一件代发<i class="icon_nav icon_daifa"></i></a></dd>
+			    </dl>
+			</div>
+		</div>
+		<!-- nav -e -->
+	</div>	
+	<!-- head_container -e -->
+
+	<!-- banner -s -->
+	<div class="banner banxin clearfix">
+		 <div class="banner_left fl">
+		 	<ul>
+		 		<li><a href="#">全部商品</a></li>
+		 		<li><a href="#">羊毛袜</a></li>
+		 		<li><a href="#">棉袜</a></li>
+		 		<li><a href="#">高端袜</a></li>
+		 		<li><a href="#">裤袜</a></li>
+		 		<li><a href="#">丝袜</a></li>
+		 		<li><a href="#">隐形袜</a></li>
+		 		<li><a href="#">船袜</a></li>
+		 		<li><a href="#">新品</a></li>
+		 	</ul>
+		 </div>
+		 <div class="banner_center fl">
+		 	<div class="banner_pics">
+		 		<div class="slide_part clearfix">
+		 			<div class="single">
+		 				<a href="#">
+		 					<img src="..." alt="">
+		 				</a>
+		 			</div>
+		 			<div class="single">
+		 				<a href="#">
+		 					<img src="..." alt="">
+		 				</a>
+		 			</div>
+		 			<div class="single">
+		 				<a href="#">
+		 					<img src="..." alt="">
+		 				</a>
+		 			</div>
+		 		</div>
+		 	</div>
+		 	<div class="banner_index">
+		 		<div class="main_index">
+		 			<div class="indexs">
+		 				<div class="index">大袜阿里通哈哈</div>
+		 				<div class="index">大袜阿</div>
+		 				<div class="index">大袜阿里通是的的</div>
+		 				<div class="index">里通</div>
+		 				<div class="index">大袜阿里通</div>
+		 			</div>
+		 		</div>
+		 	</div>
+		 </div>
+		 <div class="banner_right fr">
+		 	<div class="apply_guide_title">
+		 		开通指引
+		 	</div>
+		 	<div class="apply_guide_step">
+		 		<div class="guide_step_content">
+		 			<!-- 步骤 -s -->
+		 			<div class="step">
+		 				<div class="step_title">
+		 					<span>01</span>开通一键上传
+		 				</div>
+		 				<div class="step_content">
+		 					<img src="..." alt="">
+		 				</div>
+		 			</div>
+		 			<div class="step active">
+		 				<div class="step_title">
+		 					<span>01</span>开通一键上传
+		 				</div>
+		 				<div class="step_content">
+		 					<img src="..." alt="">
+		 				</div>
+		 			</div>
+		 			<!-- 步骤 -e -->
+		 		</div>
+	 			<div class="apply_guide_notice">
+	 				<p>
+	 					*为确保您的功能正常使用，请开通以上两个功能
+	 				</p>
+	 			</div>
+		 	</div>
+		 	<div class="apply_guide_btn clearfix">
+		 		<a href="#" class="fl">
+		 			<div class="btn_left">
+		 				了解详情
+		 			</div>
+		 		</a>
+		 		<a href="#" class="fr">
+		 			<div class="btn_right fr">
+		 				使用说明书
+		 			</div>
+		 		</a>
+		 	</div>
+		 </div>
+	</div>
+	<!-- banner -e -->
+	
+	<!-- recommend -s -->
+	<div class="recomend banxin clearfix">
+		<div class="recomend_box">
+			<div class="pic">
+				<img src="......" alt="">
+			</div>
+			<div class="title">
+				<a href="#">爆款推荐</a>
+			</div>
+		</div>
+		<div class="recomend_box">
+			<div class="pic">
+				<img src="......" alt="">
+			</div>
+			<div class="title">
+				<a href="#">爆款推荐</a>
+			</div>
+		</div>
+		<div class="recomend_box">
+			<div class="pic">
+				<img src="......" alt="">
+			</div>
+			<div class="title">
+				<a href="#">爆款推荐</a>
+			</div>
+		</div>
+		<div class="recomend_box">
+			<div class="pic">
+				<img src="......" alt="">
+			</div>
+			<div class="title">
+				<a href="#">爆款推荐</a>
+			</div>
+		</div>
+	</div>
+	<!-- recommend -e -->
+
+	<!-- alitong_title -s -->
+	<div class="alitong_title banxin">
+		<div class="title">
+			<span>精</span>
+			<i class="iconfont">&#xe603;</i>
+			<span>品</span>
+			<i class="iconfont">&#xe603;</i>
+			<span>分</span>
+			<i class="iconfont">&#xe603;</i>
+			<span>类</span>
+		</div>
+		<div class="sub_title">
+			<b></b>
+			<span>LIMITETODAY’S SPECIALD SALE</span>
+			<b></b>
+		</div>
+	</div>
+	<!-- alitong_title -e -->
+
+	<!-- prefecture -s -->
+	<div class="prefecture banxin">
+		<div class="prefecture_single clearfix">
+			<div class="single_left fl">
+				<div class="title_1">羊毛袜</div>
+				<div class="title_2">秋冬有新品</div>
+				<button>进入</button>
+			</div>
+			<div class="single_right fr">
+				<img src="...." alt="">
+			</div>
+		</div>
+		<div class="prefecture_single clearfix">
+			<div class="single_left fl">
+				<div class="title_1">羊毛袜</div>
+				<div class="title_2">秋冬有新品</div>
+				<button>进入</button>
+			</div>
+			<div class="single_right fr">
+				<img src="...." alt="">
+			</div>
+		</div>
+		<div class="prefecture_single clearfix">
+			<div class="single_left fl">
+				<div class="title_1">羊毛袜</div>
+				<div class="title_2">秋冬有新品</div>
+				<button>进入</button>
+			</div>
+			<div class="single_right fr">
+				<img src="...." alt="">
+			</div>
+		</div>
+		<div class="prefecture_single clearfix">
+			<div class="single_left fl">
+				<div class="title_1">羊毛袜</div>
+				<div class="title_2">秋冬有新品</div>
+				<button>进入</button>
+			</div>
+			<div class="single_right fr">
+				<img src="...." alt="">
+			</div>
+		</div>
+		<div class="prefecture_single clearfix">
+			<div class="single_left fl">
+				<div class="title_1">羊毛袜</div>
+				<div class="title_2">秋冬有新品</div>
+				<button>进入</button>
+			</div>
+			<div class="single_right fr">
+				<img src="...." alt="">
+			</div>
+		</div>
+		<div class="prefecture_single clearfix">
+			<div class="single_left fl">
+				<div class="title_1">羊毛袜</div>
+				<div class="title_2">秋冬有新品</div>
+				<button>进入</button>
+			</div>
+			<div class="single_right fr">
+				<img src="...." alt="">
+			</div>
+		</div>
+		<div class="prefecture_single clearfix">
+			<div class="single_left fl">
+				<div class="title_1">羊毛袜</div>
+				<div class="title_2">秋冬有新品</div>
+				<button>进入</button>
+			</div>
+			<div class="single_right fr">
+				<img src="...." alt="">
+			</div>
+		</div>
+		<div class="prefecture_single clearfix">
+			<div class="single_left fl">
+				<div class="title_1">羊毛袜</div>
+				<div class="title_2">秋冬有新品</div>
+				<button>进入</button>
+			</div>
+			<div class="single_right fr">
+				<img src="...." alt="">
+			</div>
+		</div>
+	</div>
+	<!-- prefecture -e -->
+
+	<!-- alitong_title -s -->
+	<div class="alitong_title banxin">
+		<div class="title">
+			<span>今</span>
+			<i class="iconfont">&#xe603;</i>
+			<span>日</span>
+			<i class="iconfont">&#xe603;</i>
+			<span>推</span>
+			<i class="iconfont">&#xe603;</i>
+			<span>荐</span>
+		</div>
+		<div class="sub_title">
+			<b></b>
+			<span>LIMITETODAY’S SPECIALD SALE</span>
+			<b></b>
+			<a href="#">查看更多 ></a>
+		</div>
+	</div>
+	<!-- alitong_title -e -->
+
+	<!-- today_nav -s -->
+	<div class="today banxin">
+		<div class="today_nav clearfix">
+			<div class="part active">
+				<span>精选男袜</span>
+				<i class="iconfont">&#xe628;</i>
+			</div>
+			<div class="part">
+				<span>精选男袜</span>
+				<i class="iconfont">&#xe628;</i>
+			</div>
+			<div class="part">
+				<span>精选男袜</span>
+				<i class="iconfont">&#xe628;</i>
+			</div>
+			<div class="part">
+				<span>精选男袜</span>
+				<i class="iconfont">&#xe628;</i>
+			</div>
+			<div class="part">
+				<span>精选男袜</span>
+				<i class="iconfont">&#xe628;</i>
+			</div>
+			<div class="part">
+				<span>精选男袜</span>
+				<i class="iconfont">&#xe628;</i>
+			</div>
+			<div class="part">
+				<span>精选男袜</span>
+				<i class="iconfont">&#xe628;</i>
+			</div>
+			<div class="part_2 clearfix">
+				<div class="part_2_l fl">
+					<i class="iconfont">&#xe61e;</i>
+				</div>
+				<div class="line"></div>
+				<div class="part_2_r fr">
+					<i class="iconfont">&#xe626;</i>
+				</div>
+			</div>
+		</div>
+		<div class="today_content">
+		<!-- 也可由多个content_prodect在不同层级 -->
+			<div class="content_product clearfix active">
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+			</div>
+			<div class="content_product clearfix">
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+				<div class="single">
+					<div class="pic">
+						<img src="..." alt="">
+						<div class="upto_ali">
+							<span>一键上传到阿里</span>
+						</div>
+					</div>
+					<div class="title">
+						<a href="#">
+							2016新款C.M.31010裸袜仿手手动阀手动阀
+						</a>
+					</div>
+					<div class="price">
+						<span><b>&yen;</b>2.20</span>
+						<del><b>&yen;</b>3.000</del>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- today_nav -e -->
+
+	<!-- alitong_title -s -->
+	<div class="alitong_title banxin">
+		<div class="title">
+			<span>今</span>
+			<i class="iconfont">&#xe603;</i>
+			<span>日</span>
+			<i class="iconfont">&#xe603;</i>
+			<span>推</span>
+			<i class="iconfont">&#xe603;</i>
+			<span>荐</span>
+		</div>
+		<div class="sub_title">
+			<b></b>
+			<span>LIMITETODAY’S SPECIALD SALE</span>
+			<b></b>
+			<a href="#">查看更多 ></a>
+		</div>
+	</div>
+	<!-- alitong_title -e -->
+
+	<!-- brand_sock -s -->
+	<div class="brand_sock clearfix banxin">
+		<div class="single">
+			<div class="pic">
+				<img src="..." alt="">
+				<div class="upto_ali">
+					<span>一键上传到阿里</span>
+				</div>
+			</div>
+			<div class="title">
+				<a href="#">
+					2016新款C.M.31010裸袜仿手手动阀手动阀
+				</a>
+			</div>
+			<div class="price">
+				<span><b>&yen;</b>2.20</span>
+				<del><b>&yen;</b>3.000</del>
+			</div>
+		</div>
+		<div class="single">
+			<div class="pic">
+				<img src="..." alt="">
+				<div class="upto_ali">
+					<span>一键上传到阿里</span>
+				</div>
+			</div>
+			<div class="title">
+				<a href="#">
+					2016新款C.M.31010裸袜仿手手动阀手动阀
+				</a>
+			</div>
+			<div class="price">
+				<span><b>&yen;</b>2.20</span>
+				<del><b>&yen;</b>3.000</del>
+			</div>
+		</div>
+		<div class="single">
+			<div class="pic">
+				<img src="..." alt="">
+				<div class="upto_ali">
+					<span>一键上传到阿里</span>
+				</div>
+			</div>
+			<div class="title">
+				<a href="#">
+					2016新款C.M.31010裸袜仿手手动阀手动阀
+				</a>
+			</div>
+			<div class="price">
+				<span><b>&yen;</b>2.20</span>
+				<del><b>&yen;</b>3.000</del>
+			</div>
+		</div>
+		<div class="single">
+			<div class="pic">
+				<img src="..." alt="">
+				<div class="upto_ali">
+					<span>一键上传到阿里</span>
+				</div>
+			</div>
+			<div class="title">
+				<a href="#">
+					2016新款C.M.31010裸袜仿手手动阀手动阀
+				</a>
+			</div>
+			<div class="price">
+				<span><b>&yen;</b>2.20</span>
+				<del><b>&yen;</b>3.000</del>
+			</div>
+		</div>
+		<div class="single">
+			<div class="pic">
+				<img src="..." alt="">
+				<div class="upto_ali">
+					<span>一键上传到阿里</span>
+				</div>
+			</div>
+			<div class="title">
+				<a href="#">
+					2016新款C.M.31010裸袜仿手手动阀手动阀
+				</a>
+			</div>
+			<div class="price">
+				<span><b>&yen;</b>2.20</span>
+				<del><b>&yen;</b>3.000</del>
+			</div>
+		</div>
+		<div class="single">
+			<div class="pic">
+				<img src="..." alt="">
+				<div class="upto_ali">
+					<span>一键上传到阿里</span>
+				</div>
+			</div>
+			<div class="title">
+				<a href="#">
+					2016新款C.M.31010裸袜仿手手动阀手动阀
+				</a>
+			</div>
+			<div class="price">
+				<span><b>&yen;</b>2.20</span>
+				<del><b>&yen;</b>3.000</del>
+			</div>
+		</div>
+		<div class="single">
+			<div class="pic">
+				<img src="..." alt="">
+				<div class="upto_ali">
+					<span>一键上传到阿里</span>
+				</div>
+			</div>
+			<div class="title">
+				<a href="#">
+					2016新款C.M.31010裸袜仿手手动阀手动阀
+				</a>
+			</div>
+			<div class="price">
+				<span><b>&yen;</b>2.20</span>
+				<del><b>&yen;</b>3.000</del>
+			</div>
+		</div>
+		<div class="single">
+			<div class="pic">
+				<img src="..." alt="">
+				<div class="upto_ali">
+					<span>一键上传到阿里</span>
+				</div>
+			</div>
+			<div class="title">
+				<a href="#">
+					2016新款C.M.31010裸袜仿手手动阀手动阀
+				</a>
+			</div>
+			<div class="price">
+				<span><b>&yen;</b>2.20</span>
+				<del><b>&yen;</b>3.000</del>
+			</div>
+		</div>
+		<div class="single">
+			<div class="pic">
+				<img src="..." alt="">
+				<div class="upto_ali">
+					<span>一键上传到阿里</span>
+				</div>
+			</div>
+			<div class="title">
+				<a href="#">
+					2016新款C.M.31010裸袜仿手手动阀手动阀
+				</a>
+			</div>
+			<div class="price">
+				<span><b>&yen;</b>2.20</span>
+				<del><b>&yen;</b>3.000</del>
+			</div>
+		</div>
+		<div class="single">
+			<div class="pic">
+				<img src="..." alt="">
+				<div class="upto_ali">
+					<span>一键上传到阿里</span>
+				</div>
+			</div>
+			<div class="title">
+				<a href="#">
+					2016新款C.M.31010裸袜仿手手动阀手动阀
+				</a>
+			</div>
+			<div class="price">
+				<span><b>&yen;</b>2.20</span>
+				<del><b>&yen;</b>3.000</del>
+			</div>
+		</div>
+	</div>
+	<!-- brand_sock -e -->
+
+	<!-- foot_container -s -->
+	<div class="foot_container">
+		<!-- foot -s -->
+		<div class="foot">
+			<div class="foot_top">
+				<div class="foot_top_content banxin">
+					<dl>
+						<dt>服务保障</dt>
+						<dd><a href="javascript:void(0)">商品质量</a></dd>
+						<dd><a href="javascript:void(0)">商品质量</a></dd>
+						<dd><a href="javascript:void(0)">商品质量</a></dd>
+						<!-- <dd><img src=""></dd> -->
+					</dl>
+					<dl>
+						<dt>服务保障</dt>
+						<dd><a href="javascript:void(0)">商品质量</a></dd>
+						<dd><a href="javascript:void(0)">商品质量</a></dd>
+						<dd><a href="javascript:void(0)">商品质量</a></dd>
+						<!-- <dd><img src=""></dd> -->
+					</dl>
+					<dl>
+						<dt>官网微信</dt>
+						<dd><img src="../../img/pic/index/code_weichat_img.png"></dd>
+					</dl>
+					<dl>
+						<dt>官网微博</dt>
+						<dd><img src="../../img/pic/index/code_blog_img.png"></dd>
+					</dl>
+					<dl>
+						<dt>手机大袜网</dt>
+						<dd><img src="../../img/pic/index/code_phone_img.png"></dd>
+					</dl>
+				</div>
+			</div>
+			<div class="foot_bottom">
+				<div class="foot_bottom_content banxin">
+					<!-- <dl class="clearfix">
+						<dt>友情链接 ：</dt>
+						<dd><a href="javascript:void(0)">阿里巴巴</a></dd>
+						<dd><a href="javascript:void(0)">淘宝网</a></dd>
+						<dd><a href="javascript:void(0)">南极人</a></dd>
+					</dl> -->
+					<ul class="clearfix">
+						<li><a href="about.html">关于大袜网</a></li>
+						<li><a href="about5.html">法律声明</a></li>
+						<li><a href="/news/3.html">联系我们</a></li>
+						<li><a href="http://sou.zhaopin.com/jobs/searchresult.ashx?jl=%E6%9D%AD%E5%B7%9E&kw=%E5%B0%8F%E9%BA%A6%EF%BC%88%E6%B5%99%E6%B1%9F%EF%BC%89%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&sm=0&p=1&kt=2&source=0">诚聘英才</a></li>
+						<li><a href="/news/56.html">友情链接申请</a></li>
+					</ul>
+					<div class="copyright">
+						<span>浙ICP备16019581号</span>
+						<span>Copyright © 2014 - 2017  小麦（浙江）网络科技有限公司版权所有</span>
+					</div>
+					<div class="pic">
+						<img src="../../img/pic/index/trademark_img.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- foot -e -->
+	</div>
+	<!-- foot_container -e -->
+<script src="../../js/lib/require.js"></script>
+<script>
+	require(['../../js/main'],function () {
+		require(['alitong_index'])
+	})
+</script>
+</body>
+</html>

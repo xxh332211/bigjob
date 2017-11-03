@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="../../css/system/login.css">
+</head>
+
+<body>
+    <div class="login_head banxin">
+        <div class="pic">
+            <img src="..." alt="">
+        </div>
+        <div class="title">
+            <p>用户登录</p>
+        </div>
+    </div>
+    <div class="login_content">
+        <div class="login_center banxin">
+            <div class="pic fl">
+                <!-- 这是登录页面的图 -->
+                <!-- <img src="../../img/pic/system/login.png" alt=""> -->
+                <!-- 登录页面的图 -->
+
+                <!-- 这是注册页面的图 -->
+                <img src="../../img/pic/system/register.png" alt="">
+                <!-- 这是注册页面的图 -->
+            </div>
+            <div class="login_form fr">
+                <!-- <div class="title">欢迎登录</div> -->
+                <div class="double_title clearfix">
+                    <div class="buyer_title">
+                        我是采购商
+                    </div>
+                    <div class="subline"></div>
+                    <div class="supplyer_title">
+                        我是供应商
+                    </div>
+                </div>
+                <div class="notice hide">
+                    <i>!</i>
+                    <span class="word">这里是错误提示的内容</span>
+                </div>
+                <div class="fullinput">
+                    <i class="iconfont">&#xe61f;</i>
+                    <input type="text" placeholder="请输入手机号码">
+                </div>
+                <div class="fullinput">
+                    <!-- start -->
+
+                    <!-- 以下两个图标二选一即可 -->
+
+                    <!-- 密码 -->
+                    <i class="iconfont">&#xe624;</i>
+                    <!-- 密码 -->
+
+                    <!-- 手机验证码 -->
+                    <i class="iconfont">&#xe636;</i>
+                    <div class="getcode">
+                        <button>获取验证码</button>
+                    </div>
+                    <!-- 手机验证码 -->
+                    <!-- end -->
+                    <input type="password" placeholder="请输入密码">
+
+                </div>
+                <div class="fullinput">
+                    <i class="iconfont">&#xe622;</i>
+                    <input type="text" placeholder="验证码">
+                    <div class="getcomfirm">
+                        <span>1992</span>
+                    </div>
+                </div>
+                <div class="check_protocol">
+                    <p> <i class="iconfont">&#xe640;</i>我已阅读并同意 <span class="protocol_1">《大袜网平台用户服务协议》</span> </p>
+                    <p><span class="protocol_2">《委托付款三方协议》</span></p>
+                </div>
+                <div class="login_btn disable">
+                    <button>立即登录</button>
+                </div>
+                <div class="tag">
+                    <a href="#" class="fl">忘记登录密码?</a>
+                    <a href="#" class="fr">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../js/lib/require.js"></script>
+    <script>
+        require(['../../js/main'], function () {
+            require(['login']);
+        })
+    </script>
+</body>
+
+</html>

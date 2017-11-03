@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/quick_buy/ensure.css">
+</head>
+<body>
+    <div class="main_part banxin">
+        <div class="tip">核对信息</div>
+        <div class="row clearfix">
+            <div class="title">收货人信息</div>
+            <div class="content">
+                <div class="chose_box small selected">
+                    <i class="iconfont">&#xe61d;</i>
+                    大唐自提
+                </div>
+                <div class="adress_box">
+                    <span class="province">浙江省</span><span class="city">绍兴市</span><span class="street">陶朱街道</span><span class="detail">千禧路20号  大袜网  （蒋先生 收）  154****8986</span>
+                    <span>修改</span>
+                    <span>更换地址</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

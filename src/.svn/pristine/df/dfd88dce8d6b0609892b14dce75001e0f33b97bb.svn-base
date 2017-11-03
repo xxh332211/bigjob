@@ -1,0 +1,305 @@
+@import '../../common/base';
+@import '../../common/reset';
+@import '../../component/head';
+@import '../../component/foot';
+@import '../../common/iconfont';
+body {
+	background:#f2f2f2;
+}
+
+.modal_cover {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	z-index: 999;
+	text-align: center;
+	line-height: 100%;
+	&:before {
+		  content: '';
+		  display: inline-block;
+		  height: 100%;
+		  vertical-align: middle;
+		  margin-right: -0.25em
+	}
+	.modal_cotainer {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		background: #fff;
+		display: inline-block;
+		vertical-align: middle;
+		border-radius: 10px;
+		div {
+			padding-left: 40px;
+			padding-right: 40px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			text-align: left;
+		}
+		.title {
+			font-size:20px;
+			color:#ff7e18;
+			margin-bottom: 30px;
+		}
+		.alert {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size:12px;
+			color:#ff3c23;
+			background: #f5f5f5;
+		}
+		.paragraph {
+			font-size:12px;
+			color:#666666;
+			line-height:1.5em;
+			width: 400px;
+		}
+		.input {
+			span {
+				width: 50px;
+				font-size:12px;
+				color:#666666;
+				display: inline-block;
+				text-align: justify;
+    			text-align-last: justify;
+    			margin-right: 5px;
+			}
+			input {
+				background:#ffffff;
+				border:1px solid #e5e5e5;
+				width:260px;
+				height:30px;
+				text-indent: 1em;
+				margin-left: 10px;
+				font-size:12px;
+				color:#666666;
+			}
+		}
+		.fullinput {
+			position: relative;
+			text-align: center;
+			input {
+				background:#ffffff;
+				border:1px solid #e5e5e5;
+				width:260px;
+				height:30px;
+				text-indent: 1em;
+				margin-left: 10px;
+				font-size:12px;
+				color:#666666;
+				margin-left: 0;
+			}
+			.iconfont {
+				position: absolute;
+				background: black;
+				width: 10px;
+				height: 10px;
+				left: 0;
+			}
+		}
+		.option {
+			.btn {
+				padding:0;
+				.sure {
+					float: right;
+					border:1px solid #ff7e18;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					cursor: pointer;
+					background: #ff7e18;
+					font-size:14px;
+					color:#ffffff;
+					border-radius: 5px;
+					margin-left: 40px;
+				}
+				.cancel {
+					float: left;
+					border:1px solid #e8e8e8;
+					padding-top: 10px;
+					padding-bottom: 10px;
+					cursor: pointer;
+					border-radius: 5px;
+				}
+				.big {
+					width: 263px;
+					padding:{
+						top : 12px;
+						bottom: 12px;
+						left:0;
+						right: 0;
+					}
+					text-align: center;
+					cursor:pointer;
+					background:#ff7e18;
+					font-size:14px;
+					color:#ffffff;
+					border-radius:5px;
+					margin-top: 30px;
+				}
+			}
+		}
+	}
+}
+
+.alitong_guide_container {
+	width: 1343px;
+	margin:0 auto;
+	.alitong_buy {
+		height: 284px;
+		padding : {
+			top: 26px;
+			bottom: 30px;
+			left: 70px;
+			right: 70px;
+		}
+		background: #fff;
+		margin-top: 15px;
+		.left_pic {
+			width: 543px;
+			height: 228px;
+		}
+		.right_info{
+			width: 590px;
+			height: 228px;
+			position: relative;
+			.info_title {
+				font-size: 19px;
+				font-weight: bold;
+				margin-top: 7px;
+			}
+			p {
+				font-size: 12px;
+				margin-top: 13px;
+			}
+			.price {
+				margin-top: 34px;
+				span {
+					font-size: 12px;
+					color: #7A7A7A;
+					b {
+						color: #FF7D18;
+						font-size: 22px;
+						font-weight: bold;
+					}
+				}
+				.title {
+					    font-size: 12px;
+					    display: inline-block;
+					    width: 55px;
+					    text-align: justify;
+					    text-align-last: justify;
+				}
+			}
+			.keeppay {
+				margin-top: 12px;
+				color: #7A7A7A;
+				span {
+					font-size: 12px;
+					b {
+						color: #FF7D18;
+						font-weight: bold;
+					}
+				}
+				.title {
+					    font-size: 12px;
+					    display: inline-block;
+					    width: 55px;
+					    text-align: justify;
+					    text-align-last: justify;
+				}
+			}
+			.apply {
+				height: 46px;
+				text-align: right;
+				margin-top: 30px;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				span {
+					display: inline-block;
+					width: 170px;
+					height: 46px;
+					background: #FF6900;
+					font-size: 18px;
+					color: #fff;
+					line-height: 46px;
+					text-align: center;
+				}
+			}
+		}
+	}
+	.alitong_content {
+		margin-top: 15px;
+		background: #fff;
+		.tab {
+			height: 75px;
+			padding-top: 14px;
+			padding-left: 70px;
+			border-bottom: 1px solid #FFAD73;
+			.tab_single {
+				display: inline-block;
+				float: left;
+				padding: {
+					left:20px;
+					right: 20px;
+				}
+				height: 60px;
+				line-height: 60px;
+				text-align: center;
+				cursor: pointer;
+				color: #666666;
+				font-weight: bold;
+				.iconfont {
+					font-size: 30px;
+					vertical-align: middle;
+				}
+				&.active {
+					background: #F7F7F7;
+					color: #333333;
+					.iconfont {
+						color : #FF7D17;
+					}
+				}
+			}
+		}
+		.content {
+			padding-bottom: 66px;
+			.order_training {
+				text-align: center;
+				span {
+					display: inline-block;
+					width: 135px;
+					height: 40px;
+					color: #fff;
+					background: #FF6900;
+					line-height: 40px;
+					text-align: center;
+				}
+			}
+			.content_class {
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-bottom: 1px solid #F5F5F5;
+				position: relative;
+				margin-bottom: 15px;
+				&:after {
+					content: '';
+					display: block;
+					width: 56px;
+					height: 3px;
+					background: #FF6900;
+					position: absolute;
+					left: 0;
+					bottom: -2px;
+				}
+				span {
+					font-size: 18px;
+					color: #333333;
+				}
+				b {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

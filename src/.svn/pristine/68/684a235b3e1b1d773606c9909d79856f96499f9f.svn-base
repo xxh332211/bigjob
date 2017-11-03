@@ -1,0 +1,41 @@
+define(['jquery','common',"bootstrap","alitong_operate","modal","swipper"],function($,common,bootstrap,alitong_operate,modal,swipper){
+   var oSwiper = new Swiper('#o-c',{
+		direction : 'vertical',
+		mousewheelControl: true,
+		onSetTransition: function(swiper){
+            if(swiper.activeIndex==1){
+	            swiper.params.onlyExternal=true;
+	            swiper.disableMousewheelControl();
+           	}else{
+	            swiper.params.onlyExternal=false;
+	            swiper.enableMousewheelControl();
+	        }
+	
+            }
+	   
+		});
+	var iSwiper = new Swiper('#i-c1',{
+		scrollbar: '.swiper-scrollbar',
+        direction: 'vertical',
+        slidesPerView: 'auto',
+		freeMode: true,
+		freeModeMomentum : false,
+		mousewheelControl: true,
+		mousewheelSensitivity : 0.5,
+		onSetTransition: function(swiper,translate){
+			//translate 一直为0，不可直接用
+			nowTranslate=swiper.translate;
+			if( typeof(beforeTranslate)=="undefined"){beforeTranslate=0};
+			slideHeight=swiper.slides[0].scrollHeight;
+			swiperHeight=swiper.height
+			if(nowTranslate>-2 && nowTranslate > beforeTranslate){oSwiper.slideTo(0);}
+			if(slideHeight-swiperHeight+nowTranslate<2 && nowTranslate < beforeTranslate){oSwiper.slideTo(2);}
+			beforeTranslate=nowTranslate;
+           },
+		 onTouchEnd:function(swiper){
+			 if(swiper.translate>0){oSwiper.slideTo(0);}
+			 if(swiper.translate<(swiper.height-swiper.slides[0].scrollHeight)){oSwiper.slideTo(2);}
+		 }
+
+		});
+});

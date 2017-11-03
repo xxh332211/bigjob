@@ -1,0 +1,6 @@
+define(['jquery','common'],function(){
+	//关闭侧边栏
+	$('.side_adv .close').on('click', function(event) {
+		$('.side_adv').addClass('hide');
+	});
+});

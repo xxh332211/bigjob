@@ -1,0 +1,43 @@
+@import '../../common/base';
+@import '../../common/reset';
+@import '../../component/head';
+@import '../../component/foot';
+
+.pay_logo {
+    height:100px;
+    .pic {
+        background: #666;
+		width: 350px;
+        height:80px;
+        margin-top:10px;
+        img {
+            width:100%;
+        }
+    }
+    .line {
+        height:35px;
+        width:1px;
+        margin-left: 20px;
+        margin-right:20px;
+    }
+    .title {
+        font-size:22px;
+        color:#333333;
+        line-height:22px;
+    }
+    .step {
+        height: 100px;
+        position: relative;
+        width: 473px;
+        .step_gray {
+            position: absolute;
+            top:0;
+            left:0;
+        }
+        .step_orange {
+            position: absolute;
+            top:0;
+            left:0;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+@import '../../common/base';
+@import '../../common/reset';
+@import '../../component/head';
+@import '../../component/foot';
+@import '../../common/iconfont';
+
+.cannot {
+    background: #eee;
+    height: 600px;
+    .cannot_center {
+        padding-left:263px;
+        height: 600px; 
+        background: #eee;
+        h2 {
+            font-size:28px;
+            color:#ff7e18;
+        }
+        .pic {
+            width: 250px;
+            margin-left:137px;
+            img {
+                width: 100%;
+            }
+        }
+        p {
+            font-size:14px;
+            color:#ff7e18;
+            line-height:14px;
+        }
+        .btn_404 {
+            margin-top: 30px;
+            margin-left: 90px;
+            a {
+                display: inline-block;
+            }
+            .back {
+                background:#ff7e18;
+                border:1px solid #ec530f;
+                border-radius:2px;
+                width:118px;
+                height:40px;
+
+                
+                font-size:16px;
+                color:#ffffff;
+                text-align:center;
+                line-height: 40px;
+                
+            }
+            .last_step {
+                background:#eeeeee;
+                border:1px solid #ff7e18;
+                border-radius:2px;
+                width:118px;
+                height:40px;
+                font-size:16px;
+                color:#ff7e18;
+                line-height:40px;
+                text-align:center;
+                margin-left: 30px;
+            }
+        }
+    }
+}

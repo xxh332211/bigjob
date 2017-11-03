@@ -1,0 +1,63 @@
+define(["jquery","common","modal"],function($,common,modal){
+		//实例化弹窗
+		//阿里通协议弹窗		
+		var alitong_protocol = new modal([
+				{name:"水电费地方",type:"title",content:"这是一个标题"},
+				{name:"xx23h",type:"protocol",content: "te"},
+				{name:"col融入i",type: "checkbox",sub:"big" ,content:"点击同意以上协议内容"},
+				{name:"sdfsd",type:"option",sub:"big",text: "点击开通" ,subclass: "disable"}
+			]);
+		//阿里通对接表单
+		var alitong_apply = new modal ([
+				{name: "阿里通服务", type: "title", content: "对接平台：阿里"},
+		        {name: "storeLink", text: "店铺链接", type: "input", holder: "请输入店铺链接",require:"require",cheack:"isurl",tip:"请输入正确的链接"},
+		        {name: "contactName", text: "联系人", type: "input", holder: "请输入联系人",require:"require"},
+		        {name: "wangwangId", text: "阿里账号", type: "input", holder: "请输入旺旺号",cheack:"isusername",tip:"请输入3-16位旺旺号",require:"require"},
+		        {name: "phoneNumber", text: "电话", type: "input", cheack: "isphone", holder: "请输入电话", tip: "联系电话不正确，请重新输入",require:"require"},
+		        {name: "companyName", text: "公司名称", type: "input", holder: "请输入公司名称",cheack:"isusername",tip:"请输入公司名称"},
+		        {name: "wangwangId", text: "旺旺ID", type: "input", holder: "请输入旺旺号",cheack:"isusername",tip:"请输入3-16位旺旺号"},
+		        {name: "submit", type: "option", sub: "cancel,sure", text: '提交'},
+			]);
+
+		//登录弹窗
+		var alitong_login = new modal ([
+				{name:"title",type:"title",content:"用户登录"},
+				{name:"username",type: "fullinput",holder:"请输入账号",icon:"&#xe61f;",cheack:"isphone",tip:"请输入注册手机号"},
+				{name:"password",type: "fullinput",holder:"请输入密码",icon:"&#xe624;",cheack:"ispassword",tip:"请输入4-20位密码",sub:""},
+				{name:"verifyCode",type: "fullinput",holder:"请输入验证码",icon:"&#xe622;",sub:'identify',cheack:"issms",tip:"请输入正确格式的验证码"},
+				{name:"col融入i",type: "option",sub:"big,login",link1:domain + "/forgetpassword.html",link2:domain + "/register.html",text:'点击登录'}
+			]);
+		//注册弹窗
+		var alitong_register = new modal ([
+				{name:"title",type:"title",content:"用户注册"},
+				{name:"username",type: "fullinput",holder:"请输入手机号码",icon:"&#xe61f;",cheack:"isphone",tip:"请输入注册手机号"},
+				{name:"password",type: "fullinput",holder:"请设置6~20位数字和字母组合的密码",icon:"&#xe624;",cheack:"ispassword",tip:"请输入4-20位密码"},
+				{name:"password",type: "fullinput",holder:"请再次输入密码",icon:"&#xe624;",cheack:"ispassword",tip:"请输入4-20位密码"},
+				{name:"verifyCode",type: "fullinput",holder:"请输入验证码",icon:"&#xe622;",sub:'identify',cheack:"issms",tip:"请输入正确格式的验证码"},
+				{name:"verifyCode",type: "fullinput",holder:"请输入手机验证码",icon:"&#xe622;",sub:'getcode',cheack:"issms",tip:"请输入正确格式的验证码"},
+				{name:"col融入i",type: "checkbox",sub:"big",classname:"r_check",content:"<div><a>《大袜网平台用户服务协议》</a><br><a>《委托付款三方协议》</a></div>"},
+				{name:"sdfsd",type:"option",sub:"big",text: "立即注册" ,subclass: "disable"}
+			]);
+		//注册协议
+			//用户服务协议
+		var regist_protocol = new modal ([
+				{name:"水电费地方",type:"title",content:"大袜网用户服务协议"},
+				{name:"xx23h",type:"protocol",content: "te"},
+				{name:"sdfsd",type:"option",sub:"big",text: "同意并继续"}
+			]);
+			//委托付款三方协议
+		var regist_protocol_2 = new modal ([
+				{name:"水电费地方",type:"title",content:"委托付款三方协议"},
+				{name:"xx23h",type:"protocol",content: "te"},
+				{name:"sdfsd",type:"option",sub:"big",text: "同意并继续"}
+			]);
+
+		return {
+			alitong_protocol:alitong_protocol,
+			alitong_apply:alitong_apply,
+			alitong_login:alitong_login,
+			alitong_register:alitong_register,
+			regist_protocol:regist_protocol,
+			regist_protocol_2:regist_protocol_2
+		}
+})

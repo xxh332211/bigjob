@@ -1,0 +1,531 @@
+define(['jquery','bootstrap','modal'],function ($,bootstrap,modal) {
+    //model^
+    var O2OModal = new modal([
+        {name:"阿里通服务",type:"title",content:"对接平台：阿里"},
+        {name:"storeLink",text:"店铺链接",type: "input",holder:"请输入店铺链接",tip:"店铺链接不正确，请重新输入"},
+        {name:"companyName",text:"公司名称",type: "input",holder:"请输入公司名称",tip:"公司名称不正确，请重新输入"},
+        {name:"contactName",text:"联系人",type: "input",holder:"请输入联系人",tip:"联系人不正确，请重新输入"},
+        {name:"phoneNumber",text:"电话",type: "input",cheack:"isphone",holder:"请输入电话",tip:"联系电话不正确，请重新输入"},
+        {name:"wangwangId",text:"旺旺ID",type: "input",holder:"请输入旺旺号",tip:"旺旺号不正确，请重新输入"},
+        {name:"submit",type: "option",sub:"cancel,sure",text:'提交'},
+    ]);
+
+    O2OModal.sure(submitMemberStore);
+
+    var result={};
+
+    function storeShouQuan(){
+        O2OModal.showmodal();
+    }
+
+    function submitMemberStore(){
+        if(O2OModal.cansend()){
+            var memberStore = O2OModal.getresult();
+            memberStore = JSON.stringify(memberStore);
+            $.ajax({
+                async:true,
+                type: "POST",
+                url: "/product/memberstoreadd",
+                data: {"memberStore": memberStore},
+                success: function (result) {
+                    if(result.data){
+                        window.location.href = "http://www.dawawang.com/services/alibaba.html";
+                    }
+                }
+            });
+        }
+    };
+
+    //查询当前用户的阿里店铺并渲染select
+    function findStore(productId, specPricesDom, priceRangeDom, memberId, selectChoose) {
+        selectChoose.html("");
+        // 打开页面，此处最好使用提示页面
+        //var newWin = window.open("http://www.dawawang.com");
+        $.ajax({
+            async:false,
+            type: "POST",
+            url: "/product/memberstores",
+            data: {"memberId": memberId},
+            success: function (result) {
+                //http://www.dawawang.com/services/alibaba.html
+                var a = "<a id='storeShouQuan' class='btns btn-primary' style='margin:10px 5px; background:#ff7300;width:160px;border:none;' href='javascript:;'>" +
+                    "阿里通功能开通</a>";
+                //http://www.dawawang.com/services/alibaba_product.html
+                var a2 = "<a id='productShouQuan' class='btns btn-primary' style='margin:10px 5px; background:#ff7300;width:160px;border:none;'" +
+                    "href=' javascript:;'>" +
+                    "一件铺货功能开通</a>";
+                //http://www.dawawang.com/services/alibaba.html
+                var a3 = "<a id='aliMessage' class='btns btn-primary' style='margin:10px 5px; background:#ff7300;width:160px;border:none;' href=' javascript:;'>" +
+                    "查看产品介绍</a>";
+                var d1 = "<div>" +
+                    "您的账号未开通阿里通授权功能，请先开通阿里通授权功能以及一键铺货功能。欲了解产品详情，请点击【查看产品介绍】"+
+                    "</div>";
+                if (result.message == "1") {
+                    $("#aliStoreModal").find("h4.modal-title").html("登录提示");
+                    $("#aliStoreModal").find("div.modal-body").html("请确定已登录");
+                    $('#aliStoreModal').modal('show');
+                    window.location.href = result.backUrl;
+                } else if (result.message == "2") {
+                    //newWin.close();
+                    $("#aliStoreModal").find("h4.modal-title").html("阿里通授权店铺绑定提示");
+                    $("#aliStoreModal").find("div.modal-body").html("");
+                    $("#aliStoreModal").find("div.modal-body").append(d1);
+                    $("#aliStoreModal").find("div.modal-body").append(a);
+                    $("#aliStoreModal").find("div.modal-body").append(a3);
+                    $("#aliStoreModal").find("div.modal-footer").hide();
+                    $('#aliStoreModal').modal('show');
+                } else if (result.message == "3") {
+                    //newWin.close();
+                    $("#aliStoreModal").find("h4.modal-title").html("阿里通授权商品绑定提示");
+                    $("#aliStoreModal").find("div.modal-body").html("");
+                    $("#aliStoreModal").find("div.modal-body").append(d1);
+                    $("#aliStoreModal").find("div.modal-body").append(a2);
+                    $("#aliStoreModal").find("div.modal-body").append(a3);
+                    $("#aliStoreModal").find("div.modal-footer").hide();
+                    $('#aliStoreModal').modal('show');
+                } else if (result.message == "4") {
+                    //newWin.close();
+                    $("#aliStoreModal").find("h4.modal-title").html("阿里通授权绑定提示");
+                    $("#aliStoreModal").find("div.modal-body").html("");
+                    $("#aliStoreModal").find("div.modal-body").append(d1);
+                    $("#aliStoreModal").find("div.modal-body").append(a);
+                    $("#aliStoreModal").find("div.modal-body").append(a2);
+                    $("#aliStoreModal").find("div.modal-body").append(a3);
+                    $("#aliStoreModal").find("div.modal-footer").hide();
+                    $('#aliStoreModal').modal('show');
+                } else if (result.message == "5") {
+                    //newWin.close();
+                    var optionHtml = "";
+                    var options = result.data;
+                    for (var i = 0; i < options.length; i++) {
+                        optionHtml += "<option value=" + options[i].storeIdProduct + ">" + options[i].storeName + "</option>"
+                    }
+                    selectChoose.html(optionHtml);
+                    getSkuClass(productId, specPricesDom);
+                    showPriceRanges(productId, priceRangeDom);
+                    $('#aliModal').modal('show');
+                }
+            }
+        });
+        $("#storeShouQuan").click(function(){
+            $('#aliStoreModal').modal('hide');
+            storeShouQuan();
+        });
+    }
+
+    //查询当前用户的阿里店铺并渲染select
+    function findStore2(productId, specPricesDom, priceRangeDom, memberId, selectChoose) {
+        selectChoose.html("");
+        // 打开页面，此处最好使用提示页面
+        //var newWin = window.open("http://www.dawawang.com");
+        $.ajax({
+            async:false,
+            type: "POST",
+            url: "/product/memberstores",
+            data: {"memberId": memberId},
+            success: function (result) {
+                //http://www.dawawang.com/services/alibaba.html
+                var a = "<a id='storeShouQuan' class='btns btn-primary' style='margin:10px 5px; background:#ff7300;width:160px;border:none;' href='javascript:;'>" +
+                    "授权店铺绑定</a>";
+                //http://www.dawawang.com/services/alibaba_product.html
+                var a2 = "<a id='productShouQuan' class='btns btn-primary' style='margin:10px 5px; background:#ff7300;width:160px;border:none;'" +
+                    "href=' javascript:;'>" +
+                    "授权商品绑定</a>";
+                //http://www.dawawang.com/services/alibaba.html
+                var a3 = "<a id='aliMessage' class='btns btn-primary' style='margin:10px 5px; background:#ff7300;width:160px;border:none;' href=' javascript:;'>" +
+                    "查看产品介绍</a>";
+                var d1 = "<div>" +
+                    "您的账号未开通阿里通授权功能，请先开通阿里通授权功能以及一键铺货功能。欲了解产品详情，请点击【查看产品介绍】"+
+                    "</div>";
+                if (result.message == "1") {
+                    $("#aliStoreModal").find("h4.modal-title").html("登录提示");
+                    $("#aliStoreModal").find("div.modal-body").html("请确定已登录");
+                    $('#aliStoreModal').modal('show');
+                    window.location.href = result.backUrl;
+                } else if (result.message == "2") {
+                    //newWin.close();
+                    $("#aliStoreModal").find("h4.modal-title").html("阿里通授权店铺绑定提示");
+                    $("#aliStoreModal").find("div.modal-body").html("");
+                    $("#aliStoreModal").find("div.modal-body").append(d1);
+                    $("#aliStoreModal").find("div.modal-body").append(a);
+                    $("#aliStoreModal").find("div.modal-body").append(a3);
+                    $("#aliStoreModal").find("div.modal-footer").hide();
+                    $('#aliStoreModal').modal('show');
+                } else if (result.message == "3") {
+                    //newWin.close();
+                    $("#aliStoreModal").find("h4.modal-title").html("阿里通授权商品绑定提示");
+                    $("#aliStoreModal").find("div.modal-body").html("");
+                    $("#aliStoreModal").find("div.modal-body").append(d1);
+                    $("#aliStoreModal").find("div.modal-body").append(a2);
+                    $("#aliStoreModal").find("div.modal-body").append(a3);
+                    $("#aliStoreModal").find("div.modal-footer").hide();
+                    $('#aliStoreModal').modal('show');
+                } else if (result.message == "4") {
+                    //newWin.close();
+                    $("#aliStoreModal").find("h4.modal-title").html("阿里通授权绑定提示");
+                    $("#aliStoreModal").find("div.modal-body").html("");
+                    $("#aliStoreModal").find("div.modal-body").append(d1);
+                    $("#aliStoreModal").find("div.modal-body").append(a);
+                    $("#aliStoreModal").find("div.modal-body").append(a2);
+                    $("#aliStoreModal").find("div.modal-body").append(a3);
+                    $("#aliStoreModal").find("div.modal-footer").hide();
+                    $('#aliStoreModal').modal('show');
+                } else if (result.message == "5") {
+                    //newWin.close();
+                    var optionHtml = "";
+                    var options = result.data;
+                    for (var i = 0; i < options.length; i++) {
+                        optionHtml += "<option value=" + options[i].storeIdProduct + ">" + options[i].storeName + "</option>"
+                    }
+                    selectChoose.html(optionHtml);
+                    /* getSkuClass(productId, specPricesDom);
+                     showPriceRanges(productId, priceRangeDom);*/
+
+                    $("#productToAliForm").find("div.priceRangesBySkuNum").hide();
+                    $("#productToAliForm").find("div.specPricesBySkuClass").hide();
+                    $("#productToAliForm").find("div.quoteDiv").hide();
+                    $('#aliModal').modal('show');
+                }
+            }
+        });
+        $("#storeShouQuan").click(function(){
+            $('#aliStoreModal').modal('hide');
+            storeShouQuan();
+        });
+    }
+
+    //查询当前商品的sku信息渲染规格报价
+    function getSkuClass(productId, specPricesDom) {
+        specPricesDom.html();
+        $.ajax({
+            async:false,
+            type: "POST",
+            url: "/product/storeGoods",
+            data: {"productId": productId},
+            success: function (result) {
+                if(result.message == "success"){
+                    specPricesDom.html("");
+                    var skuHtml = " <table class='table table-bordered table-condensed'><thead><tr><th>颜色</th><th>单价</th><th>建议零售价</th></tr></thead><tbody>"
+                    var productGoods = result.data;
+                    for (var i = 0; i < productGoods.length; i++) {
+                        skuHtml += "<tr class='specPrice'><td><input  name='skucode' type='hidden' value=" + productGoods[i].sku + "><span>" + productGoods[i].normName.substring(productGoods[i].normName.indexOf(',') + 1, productGoods[i].normName.length) + "</span></td><td><input style='width:112px;border:1px solid #D7D7D7;' name='price' type='number' value=" + productGoods[i].mallPcPrice + " readonly='readonly'></td><td><input style='width:112px;border:1px solid #D7D7D7;' type='number' name='retailprice'></td></tr>";
+                    }
+                    skuHtml += "</tbody></table>";
+                    specPricesDom.html(skuHtml);
+                    $("#productToAliForm").find("select[name='quoteType']").val(1);
+                    $("#productToAliForm").find("select[name='quoteType']").prop("disabled", true);
+                    //按照sku规格
+                    $("#productToAliForm").find("div.priceRangesBySkuNum").hide();
+                    $("#productToAliForm").find("div.specPricesBySkuClass").show();
+                }
+            }
+        });
+    };
+    //查询当前商品的阶梯价信息渲染
+    function showPriceRanges(productId, priceRangeDom) {
+        var priceRangeDoms = priceRangeDom.find("tr[class='priceRange']");
+        $.ajax({
+            async:false,
+            type: "POST",
+            url: "/product/PriceRange",
+            data: {"productId": productId},
+            success: function (result) {
+                if (result.message == "success") {
+                    var productPrice = result.data;
+                    for (var i = 0; i < priceRangeDoms.length; i++) {
+                        var price = "price" + (i + 1);
+                        var priceS = price + "S";
+                        if (i > 0) {
+                            $(priceRangeDoms[i]).find("input[name='startQuantity']").val(productPrice[priceS]);
+                            $(priceRangeDoms[i]).find("input[name='price']").val(productPrice[price]);
+                        } else {
+                            $(priceRangeDoms[i]).find("input[name='startQuantity']").val(result.total);
+                            $(priceRangeDoms[i]).find("input[name='price']").val(productPrice[price]);
+                        }
+                        $("#productToAliForm").find("select[name='quoteType']").val(2);
+                        $("#productToAliForm").find("select[name='quoteType']").prop("disabled", true);
+                        //按照sku数量
+                        $("#productToAliForm").find("div.specPricesBySkuClass").hide();
+                        $("#productToAliForm").find("div.priceRangesBySkuNum").show();
+                    }
+                }
+            }
+        });
+    }
+    //封装数量报价对象
+    function getPriceRanges(priceRangeDom) {
+        var result = {
+            success: true,
+            message: "",
+            data: {}
+        };
+        var priceRangeDoms = priceRangeDom.find("tr[class='priceRange']");
+        var priceRanges = [];
+        for (var i = 0; i < priceRangeDoms.length; i++) {
+            var priceRange = {};
+            priceRange.startQuantity = $(priceRangeDoms[i]).find("input[name='startQuantity']").val();
+            if ($.trim(priceRange.startQuantity) == "" || priceRange.startQuantity == null || Number($.trim(priceRange.startQuantity)) <= 0) {
+                result.success = false;
+                result.message = "起订量必填并且不能小于0";
+                return result;
+            }
+            priceRange.price = $(priceRangeDoms[i]).find("input[name='price']").val();
+            if ($.trim(priceRange.price) == "" || priceRange.price == null || Number(priceRange.price) <= 0) {
+                result.success = false;
+                result.message = "产品单价必填并且不能小于0";
+                return result;
+            }
+            priceRanges.push(priceRange);
+        }
+        //检测价格区间
+        var start1 = Number(priceRanges[0].startQuantity);
+        var price1 = Number(priceRanges[0].price);
+        var start2 = Number(priceRanges[1].startQuantity);
+        var price2 = Number(priceRanges[1].price);
+        var start3 = Number(priceRanges[2].startQuantity);
+        var price3 = Number(priceRanges[2].price);
+        result.success = start1 > start2 ? price1<price2:price1>price2;
+        result.success = start1 > start3 ? price1<price3:price1>price3;
+        result.success = start2 > start3 ? price2<price3:price2>price3;
+        if(result.success == false){
+            result.message = "价格区间信息错误";
+        }
+        result.data = priceRanges;
+        return result;
+    }
+    //封装规格报价对象
+    function getSpecPrices(specPriceDom) {
+        var result = {
+            success: true,
+            message: "",
+            data: {}
+        };
+        var specPriceDoms = specPriceDom.find("tr[class='specPrice']");
+        var specPrices = [];
+        for (var i = 0; i < specPriceDoms.length; i++) {
+            var specPrice = {};
+            specPrice.skucode = $(specPriceDoms[i]).find("input[name='skucode']").val();
+            specPrice.price = $(specPriceDoms[i]).find("input[name='price']").val();
+            if ($.trim(specPrice.price) == "" || specPrice.price == null || Number(specPrice.price) <= 0) {
+                result.success = false;
+                result.message = "产品单价必填并且不能小于0";
+                return result;
+            }
+            specPrice.retailprice = $(specPriceDoms[i]).find("input[name='retailprice']").val();
+            if ($.trim(specPrice.retailprice) == "" || specPrice.retailprice == null || Number(specPrice.retailprice) <= 0) {
+                result.success = false;
+                result.message = "产品建议零售价必填并且不能小于0";
+                return result;
+            }
+            specPrices.push(specPrice);
+        }
+        result.data = specPrices;
+        return result;
+    }
+
+
+    var close = $("#aliModal").find("button[name='close']");
+    close.click(function () {
+        $("#aliModal").modal('hide');
+    });
+
+    var jinduTemp = 0;
+    $(function () {
+        var submit0 = $("#aliModal").find("button[name='submit0']");
+        var submit1 = $("#aliModal").find("button[name='submit1']");
+        var memberId = memberId;
+        var productId;
+        var selectChoose = $("#productToAliForm").find("select[name='storeidforproduct']");
+        var specPricesDom = $("#productToAliForm").find("div.specPricesBySkuClass");
+        var priceRangeDom = $("#productToAliForm").find("div.priceRangesBySkuNum");
+        //点击下载数据包
+        $(".producttoalidowndata").click(function () {
+            productId = $(this).data("productid");
+            findStore2(productId, specPricesDom, priceRangeDom, memberId, selectChoose);
+            submit1.hide();
+            submit0.show();
+        });
+        //点击一键铺货弹出弹框,渲染店铺列表和商品sku信息
+        $(".producttoali").click(function () {
+            productId = $(this).data("productid");
+            findStore(productId, specPricesDom, priceRangeDom, memberId, selectChoose);
+            submit0.hide();
+            submit1.show();
+            if ($("#productToAliForm").find("select[name='quoteType']").val() == 1) {
+                //按照sku规格
+                $("#productToAliForm").find("div.priceRangesBySkuNum").hide();
+                $("#productToAliForm").find("div.specPricesBySkuClass").show();
+            } else if ($("#productToAliForm").find("select[name='quoteType']").val() == 2) {
+                //按照sku数量
+                $("#productToAliForm").find("div.specPricesBySkuClass").hide();
+                $("#productToAliForm").find("div.priceRangesBySkuNum").show();
+            }
+            $("#productToAliForm").find("div.quoteDiv").show();
+        });
+
+        //绑定下载数据包的提交方法
+        submit0.click(function () {
+            //阿里商铺id
+            var storeidforproduct = $("#productToAliForm").find("select[name='storeidforproduct']").val();
+            $.ajax({
+                async:false,
+                type: "POST",
+                url: "/product/productToAli",
+                data: {"dataType": 0, "productId": productId,"storeId":storeidforproduct},
+                success: function (msg) {
+                    $("#aliStoreModal").find("h4.modal-title").html("提示");
+                    $("#aliStoreModal").find("div.modal-body").html(msg.message);
+                    $("#productToAliForm")[0].reset();
+                    $("#aliModal").modal("hide");
+                    $("#aliStoreModal").modal("show");
+                }
+            });
+        });
+        //绑定上传至阿里的提交方法
+        submit1.click(function () {
+            //阿里商铺id
+            var storeidforproduct = $("#productToAliForm").find("select[name='storeidforproduct']").val();
+            //报价方式
+            var quoteType = $("#productToAliForm").find("select[name='quoteType']").val();
+            if (quoteType == 1) {
+                //按规格报价
+                var specPriceDom = $("#productToAliForm").find("div.specPricesBySkuClass");
+                var result = getSpecPrices(specPriceDom);
+                if (result.success) {
+                    var specPrices = result.data;
+                } else {
+                    alert(result.message);
+                    return;
+                }
+                var aliResult = {
+                    "specPrices": specPrices,
+                    "quoteType": quoteType,
+                    "storeId": storeidforproduct
+                };
+                $.ajax({
+                    type: "POST",
+                    url: "/product/productToAli",
+                    data: {"dataType": 1, "productId": productId, "aliResult": JSON.stringify(aliResult)},
+                    success: function (msg) {
+                        window.clearInterval(timeinterval1);
+                        console.log(msg.data);
+                        console.log(msg.backUrl);
+                        if(msg.data.code != 1){
+                            jindutiao(2,msg.message,jinduTemp);
+                        }else{
+                            $("#aliStoreModal").find("div.modal-footer").show();
+                            $("#aliStoreModal").find("h4.modal-title").html("提示");
+                            $("#aliStoreModal").find("div.modal-body").html(msg.message);
+                            $("#aliStoreModal").modal("show");
+                        }
+                    }
+                });
+            } else if (quoteType == 2) {
+                //建议零售价
+                var retailprice = $("#productToAliForm").find("input[name='retailprice']").val();
+                if ($.trim(retailprice) == "" || retailprice == null||Number(retailprice) <= 0) {
+                    alert("建议零售价必填并且不能小于0");
+                    return;
+                }
+                //按数量报价
+                var priceRangeDom = $("#productToAliForm").find("div.priceRangesBySkuNum");
+                var result = getPriceRanges(priceRangeDom);
+                if (result.success) {
+                    var priceRanges = result.data;
+                } else {
+                    alert(result.message);
+                    return;
+                }
+                var aliResult = {
+                    "retailprice": retailprice,
+                    "quoteType": quoteType,
+                    "storeId": storeidforproduct,
+                    "priceRanges": priceRanges
+                };
+                $.ajax({
+                    type: "POST",
+                    url: "/product/productToAli",
+                    data: {"dataType": 1, "productId": productId, "aliResult": JSON.stringify(aliResult)},
+                    success: function (msg) {
+                        window.clearInterval(timeinterval1);
+                        console.log(msg.data);
+                        console.log(msg.backUrl);
+                        if(msg.data.code != 1){
+                            jindutiao(2,msg.message,jinduTemp);
+                        }else{
+                            $("#aliStoreModal").find("div.modal-footer").show();
+                            $("#aliStoreModal").find("h4.modal-title").html("提示");
+                            $("#aliStoreModal").find("div.modal-body").html(msg.message);
+                            $("#aliStoreModal").modal("show");
+                        }
+                    }
+                });
+            }
+            var timeinterval1 = jindutiao(1,"",0);
+            $("#productToAliForm")[0].reset();
+            $("#aliModal").modal("hide");
+            $('#aliStoreModal').modal({backdrop: 'static', keyboard: false});
+        });
+        //选择不同的价格设置方式绑定change方法
+        $("#productToAliForm").find("select[name='quoteType']").change(function () {
+            if ($(this).val() == 1) {
+                //按照sku规格
+                $("#productToAliForm").find("div.priceRangesBySkuNum").hide();
+                $("#productToAliForm").find("div.specPricesBySkuClass").show();
+            } else if ($(this).val() == 2) {
+                //按照sku数量
+                $("#productToAliForm").find("div.specPricesBySkuClass").hide();
+                $("#productToAliForm").find("div.priceRangesBySkuNum").show();
+            }
+        });
+    });
+
+    function timeIntervalCallback(jinduNum){
+        jinduTemp = jinduNum;
+    }
+    
+    function jindutiao(type,message,jinduNum){
+        var result={};
+        if(type == 1){
+            var jinduHtml = "<div class='progress progress-striped active'>"+
+                "<div class='progress-bar  progress-bar-info' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: "+jinduNum+"%;'>" +
+                "<span class='sr-only'>40% 完成</span> </div> </div>";
+            $("#aliStoreModal").find("div.modal-footer").hide();
+            $("#aliStoreModal").find("div.modal-header").find("button.close").hide();
+            $("#aliStoreModal").find("h4.modal-title").html("发布中");
+            $("#aliStoreModal").find("div.modal-body").html(jinduHtml);
+            var timeInterval1 = window.setInterval(function(){
+                if(jinduNum < 95){
+                    jinduNum++;
+                };
+                var widthTemp = jinduNum+'%';
+                $("#aliStoreModal").find("div.modal-body").find("div.progress-bar").css("width",widthTemp);
+                return timeIntervalCallback(jinduNum);
+            },1000);
+            return timeInterval1;
+        }else if(type == 2){
+            var jinduHtml = "<div class='progress progress-striped active'>"+
+                "<div class='progress-bar  progress-bar-info' role='progressbar' aria-valuenow='60' aria-valuemin='0' aria-valuemax='100' style='width: "+jinduNum+"%;'>" +
+                "<span class='sr-only'>40% 完成</span> </div> </div>";
+            $("#aliStoreModal").find("div.modal-footer").hide();
+            $("#aliStoreModal").find("div.modal-header").find("button.close").hide();
+            $("#aliStoreModal").find("h4.modal-title").html("发布中");
+            $("#aliStoreModal").find("div.modal-body").html(jinduHtml);
+            var timeInterval2 = window.setInterval(function(){
+                jinduNum++;
+                var widthTemp = jinduNum+'%';
+                //$("#aliStoreModal").find("div.modal-body").html(jinduHtml);
+                $("#aliStoreModal").find("div.modal-body").find("div.progress-bar").css("width",widthTemp);
+                if(jinduNum >= 110){
+                    window.clearInterval(timeInterval2);
+                    $("#aliStoreModal").find("div.modal-footer").show();
+                    $("#aliStoreModal").find("h4.modal-title").html("提示");
+                    $("#aliStoreModal").find("div.modal-body").html(message);
+                    $("#aliStoreModal").modal("show");
+                };
+                return timeIntervalCallback(jinduNum);
+            },100);
+            return timeInterval2;
+        }
+    }
+});

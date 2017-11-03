@@ -1,0 +1,29 @@
+		<div class="fullinput">
+			<div class="username" data-name={{value.name}}>
+				<input type="text" placeholder="请输入用户名">
+				<i class="iconfont">&#xe61f;</i>
+			</div>
+			<div class="password">
+				<input type="text" placeholder="请输入密码">
+				<i class="iconfont">&#xe624;</i>
+			</div>
+			<div class="phonecode">
+				<input type="text" placeholder="请输入验证码">
+				<i class="iconfont">&#xe622;</i>
+			</div>
+		</div>
+
+
+		var apply_open = new modal({arry:[
+			{name:"水电费地方",type:"title",content:"这是一个标题"},
+			{name:"xx23h",type:"alert",content: "ssss"},
+			{name:"xx23h",type:"note",content:data.words},
+			{name:"x1xh",text:"这里标题",type: "input",holder:"请输入你想输入的"},
+			{name:"username",text:"这里标题",type: "fullinput",holder:"请输入你想输入的",icon:"&#xe61f;"},
+			{name:"password",text:"这里标题",type: "fullinput",holder:"请输入密码",icon:"&#xe624;"},
+			{name:"co儿li",text:"这里标题",type: "fullinput",holder:"请输入你想输入的",icon:"&#xe622;"},
+			{name:"co儿li",text:"这里标题",type: "fullinput",holder:"请输入你想输入的",icon:"&#xe622;"},
+			{name:"co儿li",text:"这里标题",type: "fullinput",holder:"请输入你想输入的",icon:"&#xe622;"},
+			{name:"co儿li",type: "option",sub:"cancel,sure"},
+			{name:"col融入i",type: "option",sub:"big"},
+		]});

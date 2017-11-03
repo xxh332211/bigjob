@@ -1,0 +1,112 @@
+@import '../../common/reset';
+@import '../../component/foot.scss';
+@import '../../common/base';
+@import '../../common/iconfont';
+@import '../../iconcss/icon_1';
+
+
+
+.login_head {
+    height: 90px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .pic {
+        width: 350px;
+        height: 80px;
+        float: left;
+        background: pink;
+        vertical-align: middle;
+    }
+    .title {
+        float: left;
+        margin-left: 15px;
+        margin-top: 23px;
+        p {
+            font-size:24px;
+            color:#333333;
+        }
+    }
+}
+.login_content {
+    background:#ffe6d0;
+    height:600px;
+    .login_center {
+        .pic {
+            margin-top: 120px;
+            margin-left: 200px;
+        }
+        .login_form {
+            margin-top: 90px;
+            background:#ffffff;
+            box-shadow:0 0 3px 0 #e8e8e8;
+            border-radius:6px;
+            width:370px;
+            height:400px;
+            padding:20px;
+            .title {
+                font-size:20px;
+                color:#ff7e18;
+                margin-bottom: 35px;
+            }
+            .fullinput {
+                position: relative;
+                margin-bottom: 20px;
+                &.focus {
+                    input {
+                        border-color: #27b9f2;
+                    }
+                }
+                &.error {
+                    input {
+                        border-color: #ff3c23;
+                    }
+                }
+                input {
+                    background:#ffffff;
+                    border:1px solid #e5e5e5;
+                    width:330px;
+                    height:42px;
+                    text-indent: 60px;
+                }
+                i {
+                    width: 20px;
+                    height: 19px;
+                    font-size:19px;
+                    color: #cccccc;
+                    position: absolute;
+                    top: 12px;
+                    left: 12px;
+                }
+            }
+            .login_btn {
+                button {
+                    background:#ff7e18;
+                    border-radius:2px;
+                    width:330px;
+                    height:42px;
+                    color: #fff;
+                    line-height: 42px;
+                    text-align: center;
+                   
+                    font-size:20px;
+                    color:#ffffff;
+                    border:none;
+                    outline: none;
+                    cursor: pointer;
+                    &:active {
+                        background: #f86f02;
+                    }
+                }
+            }
+
+            .tag {
+                margin-top:10px;
+                a {
+                    font-size:12px;
+                    color:#ff7e18;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,14 @@
+{{each data2 as value key}}
+<div class="selected_list_row clearfix" data-pid={{value.pid}}>
+    <div class="td_name">
+        {{value.text0}}
+    </div>
+    <div class="td_type">
+        {{value.text1}}
+    </div>
+    <div class="td_num">
+        {{value.num*rate}}{{data2.unit}}
+        <i class="iconfont delobj">&#xe633;</i>
+    </div>
+</div>
+{{/each}}

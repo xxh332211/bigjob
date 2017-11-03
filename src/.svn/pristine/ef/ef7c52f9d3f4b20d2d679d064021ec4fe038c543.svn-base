@@ -1,0 +1,31 @@
+<div class="reset_password">
+    <div class="reset_step">
+        <div class="bac">
+            <img src="../../img/pic/user/step_gray.png" alt="">
+        </div>
+        <div class="step_pic step_1">
+            <img src="../../img/pic/user/step_orange.png" alt="">
+        </div>
+    </div>
+    <div class="form_list">
+        <div class="row clearfix">
+            <span class="word">用户名:</span>
+            <b>121212121212</b>
+        </div>
+        <div class="row clearfix">
+            <span>当前余额密码:</span>
+            <input type="text">
+        </div>
+        <div class="row clearfix">
+            <span>新余额密码:</span>
+            <input type="text">
+        </div>
+        <div class="row clearfix">
+            <span>确认新的余额密码:</span>
+            <input type="text">
+        </div>
+        <div class="row clearfix">
+            <button>确认提交:</button>
+        </div>
+    </div>
+</div>

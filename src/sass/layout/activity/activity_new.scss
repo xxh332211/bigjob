@@ -1,0 +1,26 @@
+@import '../../common/reset';
+@import '../../common/base';
+@import '../../component/foot';
+@import '../../component/head.scss';
+@import '../../common/activity';
+
+body {
+	background: #91D7F7;
+}
+
+// .activity_product {
+// 	.product {
+// 		&:hover {
+// 			border-color: #ff9c00;
+// 		}
+// 		.product_bottom {
+// 			.product_title {
+// 				a {
+// 					&:hover {
+// 						color:#f79625;
+// 					}
+// 				}
+// 			}
+// 		}
+// 	}
+// }

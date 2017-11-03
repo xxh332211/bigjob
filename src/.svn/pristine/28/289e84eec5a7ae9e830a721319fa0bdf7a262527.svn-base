@@ -1,0 +1,77 @@
+@import '../../common/bootstrap.min';
+@import '../../common/base';
+@import '../../common/reset';
+@import '../../component/head';
+@import '../../component/foot';
+@import '../../common/iconfont';
+@import '../../common/swiper-3.4.2.min';
+
+body {
+    background: #eee;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+	position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+#o-c {
+    width: 100%;
+    height: 100%;
+	margin: 0 auto;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+#i-c1 .swiper-slide{
+	height:1000px;
+}
+
+
+.banner {
+width: 100%;
+height: 100%;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f58672+0,ffba16+100;xxh */
+background: rgb(245,134,114); /* Old browsers */
+background: -moz-linear-gradient(81deg, rgba(245,134,114,1) 20%, rgba(255,186,22,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(81deg, rgba(245,134,114,1) 20%,rgba(255,186,22,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(81deg, rgba(245,134,114,1) 20%,rgba(255,186,22,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f58672', endColorstr='#ffba16',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	.bannerpic {
+		height: 100%;
+		width: 100%;
+		opacity: .2;
+		position: absolute;
+		top: 50 ;
+		left: 0;
+		z-index: 0;
+	}
+	.banner_center {
+		height: 100%;
+		z-index: 999;
+		position: relative;
+		
+	}
+
+}

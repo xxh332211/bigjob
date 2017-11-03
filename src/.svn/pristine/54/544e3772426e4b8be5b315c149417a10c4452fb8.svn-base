@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付费用</title>
+    <link rel="stylesheet" href="../../css/pay/pay.css">
+</head>
+<body>
+    <div class="pay_logo banxin clearfix">
+        <div class="pic fl">
+            <img src="..." alt="">
+        </div>
+        <div class="line fl"></div>
+        <div class="title fl">支付费用</div>
+        <div class="step fr">
+            <div class="step_gray">
+                <img src="../../img/pic/pay/pay_n.png" alt="">
+            </div>
+            <div class="step_orange">
+                <img src="../../img/pic/pay/pay_c.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="pay_state banxin">
+        <div>
+            <i class="iconfont">&#xe635;</i>
+            <p>订单提交成功!请您尽快付款!</p>
+        </div>
+        <div>
+            <p>请您在提交订单后3小时内完成支付,否则订单会自动取消.</p>
+        </div>
+        <div>
+            <div class="order_num fl">
+                订单号: <span>123123123123</span>
+            </div>
+            <div class="price fr">
+                应付金额: <span>590.00</span>元
+            </div>
+        </div>
+    </div>
+    <div class="pay_content banxin">
+        <!-- <div class="online_pay banxin">
+            <div class="tip">选择支付方式</div>
+            <div class="box">
+                <div class="row selected">
+                    <i class="iconfont fl">&#xe607;</i>
+                    <div class="brand fl" style="background:url(../../img/pic/pay/pay_ali.png) center center;"></div>
+                    <div class="discount fl"></div>
+                    <div class="price fr">支付<span>650</span>元</div>
+                    <div class="word fr">ddddddddddddddddddddddddddd</div>
+                </div>
+                <div class="row">
+                    <i class="iconfont fl">&#xe607;</i>
+                    <div class="brand fl" style="background:url(../../img/pic/pay/pay_wechat.png) center center;"></div>
+                    <div class="discount fl"></div>
+                    <div class="price fr">支付<span>650</span>元</div>
+                    <div class="word fr">ddddddddddddddddddddddddddd</div>
+                </div>
+                <div class="row">
+                    <i class="iconfont fl">&#xe607;</i>
+                    <div class="brand fl" style="background:url(../../img/pic/pay/pay_cu.png) center center;"></div>
+                    <div class="discount fl"></div>
+                    <div class="price fr">支付<span>650</span>元</div>
+                    <div class="word fr">ddddddddddddddddddddddddddd</div>
+                </div>
+                <div class="row">
+                    <i class="iconfont fl">&#xe607;</i>
+                    <div class="brand fl" style="background:url(../../img/pic/pay/pay_yizhifu.png) center center;"></div>
+                    <div class="discount fl"></div>
+                    <div class="price fr">支付<span>650</span>元</div>
+                    <div class="word fr">ddddddddddddddddddddddddddd</div>
+                </div>
+                <div class="row">
+                    <i class="iconfont fl">&#xe607;</i>
+                    <div class="brand fl" style="background:url(../../img/pic/pay/pay_pingtai.png) center center;"></div>
+                    <div class="discount fl"></div>
+                    <div class="price fr">支付<span>650</span>元</div>
+                    <div class="word fr">ddddddddddddddddddddddddddd</div>
+                    <div class="sub_box">
+                        <div class="title">余额支付密码：</div>
+                        <div class="input">
+                            <input type="text">
+                        </div>
+                        <div class="subbox_tip">请输入余额支付密码</div>
+                        <div class="btnbox">
+                            <button>立即支付</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="offline_pay banxin">
+            <div class="offline_top">
+                <div class="tip1">
+                    打款信息
+                </div>
+                <div class="top_content">
+                    <div class="title">
+                        <span>开户行</span>
+                        <span>开户名称</span>
+                        <span>账号</span>
+                        <span>币种</span>
+                    </div>
+                    <div class="banks">
+                        <div class="row">
+                            <span>华夏银行</span>
+                            <span>小麦(浙江)网络科技有限公司</span>
+                            <span>1325 2000 0004 55303</span>
+                            <span>CNY</span>
+                        </div>
+                        <div class="row">
+                            <span>华夏银行</span>
+                            <span>小麦(浙江)网络科技有限公司</span>
+                            <span>1325 2000 0004 55303</span>
+                            <span>CNY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../js/lib/require.js"></script>
+    
+    <script>
+        require(['../../js/main'], function () {
+            require(['pay']);
+        })
+    </script>
+</body>
+</html>

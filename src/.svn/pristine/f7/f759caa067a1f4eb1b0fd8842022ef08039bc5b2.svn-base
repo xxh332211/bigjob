@@ -1,0 +1,52 @@
+define(["jquery",'tpl',"laydate"],function ($,template,laydate) {
+
+!function(laydate){
+	window.laydate.skin('danlan');
+}();
+
+	function modal (arr) {
+		var that = this;
+		var obj = {};
+		obj.array = arr;
+		this.html = template("component/modal",obj);
+		this.index = $('.modal_cover').length;
+		$("body").append(this.html);
+		this.cover = $('.modal_cover').eq(this.index);
+		this.cover.find('.close,.cancel').on('click', function(event) {
+			that.hidemodal();
+		});
+	};
+	modal.prototype.sure = function (callback) {
+		var that = this;
+		this.cover.find('.sure').on('click', function(event) {
+			event.preventDefault();
+			callback();
+		});
+	};
+	modal.prototype.showmodal = function () {
+		this.cover.removeClass('hide');
+		this.cover.fadeIn("fast");
+	};
+	modal.prototype.hidemodal = function () {
+		this.cover.find('.sure');
+		this.cover.fadeOut("fast");
+	};
+	modal.prototype.getresult = function () {
+		var temp = {};
+		this.cover.find("[data-name]").each(function(index, el) {
+			var _name = $(el).data('name');
+			var _child = $(el).find('[data-child]');
+			if(temp[_name] && temp[_name] instanceof Array) {
+				temp[_name].push(_child.val());
+			}else if (temp[_name]&& !(temp[_name] instanceof Array)){
+				temp[_name] = [temp[_name]];
+				temp[_name].push(_child.val())
+			}else if (!temp[_name]){
+				temp[_name] = _child.val();
+			}
+		});
+		return temp;
+	};
+
+	return modal ;
+});

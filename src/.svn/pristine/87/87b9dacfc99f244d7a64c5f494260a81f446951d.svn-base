@@ -1,0 +1,966 @@
+define(["jquery", "common", "modals", "distpicker"], function ($, common, modals, distpicker) {
+    var alerts = modals.alerts;
+    var select_func = {
+        maindom: ".select",
+        select_head: ".select .select_head",
+        dropdown: ".select .select_dropdown",
+        sel_single: ".select .select_dropdown ul li",
+        toggle_drop: function (that) {
+            $(that).siblings(select_func.dropdown).slideToggle("fast");
+        },
+        down_drop: function (that) {
+            $(that).siblings(select_func.dropdown).slideDown('fast');
+        },
+        up_drop: function () {
+            $(select_func.dropdown).slideUp("fast");
+        },
+        set_selected: function (that) {
+            $(that).addClass('selected').siblings("li").removeClass('selected');
+            var selec_text = $(that).find('span').html();
+
+            var value = $(that).data("value");
+            $(that).parents(".select").find(".select_head").html(selec_text);
+            $(that).parents(".select").attr('data-value', value);
+        },
+        init: function () {
+            laydate.render({
+                elem: '.birthday'
+            });
+            laydate.render({
+                elem: '.start_time'
+            });
+            laydate.render({
+                elem: '.end_time'
+            });
+            $("body").on('click', select_func.select_head, function (event) {
+                event.stopPropagation();
+                var that = this;
+                select_func.toggle_drop(that);
+            });
+            $("body").click(function (event) {
+                /* Act on the event */
+                select_func.up_drop();
+            });
+            $("body").on('click', select_func.sel_single, function (event) {
+                var that = this;
+                event.preventDefault();
+                /* Act on the event */
+                select_func.set_selected(that);
+            });
+        }
+    };
+    var radio_func = {
+        radios: ".row label",
+        init: function () {
+            $(radio_func.radios).click(function (e) {
+                if (!$(this).hasClass("selected")) {
+                    $(this).addClass("selected").siblings().removeClass("selected");
+                }
+            });
+        }
+    }
+    var check_box = {
+        dom: 　 ".row .cheackbox",
+        doms: ".row .cheackbox .box,.row .cheackbox .content",
+        init: function () {
+            $(check_box.doms).click(function (e) {
+                if ($(check_box.dom).hasClass("checked")) {
+                    $(check_box.dom).removeClass("checked");
+                } else {
+                    $(check_box.dom).addClass("checked");
+                }
+
+            });
+        }
+    }
+
+    var redpacket = {
+        tags: ".packet_head span",
+        bags: ".packet_content>div",
+        init: function () {
+            $(redpacket.tags).on("click", function () {
+                $(this).addClass("selected").siblings().removeClass("selected")
+                var index = $(this).index();
+                $(redpacket.bags).eq(index).removeClass("hide").siblings().addClass("hide");
+
+            });
+        }
+    }
+
+    function init() {
+        redpacket.init();
+        check_box.init();
+        radio_func.init();
+        select_func.init();
+    }
+
+    init();
+
+    //搜索商品
+    $(".search_span").on('click', function () {
+        var keyword = $("#keyword").val();
+        if (keyword)
+            window.location.href = domain + "/search.html?keyword=" + keyword;
+    })
+    var numCount = 0;
+    //获取数量累加
+    $(".list_detail .products_pair").each(function (index, el) {
+        numCount += $(el).find("span").html() / 1;
+    });
+    $(".list_detail .detail_count_l span").eq(1).html(numCount);
+
+    //取消订单窗口
+    $("#queryOrders").on('click', function () {
+        var orderSn = $("#orderSn").val();
+        var orderType = $(".orderType .selected").data("value");
+        var logisticType = $(".logisticType .selected").data('value');
+        var payType = $(".payType .selected").data("value");
+        var coupnType = $("#coupnType").val();
+        var createTime_s = $("#createTime_s").val();
+        var createTime_e = $("#createTime_e").val();
+        var date = orderSn + ";" + orderType + ";" + logisticType + ";" + payType + ";" + coupnType + ";" + createTime_s + ";" + createTime_e;
+
+        window.location.href = domain + "/member/ordersquery.html?q_strs=" + date;
+    });
+
+    //验证用户输入格式
+    $("#realName").on('change', function () {
+        if (isrealname($("#realName").val())) {
+
+        } else {
+            alerts("请输入20个字符以内的文字或英文");
+            return;
+        }
+
+    });
+    //验证手机号码
+    $("#mobile").on('change', function () {
+        if (isphone($(this).val())) {
+
+        } else {
+            alerts("亲,请输入正确的手机号");
+            return;
+        }
+    });
+    //验证微信输入格式
+    $("#wechatNum").on('change', function () {
+        if (wechat($(this).val())) {
+
+        } else {
+            alerts("亲,请输入正确的微信号码");
+            return;
+        }
+
+    });
+
+    //验证邮箱输入格式
+    $("#email").on('change', function () {
+        if (isemail($(this).val())) {
+
+        } else {
+            alerts("提示信息", "请输入正确的邮箱地址");
+            return;
+        }
+    });
+    $("#certificateNum").on('change', function () {
+        if (isidentitycard($(this).val())) {
+
+        } else {
+            alerts("亲,请输入正确的身份证号码");
+            return;
+        }
+    })
+
+    //保存用户基本信息
+    $(".preserve").on('click', function () {
+        $(".preserve").attr("disabled", "disabled");
+        var params = "";
+        var realName = $("#realName").val();
+        if (isrealname(realName)) {
+
+        } else {
+            $(".preserve").removeAttr("disabled");
+            alerts("请输入20个字符以内的文字或英文");
+            return;
+        }
+        params += "realName=" + realName;
+        var birthday = $("#birthday").val();
+        params += "&birthday=" + birthday;
+        var mobile = $("#mobile").val();
+        if (isphone(mobile)) {
+
+        } else {
+            $(".preserve").removeAttr("disabled");
+            alerts("亲,请输入正确的手机号");
+            return;
+        }
+
+        params += "&mobile=" + mobile;
+        var quhaoNum = $("input[name='quhaoNum']").val();
+        params += "&quhaoNum=" + quhaoNum;
+        var teleNum = $("input[name='teleNum']").val();
+        params += "&teleNum=" + teleNum;
+        var fenjiNum = $("input[name='fenjiNum']").val();
+        params += "&fenjiNum=" + fenjiNum;
+        var qq = $("input[name='qq']").val();
+        params += "&qq=" + qq;
+        var wechatNum = $("input[name='wechatNum']").val();
+        params += "&wechatNum=" + wechatNum;
+        var email = $("input[name='email']").val();
+        params += "&email=" + email;
+        var certificateNum = $("input[name='certificateNum']").val();
+        params += "&certificateNum=" + certificateNum;
+        var gender = $(".gender .selected").data("value");
+        if (!gender) {
+            gender = "";
+        }
+        params += "&gender=" + gender;
+        var userCertify = $(".userCertify .selected").data("value");
+        if (!userCertify) {
+            userCertify = "";
+        }
+        params += "&userCertify=" + userCertify;
+        var userAddress = $("input[name='userAddress']").val();
+        params += "&userAddress=" + userAddress;
+        var dpAddress = $("input[name='dpAddress']").val();
+        params += "&dpAddress=" + dpAddress;
+        var userAddinfo = $("#userAddinfo").val();
+        params += "&userAddinfo=" + userAddinfo;
+        var dpAddinfo = $("#dpAddinfo").val();
+        params += "&dpAddinfo=" + dpAddinfo;
+        var wdName = $("input[name='wdName']").val();
+        params += "&wdName=" + wdName;
+        var wdwebAddress = $("input[name='wdwebAddress']").val();
+        params += "&wdwebAddress=" + wdwebAddress;
+        $.ajax({
+            type: "POST",
+            url: domain + "/member/saveinfo.html",
+            dataType: "json",
+            async: false,
+            data: params,
+            success: function (data) {
+                if (data.success) {
+                    alerts('提示','保存成功',function () {
+                        window.location.href = domain + "/member/info.html";
+                    });
+
+                } else {
+                    alerts(data.message);
+                    $(".preserve").removeAttr("disabled");
+                }
+            },
+            error: function () {
+                alerts("异常，请重试！");
+                $(".preserve").removeAttr("disabled");
+            }
+        });
+    });
+
+
+    //修改用户支付密码
+    $(".bt_submit").on('click', function () {
+        $(".bt_submit").attr("disabled", "disabled");
+        var params = "";
+        var oldPwd = $("input[name='oldPwd']").val();
+        var newPwd = $("input[name='newPwd']").val();
+        var confirmPwd = $("input[name='confirmPwd']").val();
+        if (!oldPwd || !newPwd || !confirmPwd) {
+            alerts("密码不能为空");
+            $(".bt_submit").removeAttr("disabled");
+            return;
+        }
+        if (confirmPwd != newPwd) {
+            alerts("密码输入不一致");
+            $(".bt_submit").removeAttr("disabled");
+            return;
+        }
+        params += "oldPwd=" + oldPwd;
+        params += "&newPwd=" + newPwd;
+        params += "&confirmPwd=" + confirmPwd;
+        $.ajax({
+            type: "POST",
+            url: domain + "/member/updatebalancepassword.html",
+            dataType: "json",
+            async: false,
+            data: params,
+            success: function (data) {
+                if (data.success) {
+                    alerts('提示','密码设置成功',function () {
+                        window.location.href = domain + "/member/balance.html"
+                    });
+
+                } else {
+                    alerts(data.message);
+                    $(".bt_submit").removeAttr("disabled");
+                }
+            },
+            error: function () {
+                alerts("异常，请重试！");
+                $(".bt_submit").removeAttr("disabled");
+            }
+        });
+    });
+
+    //重置用户支付密码
+    $(".reset_submit").on('click', function () {
+        $(".bt_submit").attr("disabled", "disabled");
+        var params = "";
+        var newPwd = $("input[name='newPwd']").val();
+        var confirmPwd = $("input[name='confirmPwd']").val();
+        var mobVerify = $("input[name='mobVerify']").val();
+        if (!mobVerify) {
+            alerts("验证码不能为空");
+            $(".reset_submit").removeAttr("disabled");
+            return;
+        }
+        if (!newPwd || !confirmPwd) {
+            alerts("密码不能为空");
+            $(".reset_submit").removeAttr("disabled");
+            return;
+        }
+        if (confirmPwd != newPwd) {
+            alerts("密码输入不一致");
+            $(".reset_submit").removeAttr("disabled");
+            return;
+        }
+        params += "mobVerify=" + mobVerify;
+        params += "&newPwd=" + newPwd;
+        params += "&confirmPwd=" + confirmPwd;
+        $.ajax({
+            type: "POST",
+            url: domain + "/member/resetbalancepassword.html",
+            dataType: "json",
+            async: false,
+            data: params,
+            success: function (data) {
+                if (data.success) {
+                    alerts('提示','密码重置成功',function () {
+                        window.location.href = domain + "/member/balance.html";
+                    })
+
+                } else {
+                    alerts(data.message);
+                    $(".reset_submit").removeAttr("disabled");
+                }
+            },
+            error: function () {
+                alerts("异常，请重试！");
+                $(".reset_submit").removeAttr("disabled");
+            }
+        });
+
+    });
+
+    //进入个人资料页面 渲染地区数据用户地址
+    if ($(".userAddress").length) {
+        //加载省市区
+        var opt = {
+            //默认省
+            defaultProvince: $("#provinceId").val(),
+            //默认市
+            defaultCity: $("#cityId").val(),
+            //默认地区
+            defaultArea: $("#areaId").val(),
+            areaRequired: true,
+            domain: domain,
+            provinceName: '选择省',
+            cityName: '选择市',
+            areaName: '选择地区',
+            compent: "userAddress"
+        };
+        //实例此对象，参数可选
+        var area = new AreaSupport(opt);
+        //初始化对象并组装DOM添加至给定的选择器对象。注意，此对象的init返回的是JQuery对象
+        $('.userAddress .select.province_').html(area.getProvince());
+        //如果希望进入页面加载到市，则可以手动执行此初始化方法
+        //area.getCity().appendTo();
+        $('.userAddress .select.city_').html(area.getCity());
+        //如果希望进入页面加载到地区，则可以手动执行此初始化方法
+        //area.getArea().appendTo();
+        $('.userAddress .select.area_').html(area.getArea());
+    }
+    //进入个人资料页面 渲染地区数据 发货地址
+    if ($(".dpAddress").length) {
+        //加载省市区
+        var opt = {
+            //默认省
+            defaultProvince: $("#provinceId").val(),
+            //默认市
+            defaultCity: $("#cityId").val(),
+            //默认地区
+            defaultArea: $("#areaId").val(),
+            areaRequired: true,
+            domain: domain,
+            provinceName: '选择省',
+            cityName: '选择市',
+            areaName: '选择地区',
+            compent: "dpAddress"
+        };
+        //实例此对象，参数可选
+        var area = new AreaSupport(opt);
+        //初始化对象并组装DOM添加至给定的选择器对象。注意，此对象的init返回的是JQuery对象
+        $('.dpAddress .select.province_').html(area.getProvince());
+        //如果希望进入页面加载到市，则可以手动执行此初始化方法
+        //area.getCity().appendTo();
+        $('.dpAddress .select.city_').html(area.getCity());
+        //如果希望进入页面加载到地区，则可以手动执行此初始化方法
+        //area.getArea().appendTo();
+        $('.dpAddress .select.area_').html(area.getArea());
+    }
+
+    //进入新增用户页面渲染地区数据
+    if ($(".deliveryAddress").length) {
+        //加载省市区
+        var opt = {
+            //默认省
+            defaultProvince: $("#provinceId").val(),
+            //默认市
+            defaultCity: $("#cityId").val(),
+            //默认地区
+            defaultArea: $("#areaId").val(),
+            areaRequired: true,
+            domain: domain,
+            provinceName: '选择省',
+            cityName: '选择市',
+            areaName: '选择地区',
+            compent: "deliveryAddress"
+        };
+        //实例此对象，参数可选
+        var area = new AreaSupport(opt);
+        //初始化对象并组装DOM添加至给定的选择器对象。注意，此对象的init返回的是JQuery对象
+        $('.deliveryAddress .select.province_').html(area.getProvince());
+        //如果希望进入页面加载到市，则可以手动执行此初始化方法
+        //area.getCity().appendTo();
+        $('.deliveryAddress .select.city_').html(area.getCity());
+        //如果希望进入页面加载到地区，则可以手动执行此初始化方法
+        //area.getArea().appendTo();
+        $('.deliveryAddress .select.area_').html(area.getArea());
+    }
+
+
+
+
+
+    //新增用户收货地址
+    $(".saveConsigneeButton").on('click', function () {
+        saveConsignee();
+    });
+    $("#txt-newpw").on('change', function () {
+        if (ispassword($(this).val())) {
+
+        } else {
+            alerts("请输入6-20位的英文字母和数字");
+            return;
+        }
+    });
+
+    //修改用户登录密码
+    $(".bt_editPwd").on('click', function () {
+        $(".bt_editPwd").attr("disabled", "disabled");
+        var params = "";
+        var oldPwd = $("input[name='oldPwd']").val();
+        var newPwd = $("input[name='newPwd']").val();
+        var confirmPwd = $("input[name='confirmPwd']").val();
+        if (!oldPwd || !newPwd || !confirmPwd) {
+            alerts("密码不能为空");
+            $(".bt_editPwd").removeAttr("disabled");
+            return;
+        }
+        if (confirmPwd != newPwd) {
+            alerts("密码输入不一致");
+            $(".bt_editPwd").removeAttr("disabled");
+            return;
+        }
+        params += "oldPwd=" + oldPwd;
+        params += "&newPwd=" + newPwd;
+        params += "&confirmPwd=" + confirmPwd;
+        $.ajax({
+            type: "POST",
+            url: domain + "/member/updatepassword.html",
+            dataType: "json",
+            async: false,
+            data: params,
+            success: function (data) {
+                if (data.success) {
+                    alerts('提示','密码修改成功',function () {
+                        window.location.href = domain + "/member/editpassword.html";
+                    })
+                } else {
+                    alerts(data.message);
+                    $(".bt_editPwd").removeAttr("disabled");
+                }
+            },
+            error: function () {
+                alerts("异常，请重试！");
+                $(".bt_editPwd").removeAttr("disabled");
+            }
+        });
+    });
+
+    //取消用户商品收藏
+    $(".goods-delete").click(function () {
+        unfollowProduct($(this));
+    });
+    //删除用户浏览记录look-delete
+    $(".look-delete").click(function () {
+        deleteProductId($(this));
+    });
+
+
+    //保存用户收货地址信息
+    function saveConsignee() {
+        var provinceId = $('.deliveryAddress .province_ .selected').data("value");
+        var cityId = $('.deliveryAddress .city_ .selected').data("value");
+        var areaId = $('.deliveryAddress .area_ .selected').data("value");
+        var memberName = $("#consignee_name").val();
+        var addressInfo = $("#consignee_address").val();
+        var mobile = $("#consignee_mobile").val();
+        var zipCode = $("#consignee_zipcode").val();
+        //获得省市区中文并拼接
+        var addall = $("input[name='deliveryAddress']").val();
+        var zipCode = $("#consignee_zipcode").val();
+        if (!memberName) {
+            alerts("收货人姓名必填");
+            return;
+        }
+        if (!provinceId || !cityId || !areaId) {
+            alerts("请选择详细的所在地区");
+            return;
+        }
+        if (!addressInfo) {
+            alerts("详细地址必填");
+            return;
+        }
+        if (!mobile) {
+            alerts("手机号码必填");
+            return;
+        }
+
+        if (isphone(mobile)) {
+
+        }else{
+            alerts("亲,请输入正确的手机号");
+            return;
+        }
+        if (zipCode == null || zipCode == '') {
+            $("#consignee_zipcode").val("000000");
+        }
+
+        $(".saveConsigneeButton").attr("disabled", "disabled");
+        var params = "";
+        params += "addAll=" + addall;
+        params += "&id=&memberName=" + memberName;
+        params += "&provinceId=" + provinceId;
+        params += "&cityId=" + cityId;
+        params += "&areaId=" + areaId;
+        params += "&addressInfo=" + addressInfo;
+        params += "&mobile=" + mobile;
+        params += "&zipCode=" + zipCode;
+        $.ajax({
+            type: "POST",
+            url: domain + "/member/saveaddress.html",
+            dataType: "json",
+            data: params,
+            success: function (data) {
+                if (data.success) {
+                    window.location.reload();
+                } else {
+                    $("#saveConsigneeButton").removeAttr("disabled");
+                    alerts(data.message);
+                }
+            },
+            error: function () {
+                $("#saveConsigneeButton").removeAttr("disabled");
+                alerts("异常，请重试！");
+            }
+        });
+    }
+
+
+
+    function isphone(value) {
+        if (value.search(/^(\+\d{2,3})?\d{11}$/) == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    };
+
+    function isrealname(value) {
+        if (value.search(/^[\u4e00-\u9fa5_a-zA-Z0-9_]{2,16}$/) == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function wechat(value) {
+        if (value.search(/^[a-zA-Z0-9_]{3,16}$/) == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function isemail(value) {
+        if (value.search(/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/) == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function ispassword(value) {
+        if (value.search(/^[a-zA-Z0-9_-]{6,20}$/) == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    function isidentitycard(value) {
+        if (value.search(/^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$/) == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+    function isnumber(value) {
+        if (value.search(/^[0-9]*$/) == -1) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+
+
+});
+
+
+//取消订单
+function cancalOrder(tradeNo) {
+    if (confirm("确定要取消该订单吗？")) {
+        $.ajax({
+            type: "GET",
+            url: domain + "/member/cancalorder.html",
+            data: {
+                tradeNo: tradeNo
+            },
+            dataType: "json",
+            success: function (data) {
+                if (data.success) {
+                    window.location.reload();
+                } else {
+                    alerts(data.message);
+                }
+            },
+            error: function () {
+                alerts("数据加载失败！");
+            }
+        });
+    }
+}
+
+//删除订单
+function deleteOrder(orderId) {
+    if (confirm("确定要删除该订单吗？")) {
+        $.ajax({
+            type: "GET",
+            url: domain + "/member/deleteorder.html",
+            data: {
+                orderId: orderId
+            },
+            dataType: "json",
+            success: function (data) {
+                if (data.success) {
+                    window.location.reload();
+                } else {
+                    alerts(data.message);
+                }
+            },
+            error: function () {
+                alerts("数据加载失败！");
+            }
+        });
+    }
+}
+
+//确认收货
+function goodsReceipt(ordersId) {
+    $.ajax({
+        type: "GET",
+        url: domain + "/member/goodreceive.html",
+        data: {
+            ordersId: ordersId
+        },
+        dataType: "json",
+        success: function (data) {
+            if (data.success) {
+                window.location.reload();
+            } else {
+                alerts(data.message);
+            }
+        },
+        error: function () {
+            alerts("数据加载失败！");
+        }
+    });
+}
+
+//取消商品收藏
+function unfollowProduct(obj) {
+    if (confirm("是否取消关注")) {
+        var id = obj.data("id");
+        $.ajax({
+            type: "GET",
+            url: domain + "/member/cancelcollectproduct.html",
+            dataType: "json",
+            async: false,
+            data: {
+                productId: id
+            },
+            success: function (data) {
+                if (data.success) {
+                    obj.parent().remove();
+                } else {
+                    alerts(data.message);
+                }
+            },
+            error: function () {
+                alerts("异常，请重试！");
+            }
+        });
+    }
+}
+
+//删除浏览记录
+function deleteProductId(obj) {
+    var productId = obj.data("id");
+    $.ajax({
+        type: "GET",
+        url: domain + "/member/deleteproductlog.html",
+        data: {
+            productId: productId
+        },
+        dataType: "json",
+        success: function (data) {
+            if (data.success) {
+                obj.parent().remove();
+            }
+        }
+    });
+}
+//设置默认地址
+function defaultAddress(id) {
+    $.ajax({
+        type: "POST",
+        url: domain + "/member/setdefaultaddress.html",
+        dataType: "json",
+        data: {
+            id: id
+        },
+        success: function (data) {
+            if (data.success) {
+                //重新加载列表数据
+                window.location.href = domain + "/member/address.html";
+            } else {
+                alerts(data.message);
+            }
+        },
+        error: function () {
+            alerts("异常，请重试！");
+        }
+    });
+}
+//删除收货地址
+function deleteAddress(id) {
+    if (confirm("是否确认删除")) {
+        //删除地址
+        $.ajax({
+            type: "POST",
+            url: domain + "/member/deleteaddress.html",
+            dataType: "json",
+            async: false,
+            data: {
+                id: id
+            },
+            success: function (data) {
+                if (data.success) {
+                    //重新加载列表数据
+                    window.location.href = domain + "/member/address.html";
+                } else {
+                    alerts(data.message);
+                }
+            },
+            error: function () {
+                alerts("异常，请重试！");
+            }
+        });
+    }
+}
+
+
+//新增或编辑收货地址
+function addOrEditAddress(id) {
+    $(".modal_adress").removeClass("hide");
+    $.ajax({
+        type: "GET",
+        url: domain + "/member/editaddress.html",
+        dataType: "html",
+        data: {
+            id: id
+        },
+        success: function (data) {
+
+            $(".modal_adress").html(data);
+            if (initTimeOut) {
+                clearTimeout(initTimeOut);
+            }
+            var initTimeOut = setTimeout(function () {
+                //doLoading('province_',config);
+                editDeliveryAddress();
+            }, 1);
+        },
+        error: function () {
+            alerts("异常，请重试！");
+        }
+    });
+
+    $(".modal_adress").on('click', ".close", function () {
+        $(".modal_adress").addClass("hide");
+    })
+
+    /*  $(".modal_adress").ajaxComplete(function () {
+          editDeliveryAddress();
+      })*/
+
+}
+
+function editDeliveryAddress() {
+    //编辑用户地址
+    if ($(".modal_adress .editDeliveryAddress").length) {
+        //加载省市区
+        var opt = {
+            //默认省
+            defaultProvince: $("#provinceId").val(),
+            //默认市
+            defaultCity: $("#cityId").val(),
+            //默认地区
+            defaultArea: $("#areaId").val(),
+            areaRequired: true,
+            domain: domain,
+            provinceName: '请选择',
+            cityName: '请选择',
+            areaName: '请选择',
+            compent: "editDeliveryAddress"
+        };
+        //实例此对象，参数可选
+        var area = new AreaSupport(opt);
+        //初始化对象并组装DOM添加至给定的选择器对象。注意，此对象的init返回的是JQuery对象
+        $('.editDeliveryAddress .select.province_').html(area.getProvince());
+        //如果希望进入页面加载到市，则可以手动执行此初始化方法
+        //area.getCity().appendTo();
+        $('.editDeliveryAddress .select.city_').html(area.getCity());
+        //如果希望进入页面加载到地区，则可以手动执行此初始化方法
+        //area.getArea().appendTo();
+        $('.editDeliveryAddress .select.area_').html(area.getArea());
+        $("." + opt.compent + " .select_head.province_").html($("." + opt.compent + " .select_dropdown.province_ .selected span").html());
+        $("." + opt.compent + " .select_head.city_").html($("." + opt.compent + " .select_dropdown.city_ .selected span").html());
+        $("." + opt.compent + " .select_head.area_").html($("." + opt.compent + " .select_dropdown.area_ .selected span").html());
+
+
+        //修改用户收货地址
+        $(".saveConsigneeButton").on('click', function () {
+            editConsignee();
+        });
+
+
+    }
+}
+
+
+//修改用户收货地址信息
+function editConsignee() {
+    var provinceId = $('.editDeliveryAddress .province_ .selected').data("value");
+    var cityId = $('.editDeliveryAddress .city_ .selected').data("value");
+    var areaId = $('.editDeliveryAddress .area_ .selected').data("value");
+    var memberName = $("#consigneeName").val();
+    var addressInfo = $("#consigneeAddress").val();
+    var mobile = $("#consigneeMobile").val();
+    var zipCode = $("#consigneeZipcode").val();
+    var id = $("#newAddressId").val();
+    //获得省市区中文并拼接
+    var addall = $("input[name='editDeliveryAddress']").val();
+
+    if (!addall) {
+        addall += $(".editDeliveryAddress .select_head.province_").html();
+        addall += $(".editDeliveryAddress .select_head.city_").html();
+        addall += $(".editDeliveryAddress .select_head.area_").html();
+    }
+
+    var zipCode = $("#consigneeZipcode").val();
+    if (!memberName) {
+        alerts("收货人姓名必填");
+        return;
+    }
+    if (!provinceId || !cityId || !areaId) {
+        alerts("请选择详细的所在地区");
+        return;
+    }
+    if (!addressInfo) {
+        alerts("详细地址必填");
+        return;
+    }
+    if (!mobile) {
+        alerts("手机号码必填");
+        return;
+    }
+    if (zipCode == null || zipCode == '') {
+        $("#consignee_zipcode").val("000000");
+    }
+
+    $(".saveConsigneeButton").attr("disabled", "disabled");
+    var params = "";
+    params += "addAll=" + addall;
+    params += "&id=" + id + "&memberName=" + memberName;
+    params += "&provinceId=" + provinceId;
+    params += "&cityId=" + cityId;
+    params += "&areaId=" + areaId;
+    params += "&addressInfo=" + addressInfo;
+    params += "&mobile=" + mobile;
+    params += "&zipCode=" + zipCode;
+    $.ajax({
+        type: "POST",
+        url: domain + "/member/saveaddress.html",
+        dataType: "json",
+        data: params,
+        success: function (data) {
+            if (data.success) {
+                window.location.reload();
+            } else {
+                $("#saveConsigneeButton").removeAttr("disabled");
+                alerts(data.message);
+
+            }
+        },
+        error: function () {
+            $("#saveConsigneeButton").removeAttr("disabled");
+            alerts("异常，请重试！");
+
+        }
+    });
+}
+
+
+//输入格式控制只能输入挣正整数
+function checknum(obj) {
+    if (/^\d+$/.test(obj.value)) {
+        obj.value = obj.value;
+    } else {
+        obj.value = obj.value.substring(0, obj.value.length - 1);
+    }
+    obj.value = /^\d+$/.test(obj.value) ? obj.value : '';
+}

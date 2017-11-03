@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文章页</title>
+    <link rel="stylesheet" href="../../css/system/article.css">
+</head>
+<body>
+    <div class="article_title clearfix">
+        <div class="banxin">
+            <div class="article_titlename">
+                帮助中心
+                <i class="iconfont">&#xe637;</i>
+            </div>
+            <div class="article_nav">
+                <div class="article_subnav">首页</div>
+                <div class="article_subnav">常见问题</div>
+                <div class="article_subnav">新手指南</div>
+                <div class="article_subnav">联系客服</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

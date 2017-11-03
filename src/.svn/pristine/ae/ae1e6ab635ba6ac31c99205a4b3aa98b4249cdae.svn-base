@@ -1,0 +1,20 @@
+{{if data}}
+{{each data as value i}}
+<!-- {{if i==0}}
+<ol class="clearfix">
+    <div class="first">{{value.name}}</div>
+    {{each value.childList as val num}}
+    <li><a href="0-1-0-0-0-0-{{val.id}}-0-0-0.html">{{val.name}}</a></li>
+    {{/each}}
+</ol>
+{{/if}} -->
+<!-- {{if i != 0}} -->
+<ol class="clearfix">
+    <div class="first">{{value.name}}</div>
+    {{each value.childList as val num}}
+    <li><a href="0-1-0-0-0-0-0-0-0-0-{{val.id}}_{{num}}.html" target="_blank">{{val.name}}</a></li>
+    {{/each}}
+</ol>
+<!-- {{/if}} -->
+{{/each}}
+{{/if}}

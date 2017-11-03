@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>阿里通介绍页</title>
+	<link rel="stylesheet" href="../../css/alitong/alitong_introduce.css">
+</head>
+<body>
+	<div class="banner">
+		<div class="bannerpic banxin" style="background: url(../../img/pic/alitong/introduce.png) center center no-repeat;"></div>
+    	<div class="banner_center banxin" >
+			<i class="iconfont_2">&#xe62d;</i>
+			<div class="title">
+				<div class="title_big">
+					大袜阿里通
+				</div>
+				<div class="title_mall">
+					<p>这是什么鬼</p>
+					<p>到底顶顶顶顶多</p>
+				</div>
+			</div>
+			<div class="alitong_btn">
+				<button>免费开通</button>
+				<div class="line"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 正式内容 -s -->
+	<div class="alitong_introduce clearfix">
+		<!-- title -s -->
+		<div class="introduce_title banxin">
+			<p><span></span></p>
+			<p>大袜阿里通</p>
+			<p>DAWAALITONG</p>
+			<p>手动阀手动阀大手动阀手动阀是的发送到是的发斯蒂芬啥地方是的啥地方是的发斯蒂芬啥地方啥地方啥地方是的</p>
+		</div>
+		<!-- title -e -->
+		<!-- pics -s -->
+		<div class="introduce_pics banxin clearfix">
+			<div class="pics_single">
+				<div><img src="../../img/pic/alitong/yjph.png" alt=""></div>
+				<p>选款拍照太麻烦?</p>
+				<p>一键铺货到店铺!</p>
+			</div>
+			<div class="pics_single">
+				<div><img src="../../img/pic/alitong/kucun.png" alt=""></div>
+				<p>库存积压很头疼?</p>
+				<p>无需备货做生意!</p>
+			</div>
+			<div class="pics_single">
+				<div><img src="../../img/pic/alitong/yjdf.png" alt=""></div>
+				<p>仓配物流难管理?</p>
+				<p>一件代发不用愁!</p>
+			</div>
+			<div class="pics_single">
+				<div><img src="../../img/pic/alitong/hlsx.png" alt=""></div>
+				<p>款式太少怎么办?</p>
+				<p>海量上新任你挑!</p>
+			</div>
+		</div>
+		<!-- pics -e -->
+		
+		<!-- subtitle -s -->
+		<div class="introduce_subtitle banxin">
+			<p><span></span></p>
+			<p>产品特色</p>
+			<p>PRODUCT FEATURES</p>
+		</div>
+		<!-- subtitle -e -->
+
+		<!-- introduce_product -s -->
+		<div class="introduce_procuct banxin clearfix">
+			<div class="product_single">
+				<div class="pic">
+					<img src="../../img/pic/alitong/keybord.png" alt="">
+				</div>
+				<div class="info">
+					<p>一键铺货</p>
+					<p>-用简单、可视化操作完成阿里卖家在大袜网平台的选款</p>
+					<p>-支持单个、批量上传，批量改价</p>
+					<p>
+						<a href="#">立即开通></a>
+					</p>
+				</div>
+			</div>
+			<div class="product_single">
+				<div class="pic">
+					<img src="../../img/pic/alitong/yj.png" alt="">
+				</div>
+				<div class="info">
+					<p>一件代发</p>
+					<p>完美嫁接大袜网完整仓配物流能力，成交订单进入大袜网系统后会自动下推云仓进行发货操作。</p>
+					<p>
+						<a href="#">立即开通></a>
+					</p>
+				</div>
+			</div>
+			<div class="product_single">
+				<div class="pic">
+					<img src="../../img/pic/alitong/kc.png" alt="">
+				</div>
+				<div class="info">
+					<p>库存共享</p>
+					<p>-用平台库存共享解决阿里卖家最大的库存成本问题。</p>
+					<p>-平台海量SKU的共享，品牌虚拟组合产品的共享。</p>
+					<p>
+						<a href="#">立即开通></a>
+					</p>
+				</div>
+			</div>
+			<div class="product_single">
+				<div class="pic">
+					<img src="../../img/pic/alitong/gxh.png" alt="">
+				</div>
+				<div class="info">
+					<p>个性化订单支持</p>
+					<p>-支持用户对商品的二次加工需求。</p>
+					<p>-订单流过程中实时截单。</p>
+					<p>-订单拆分，支持多仓订单处理。</p>
+					<p>
+						<a href="#">立即开通></a>
+					</p>
+				</div>
+			</div>
+			<div class="product_single">
+				<div class="pic">
+					<img src="../../img/pic/alitong/xx.png" alt="">
+				</div>
+				<div class="info">
+					<p>信息实时同步</p>
+					<p>-阿里店铺库存无需管理，由系统实时更新同步。</p>
+					<p>-订单处理过程的状态实时回传至阿里店铺。</p>
+					<p>
+						<a href="#">立即开通></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- introduce_product -e -->
+
+		<!-- subtitle -s -->
+		<div class="introduce_subtitle banxin alinge_r">
+			<p><span></span></p>
+			<p>业务流程</p>
+			<p>BUSINESS PROCESSE</p>
+		</div>
+		<!-- subtitle -e -->
+
+		<!-- process -s -->
+		<div class="process_bus banxin">
+			<div class="line_1 clearfix">
+				<div class="process_single">
+					<div class="pic" style="background: url(../../img/pic/alitong/ywlc_1.png) top center no-repeat;">
+						<i class="iconfont">&#xe621;</i>
+					</div>
+					<div class="title">
+						<p>申请为大袜阿里通用户</p>
+						<p>阿里店铺授权对接</p>
+					</div>
+				</div>
+				<div class="process_single">
+					<div class="pic" style="background: url(../../img/pic/alitong/ywlc_2.png) top center no-repeat;">
+						<i class="iconfont">&#xe621;</i>
+					</div>
+					<div class="title">
+						<p>大袜网平台选择商品</p>
+					</div>
+				</div>
+				<div class="process_single">
+					<div class="pic" style="background: url(../../img/pic/alitong/ywlc_3.png) top center no-repeat;">
+						<i class="iconfont">&#xe621;</i>
+					</div>
+					<div class="title">
+						<p>一键铺货</p>
+						<p>商品上传阿里店铺</p>
+						<p>库存同步</p>
+					</div>
+				</div>
+				<div class="process_single">
+					<div class="pic" style="background: url(../../img/pic/alitong/ywlc_4.png) top center no-repeat;">
+						<i class="iconfont">&#xe621;</i>
+					</div>
+					<div class="title">
+						<p>阿里店铺成交</p>
+						<p>系统抓取订单</p>
+					</div>
+				</div>
+			</div>
+			<div class="line_2 clearfix">
+				<div class="process_single">
+					<div class="pic" style="background: url(../../img/pic/alitong/ywlc_8.png) top center no-repeat;">
+					</div>
+					<div class="title">
+						<p>结算报表</p>
+						<p>异常处理</p>
+					</div>
+				</div>
+				<div class="process_single">
+					<div class="pic" style="background: url(../../img/pic/alitong/ywlc_7.png) top center no-repeat;">
+						<i class="iconfont">&#xe621;</i>
+					</div>
+					<div class="title">
+						<p>信息回传阿里</p>
+						<p>订单交易完成</p>
+					</div>
+				</div>
+				<div class="process_single">
+					<div class="pic" style="background: url(../../img/pic/alitong/ywlc_6.png) top center no-repeat;">
+						<i class="iconfont">&#xe621;</i>
+					</div>
+					<div class="title">
+						<p>云仓履单发货</p>
+					</div>
+				</div>
+				<div class="process_single">
+					<div class="pic" style="background: url(../../img/pic/alitong/ywlc_5.png) top center no-repeat;">
+						<i class="iconfont">&#xe621;</i>
+					</div>
+					<div class="title">
+						<p>用户付款结算</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- process -e -->
+
+		<!-- sign_up -s -->
+		<div class="sign_up">
+			<button>立即开通</button>
+		</div>
+		<!-- sign_up -e -->
+
+		<!-- foot -s -->
+		<div class="foot">
+			<p>操作流程 OPERATION PROCESS</p>
+			<p><a href="#"><span>点击查看</span></a></p>
+			<p><b></b></p>
+			<p>如有疑问活需要帮助,请联系大袜网全国客服热线</p>
+			<p>4008-456-002</p>
+			<p><a href="#">联系在线客服</a></p>
+		</div>
+		<!-- foot -e -->
+
+	</div>
+	<!-- 正式内容 -e -->
+
+<script src="../../js/lib/require.js"></script>
+<script>
+	require(['../../js/main'],function () {
+		require(['alitong_introduce2']);
+	})
+</script>
+</body>
+</html>

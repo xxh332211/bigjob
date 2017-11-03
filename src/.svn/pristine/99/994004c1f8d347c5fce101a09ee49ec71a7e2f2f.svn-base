@@ -1,0 +1,250 @@
+define(['jquery',"modal",'common'],function ($,modal,common) {
+
+    function filterPage(page) {
+        var urlPath = getUrlPath();
+        var urlPaths = urlPath.split("-");
+        var url = "";
+        for(var i=0; i<urlPaths.length; i++) {
+            if(i == 2) {
+                url += page;
+            } else {
+                url += urlPaths[i];
+            }
+            if((i+1) != urlPaths.length) {
+                url += "-";
+            }
+        }
+        self.location = domain + url;
+    };
+
+    $(".page_sure").click(function () {
+        var pageNumber = $("#pageNum").val();
+        filterPage(pageNumber);
+    });
+	/*$(".page_prev").click(function(){
+	 filterPage($(this).data("pagenumber"));
+	 });
+	 $(".page_next").click(function(){
+	 filterPage($(this).data("pagenumber"));
+	 });*/
+    $(".page_select").click(function(){
+        console.log($(this).data("pagenumber"));
+        filterPage($(this).data("pagenumber"));
+    });
+//交互逻辑 -s
+    //更多按钮逻辑
+    $('.option .show_more').on('click', function(event) {
+        var content_ul = $(this).parent('.option').siblings('ul');
+        if(content_ul.hasClass('hide_part')){
+            content_ul.removeClass('hide_part');
+            $(this).children('b').html('隐藏').siblings('i').removeClass('icon-xia').addClass('icon-shang')
+        }else if (!content_ul.hasClass('hide_part')) {
+            content_ul.addClass('hide_part');
+            $(this).children('b').html('更多').siblings('i').removeClass('icon-shang').addClass('icon-xia')
+        }
+    });
+    //多选按钮逻辑
+    $('.option .mul_chose').on('click', function(event) {
+        var content_ul = $(this).parent('.option').siblings('ul');
+        if(content_ul.hasClass('multichose_true')){
+            //取消多选
+            content_ul.removeClass('multichose_true').addClass('multichose_false');
+            $(this).children('b').html('多选').siblings('i').removeClass('icon-jian').addClass('icon-add')
+            content_ul.children('.selected').removeClass('selected')
+        }else if (!content_ul.hasClass('multichose_true')) {
+            //开始多选
+            content_ul.addClass('multichose_true').removeClass('multichose_false');
+            $(this).children('b').html('取消').siblings('i').removeClass('icon-add').addClass('icon-jian')
+        }
+    });
+
+    //多选选中
+    $("body").on('click',".multichose_true .word",function(event) {
+        var hadselected = $(this).hasClass('selected');
+        if(hadselected){
+            $(this).removeClass('selected');
+        }else if (!hadselected) {
+            $(this).addClass('selected');
+        }
+    });
+
+    //单选选中
+    $("body").on('click',".multichose_false li",function(event) {
+        var hadselected = $(this).hasClass('selected');
+        if(hadselected){
+            $(this).removeClass('selected');
+
+        }else if (!hadselected) {
+            $(this).addClass('selected').siblings('li').removeClass('selected');
+        }
+    });
+
+    //更多属性下拉
+
+
+    //状态筛选
+    $("body").on('click', '.status_filter_top dl dd', function(event) {
+        $(this).addClass('selected').siblings('dd').removeClass('selected');
+    });
+    $("body").on('click', '.status_filter_bottom ul li', function(event) {
+        if(!$(this).hasClass('selected')) {
+            $(this).addClass('selected').siblings('li').removeClass('selected');
+        }else if ($(this).hasClass('selected')){
+            $(this).removeClass('selected');
+        }
+    });
+
+    //滚动后,筛选置顶和隐藏
+    $(window).scroll(function(event) {
+        if($(window).scrollTop()>275){
+            if(!$(".status_filter").hasClass('fixtop')){
+                $(".status_filter").addClass('fixtop')
+            }
+        }
+        if($(window).scrollTop()<275){
+            if($(".status_filter").hasClass('fixtop')){
+                $(".status_filter").removeClass('fixtop');
+            }
+        }
+    });
+    //次级条件
+    $("body").on('click', '.dropdown_ul .title', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        if(!$(this).hasClass('chose_subfilter')) {
+            $(this).addClass('chose_subfilter').siblings('.title').removeClass('chose_subfilter')
+        }else if ($(this).hasClass('chose_subfilter')) {
+            $(this).removeClass('chose_subfilter')
+        }
+    });
+    //阻止事件冒泡
+    $('body').on('click', '.dropdown_ul .subfilter_single', function(event) {
+        event.stopPropagation();
+		/* Act on the event */
+    });
+
+
+
+
+    $(".status_filter_top .price>input").focus(function(event) {
+        if($(".status_filter_top .confirm_log").hasClass('hide')){
+            $(".status_filter_top .confirm_log").removeClass('hide');
+        }
+    });
+    $(".status_filter_top .price .search_cancel").on('click', function(event) {
+        $(".status_filter_top .price>input").val("")
+    });
+
+    //阻断事件冒泡
+    $(".status_filter_top .price").on('click', function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+    });
+    $("body").on('click', function(event) {
+        if(!$(".status_filter_top .confirm_log").hasClass('hide')){
+            $(".status_filter_top .confirm_log").addClass('hide');
+        }
+    });
+
+    var mess = new modal ([
+        {name:"title",type:"title",content:"提示信息"},
+        {name:"xx23h",type:"note",content:"请勾选属性"},
+        {name:"col融入i",type: "option",sub:"sure",link1:'22222',link2:'23231',text:'确定'}
+    ]);
+
+
+
+    $('button').on('click',function(event){
+        console.log($(this).parent().parent().find('ul').children('li.selected'));
+        if (!$(this).parent().parent().find('ul').children('li.selected').length){
+            mess.showmodal();
+            //$(".sure").click(mess.hidemodal());
+            $(".sure").on('click',function(){
+                mess.hidemodal();
+            });
+            return;
+        }
+        var attrId = $(this).parent().parent().find('ul').data("attrid");
+
+        var values = []
+        $(this).parent().parent().find('ul').children('li.selected').children('[data-valueid]').each(function (index, el) {
+                values.push($(el).data("valueid"));
+            }
+        );
+        var value = values.join("_");
+        var urlPath = $("#urlPath").val();
+        var urlPaths = urlPath.split("-");
+        var url = "";
+        var ejsUrl = $("#urlResources").val();
+        for(var i = 0;i < urlPaths.length; i++){
+            if(i == 2){
+                url += 0 ;
+            }else{
+                url += urlPaths[i];
+            }
+            if((i+1) != urlPaths.length){
+                url += "-";
+            }
+        }
+        window.location =ejsUrl + "/" + url + "-" + attrId + "_" + value + ".html";
+    });
+
+
+//交互逻辑 -e
+
+
+});
+// 商品品类筛选-s
+//过滤品牌查询商品
+function filterBrand(brand) {
+    var urlPath = $("#urlPath").val();
+    var urlPaths = urlPath.split("-");
+    var url = "";
+    var ejsUrl = $("#urlResources").val();
+    for(var i= 0 ;i < urlPaths.length; i++){
+        if(i == 2){
+            url += 0; //设置页数,从第一页开始
+        }
+        else if(i == 6){
+            url += brand;
+        }else{
+            url += urlPaths[i];
+        }
+        if((i+1) != urlPaths.length){
+            url += "-";
+        }
+
+    }
+    self.location = ejsUrl + "/" + url + ".html";
+}
+
+
+//过滤查询条件
+function delFilter(filter){
+    var urlPath = $("#urlPath").val();
+    var url = urlPath.replace(filter,"");
+    var ejsUrl = $("#urlResources").val();
+    self.location =ejsUrl + "/" + url + ".html";
+}
+
+//根据条件查询
+function filterAttr(attrId,value){
+    var urlPath = $("#urlPath").val();
+    var urlPaths = urlPath.split("-");
+    var url = "";
+    var ejsUrl = $("#urlResources").val();
+    for(var i = 0;i < urlPaths.length; i++){
+        if(i == 2){
+            url += 0 ;
+        }else{
+            url += urlPaths[i];
+        }
+        if((i+1) != urlPaths.length){
+            url += "-";
+        }
+    }
+    self.location =ejsUrl + "/" + url + "-" + attrId + "_" + value + ".html";
+}
+
+
+//	商品品类筛选 -e

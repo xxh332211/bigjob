@@ -1,0 +1,16 @@
+/*TMODJS:{"version":8,"md5":"842dbb2d450d2ae3768e6a4c6f8d00b1"}*/
+template('detail/detail_list',function($data,$filename
+/**/) {
+'use strict';var $utils=this,$helpers=$utils.$helpers,$each=$utils.$each,data2=$data.data2,value=$data.value,key=$data.key,$escape=$utils.$escape,rate=$data.rate,$out='';$each(data2,function(value,key){
+$out+=' <div class="selected_list_row clearfix" data-pid=';
+$out+=$escape(value.pid);
+$out+='> <div class="td_name"> ';
+$out+=$escape(value.text0);
+$out+=' </div> <div class="td_type"> ';
+$out+=$escape(value.text1);
+$out+=' </div> <div class="td_num"> ';
+$out+=$escape(value.num*rate);
+$out+='双 <i class="iconfont delobj">&#xe633;</i> </div> </div> ';
+});
+return new String($out);
+});

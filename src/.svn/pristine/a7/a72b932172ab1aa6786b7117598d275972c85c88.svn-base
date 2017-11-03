@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>大袜网-做袜子生意 就上大袜网</title>
+	<link rel="stylesheet" href="../../css/activity/brand_cooperate.css">
+</head>
+<body>
+	<div class="banner" style="background: url(../../img/pic/activity/cooperation_banner.jpg) top center;">
+		<div class="banner_center banxin">
+			<div class="contact_us fr">
+				<div class="title">
+					联系我们
+				</div>
+				<div class="text">
+					<p>拨打热线: 4008-456-002</p>
+					<p>拨打经理: 13549202139</p>
+				</div>
+				<a href="tencent://message/?uin=2853812892&Site=大袜网&Menu=yes">
+					<div class="btn">
+						<i class="iconfont">&#xe9df;</i>
+						<span>在线咨询客服</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="brand_title banxin">
+		品牌生产
+	</div>
+		
+	<div class="brand_text banxin">
+		通过大袜网平台强大的供应链体系，帮助品牌方找到优质专业的生产厂家，为品牌方商品生产方面提供一站式解决方案。整合优化生产资源，把控品牌商品质量，保证每件商品都精益求精。
+	</div>
+
+	<div class="product_brand banxin">	
+		<div class="single fl">
+			<div class="top" style="background: url(../../img/pic/activity/img1_part1.png) top center;"></div>
+			<div class="bottom">
+				<div class="bottom_title">
+					品牌方
+				</div>
+				<div class="word">
+					借助大袜网平台强大的供应链体系寻找生产厂家。
+				</div>
+			</div>
+		</div>
+		<div class="single fl">
+			<div class="top" style="background: url(../../img/pic/activity/img2_part1.png) top center;">
+			</div>
+			<div class="bottom">
+				<div class="bottom_title">
+					大袜网
+				</div>
+				<div class="word">
+					为品牌方商品生产方面提供一站式解决方案。
+				</div>
+			</div>
+		</div>
+		<div class="single fr">
+			<div class="top" style="background: url(../../img/pic/activity/img3_part1.png) top center;">
+			</div>
+			<div class="bottom">
+				<div class="bottom_title">
+					生产厂家
+				</div>
+				<div class="word">
+					把控品牌商品质量，保证每件商品都精益求精。
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="brand_empower" style="background: url(../../img/pic/activity/part2_bg.png) top center;">
+		<div class="brand_title banxin">
+			品牌授权
+		</div>
+			
+		<div class="brand_text banxin">
+			大袜网帮助品牌方对接优质采购商！通过专业严格的评审，最终在品牌方与采购商之间搭建起长期稳定的合作桥梁，为采购商提供品牌授权服务，便于采购商在各个渠道进行合法的品牌销售！
+		</div>
+
+		<div class="step banxin clearfix">
+			<div class="single fl">
+				<div class="pic" style="background: url(../../img/pic/activity/img1_part2.png) top center;"></div>
+				<div class="title">
+					采购商
+				</div>
+				<div class="word">
+					提交企业信息
+				</div>
+				<div class="iconfont">&#xe611;</div>
+			</div>
+			<div class="single fl">
+				<div class="pic" style="background: url(../../img/pic/activity/img2_part2.png) top center;"></div>
+				<div class="title">
+					大袜网
+				</div>
+				<div class="word">
+					严格专业评审采购商信息
+				</div>
+				<div class="iconfont">&#xe611;</div>
+			</div>
+			<div class="single fl">
+				<div class="pic" style="background: url(../../img/pic/activity/img3_part2.png) top center;"></div>
+				<div class="title">
+					审核通过
+				</div>
+				<div class="word">
+					将审核通过的采购商提交给品牌方
+				</div>
+				<div class="iconfont">&#xe611;</div>
+			</div>
+			<div class="single fl">
+				<div class="pic" style="background: url(../../img/pic/activity/img4_part2.png) top center;"></div>
+				<div class="title">
+					品牌方
+				</div>
+				<div class="word">
+					品牌方接收采购商信息
+				</div>
+				<div class="iconfont">&#xe611;</div>
+			</div>
+			<div class="single fl">
+				<div class="pic" style="background: url(../../img/pic/activity/img5_part2.png) top center;"></div>
+				<div class="title">
+					授权
+				</div>
+				<div class="word">
+					为采购商提供品牌授权服务
+				</div>
+				<div class="iconfont">&#xe611;</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="brand_order">
+		<div class="brand_title banxin">
+			品牌定制
+		</div>
+		<div class="brand_text banxin">
+			以大袜网多年的袜业产业深耕经验为基础，为采购商提供专业的品牌款订制服务。在打造购商的专属品牌袜的同时，也丰富了品牌商品的品类，帮助品牌方拿到更多优质廉价的商品资源。
+		</div>
+		<div class="order_step banxin">
+			<div class="steps clearfix">
+				<div class="step fl">
+					<div class="pic" style="background: url(../../img/pic/activity/img1_part3.png) top center;"></div>
+					<div class="title">
+						品牌方
+					</div>
+					<div class="word">
+						看中一款或多款商品联系大袜网
+					</div>
+				</div>
+				<div class="sub_line fl">
+					<img src="../../img/pic/activity/two_arr.png" alt="">
+				</div>
+				<div class="step fl">
+					<div class="pic" style="background: url(../../img/pic/activity/img2_part3.png) top center;"></div>
+					<div class="title">
+						大袜网
+					</div>
+					<div class="word">
+						以袜业产业深耕经验为基础提供专业的定制服务
+					</div>
+				</div>
+				<div class="sub_line fl">
+					<img src="../../img/pic/activity/two_arr.png" alt="">
+				</div>
+				<div class="step fl">
+					<div class="pic" style="background: url(../../img/pic/activity/img3_part3.png) top center;"></div>
+					<div class="title">
+						采购商
+					</div>
+					<div class="word">
+						与品牌方联系，帮助品牌方拿到更多优质的商品资源
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="resource_docking">
+		<div class="brand_title banxin">
+			资源对接
+		</div>
+			
+		<div class="brand_text banxin">
+			专业统筹对接，包括活动资源、商品政策、市场资源、货品规划，在内的所有品牌资源，同时帮助品牌方合理优化线上线下资源，引导采购商与品牌方达到合作共赢，互惠互利，共同发展的良性循环。
+		</div>
+
+		<div class="resource banxin clearfix">
+			<div class="single fl">
+				<div class="pic" style="background: url(../../img/pic/activity/img1_part4.png);"></div>
+				<div class="title">
+					活动资源
+				</div>
+				<div class="word">
+					品牌大促，节日活动，周年庆活动等品牌内部资源
+				</div>
+			</div>
+			<div class="single fl">
+				<div class="pic" style="background: url(../../img/pic/activity/img2_part4.png);"></div>
+				<div class="title">
+					商品政策
+				</div>
+				<div class="word">
+					在售品牌方商品，均享受品牌保障。
+				</div>
+			</div>
+			<div class="single fl">
+				<div class="pic" style="background: url(../../img/pic/activity/img3_part4.png);"></div>
+				<div class="title">
+					市场资源
+				</div>
+				<div class="word">
+					采购商可享受品牌方控制的所有外部资源。（经营许可证、销售渠道、品牌影响力等）
+				</div>
+			</div>
+			<div class="single fl">
+				<div class="pic" style="background: url(../../img/pic/activity/img4_part4.png);"></div>
+				<div class="title">
+					货品规划
+				</div>
+				<div class="word">
+					品牌货品规划，建议及指导。
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

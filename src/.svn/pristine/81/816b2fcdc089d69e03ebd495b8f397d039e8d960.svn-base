@@ -1,0 +1,267 @@
+<div class="list_detail">
+    <div class="list_detail_top">
+        <div>
+            <b>订单号: </b><span>12123123123123123</span>
+        </div>
+        <div>
+            <b>状态: </b><span>已收货</span>
+        </div>
+        <div>
+            <b>配送方式: </b><span>中通</span>
+        </div>
+        <div>
+            <b>重要提示:</b><span>是的发送到发送到发送到发斯蒂芬</span>
+        </div>
+    </div>
+    <div class="list_detail_middle clearfix">
+        <div class="detail_middle_l fl">
+            <div class="middle_l_head">
+                <span>订单信息</span>
+            </div>
+            <div class="middle_l_content">
+                <div>
+                    <span>收货人:</span><b>孙凯</b>
+                </div>
+                <div>
+                    <span>地址:</span><b>浙江省绍兴市千禧路20号</b>
+                </div>
+                <div>
+                    <span>手机号码:</span><b>1212312312312</b>
+                </div>
+                <div>
+                    <span>固定电话:</span><b>1232-123123123</b>
+                </div>
+            </div>
+        </div>
+        <div class="detail_middle_r fl">
+            <div class="middle_r_head">
+                <span>订单跟踪</span>
+            </div>
+            <div class="middle_r_content">
+                <div class="second_head">
+                    <span>处理时间</span>
+                    <span>处理提示</span>
+                    <span>操作人</span>
+                </div>
+                <div class="content_main">
+                    <div>
+                        <span>2016-09-09 09:21:12</span>
+                        <span>您提交了订单,请等待系统确认</span>
+                        <span>12312312312312</span>
+                    </div>
+                    <div>
+                        <span>2016-09-09 09:21:12</span>
+                        <span>您提交了订单,请等待系统确认</span>
+                        <span>12312312312312</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list_detail_products">
+        <div class="detail_products_head">
+            <span>商品信息</span>
+            <span>单价(元)</span>
+            <span>数量(双)</span>
+            <span>二次加工</span>
+            <span>自供标</span>
+            <span>加工费(元)</span>
+            <span>辅料费(元)</span>
+            <span>下载数据包</span>
+        </div>
+        <div class="detail_products_content clearfix">
+            <div class="products_single">
+                <div class="products_info clearfix">
+                    <div class="pic">
+                        <img src="..." alt="">
+                    </div>
+                    <div class="title">
+                        <div class="title_1">发是的发送到发送到发送到发斯蒂芬对方水电费</div>
+                        <div class="title_2">
+                            袜颜色: <span>白色</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_price">
+                    <span>19.02</span>
+                </div>
+                <div class="products_pair">
+                    <span>23</span>
+                </div>
+                <div class="hand_type">
+                    <span>T12</span>
+                </div>
+                <div class="zigongbiao">
+                    <span>--</span>
+                </div>
+                <div class="hand_price">
+                    <span>10.30</span>
+                </div>
+                <div class="accessories_price">
+                    <span>--</span>
+                </div>
+                <div class="download_pack">
+                    <i class="iconfont">&#xe634;</i>
+                </div>
+            </div>
+            <div class="products_single">
+                <div class="products_info clearfix">
+                    <div class="pic">
+                        <img src="..." alt="">
+                    </div>
+                    <div class="title">
+                        <div class="title_1">发是的发送到发送到发送到发斯蒂芬对方水电费</div>
+                        <div class="title_2">
+                            袜颜色: <span>白色</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_price">
+                    <span>19.02</span>
+                </div>
+                <div class="products_pair">
+                    <span>23</span>
+                </div>
+                <div class="hand_type">
+                    <span>T12</span>
+                </div>
+                <div class="zigongbiao">
+                    <span>--</span>
+                </div>
+                <div class="hand_price">
+                    <span>10.30</span>
+                </div>
+                <div class="accessories_price">
+                    <span>--</span>
+                </div>
+                <div class="download_pack">
+                    <i class="iconfont">&#xe634;</i>
+                </div>
+            </div>
+            <div class="products_single">
+                <div class="products_info clearfix">
+                    <div class="pic">
+                        <img src="..." alt="">
+                    </div>
+                    <div class="title">
+                        <div class="title_1">发是的发送到发送到发送到发斯蒂芬对方水电费</div>
+                        <div class="title_2">
+                            袜颜色: <span>白色</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_price">
+                    <span>19.02</span>
+                </div>
+                <div class="products_pair">
+                    <span>23</span>
+                </div>
+                <div class="hand_type">
+                    <span>T12</span>
+                </div>
+                <div class="zigongbiao">
+                    <span>--</span>
+                </div>
+                <div class="hand_price">
+                    <span>10.30</span>
+                </div>
+                <div class="accessories_price">
+                    <span>--</span>
+                </div>
+                <div class="download_pack">
+                    <i class="iconfont">&#xe634;</i>
+                </div>
+            </div>
+            <div class="products_single">
+                <div class="products_info clearfix">
+                    <div class="pic">
+                        <img src="..." alt="">
+                    </div>
+                    <div class="title">
+                        <div class="title_1">发是的发送到发送到发送到发斯蒂芬对方水电费</div>
+                        <div class="title_2">
+                            袜颜色: <span>白色</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_price">
+                    <span>19.02</span>
+                </div>
+                <div class="products_pair">
+                    <span>23</span>
+                </div>
+                <div class="hand_type">
+                    <span>T12</span>
+                </div>
+                <div class="zigongbiao">
+                    <span>--</span>
+                </div>
+                <div class="hand_price">
+                    <span>10.30</span>
+                </div>
+                <div class="accessories_price">
+                    <span>--</span>
+                </div>
+                <div class="download_pack">
+                    <i class="iconfont">&#xe634;</i>
+                </div>
+            </div>
+            <div class="products_single">
+                <div class="products_info clearfix">
+                    <div class="pic">
+                        <img src="..." alt="">
+                    </div>
+                    <div class="title">
+                        <div class="title_1">发是的发送到发送到发送到发斯蒂芬对方水电费</div>
+                        <div class="title_2">
+                            袜颜色: <span>白色</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="products_price">
+                    <span>19.02</span>
+                </div>
+                <div class="products_pair">
+                    <span>23</span>
+                </div>
+                <div class="hand_type">
+                    <span>T12</span>
+                </div>
+                <div class="zigongbiao">
+                    <span>--</span>
+                </div>
+                <div class="hand_price">
+                    <span>10.30</span>
+                </div>
+                <div class="accessories_price">
+                    <span>--</span>
+                </div>
+                <div class="download_pack">
+                    <i class="iconfont">&#xe634;</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list_detail_total clearfix">
+        <div class="detail_count_l fl">
+            总计:<span>3</span>种货品 共<span>150</span>件
+        </div>
+        <div class="detail_count_r fr">
+            <div>
+                <span>运费:</span> <b>+15.00</b>元
+            </div>
+            <div>
+                <span>运费:</span> <b>+15.00</b>元
+            </div>
+            <div>
+                <span>运费:</span> <b>+15.00</b>元
+            </div>
+            <div>
+                <span>运费:</span> <b>+15.00</b>元
+            </div>
+        </div>
+    </div>
+    <div class="detail_price_all">
+        <span>应付金额:<b>568.00</b>元</span>
+    </div>
+</div>

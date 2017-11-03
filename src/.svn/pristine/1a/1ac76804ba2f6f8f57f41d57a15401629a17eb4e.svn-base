@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>进货单</title>
+    <link rel="stylesheet" href="../../css/quick_buy/inpaper.css">
+</head>
+<body>
+    <div class="inpaper_title banxin">
+        <span class="allpick">
+            <i class="iconfont">&#xe640;</i>
+            全选
+        </span>
+        <span>
+            商品信息
+        </span>
+        <span>
+            二次加工
+        </span>
+        <span>
+            加工费（元）
+        </span>
+        <span>
+            辅料费（元）
+        </span>
+        <span>
+            单价(元)
+        </span>
+        <span>
+            数量
+        </span>
+        <span>
+            优惠(元)
+        </span>
+        <span>
+            小计(元)
+        </span>
+        <span>
+            交易状态
+        </span>
+    </div>
+    <div class="inpaper_single banxin">
+        <div class="single">
+            <i class="iconfont check">&#xe640;</i>
+            <i class="iconfont delete">&#xe629;</i>
+            <div class="pic">
+                <img src="..." alt="">
+            </div>
+            <div class="content">
+                <div class="content_title">
+                    W.S.0426裸袜仿手工船袜sdfssdfsdfdfs
+                </div>
+                <div class="row">
+                    <span>袜颜色:白色</span>
+                    <span>T12</span>
+                    <span>0.17</span>
+                    <span>--</span>
+                    <span>1.43</span>
+                    <span>
+                        <button>-</button>
+                        <input type="text" value="0">
+                        <button>+</button>双
+                    </span>
+                    <span>-10.80</span>
+                    <span>169.00</span>
+                    <span>等待付款</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_panel all banxin">
+        <div class="selectall fl ">
+            <i class="iconfont">&#xe640;</i>
+            <span>全选</span>
+        </div>
+        <div class="add_inpaper fr">
+            已选<span>1</span>种货品 共<span>50</span>件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 总价(不含运费):&nbsp;&nbsp; <em>168.00</em>&nbsp;元
+            <button>结算</button>
+        </div>
+    </div>
+    <div class="banxin">
+        <div class="warning">
+            <i>!</i>
+            注意:包含二次加工的订单提交后,客服会第一时间与您确认辅料信息
+        </div>
+    </div>
+</body>
+</html>

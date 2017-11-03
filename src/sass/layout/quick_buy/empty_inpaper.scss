@@ -1,0 +1,49 @@
+@import '../../common/reset';
+@import '../../component/foot.scss';
+@import '../../component/head.scss';
+@import '../../common/base';
+@import '../../common/iconfont';
+@import '../../iconcss/icon_1';
+
+.empty {
+    margin-top: 180px;
+    margin-bottom: 180px;
+    &.nosearch {
+        .pic {
+            width: 80px;
+        }
+    }
+    .pic {
+        float: left;
+        width: 265px;
+        margin-left: 240px;
+        height: 160px;
+        img {
+            width: 100%;
+        }
+    }
+    .word {
+        float: left;
+        margin-top: 50px;
+        margin-left: 50px;
+        p {
+            font-size:18px;
+            color:#333333;
+            margin-top: 0;
+            &:last-child{
+                line-height: 1em;
+                margin-top:20px;
+                a {
+                    font-size:14px;
+                    color:#ff7e18;
+                    font-weight: bold;
+                }
+            }
+            &.sub {
+                font-size:12px;
+                color:#666666;
+            }
+
+        }
+    }
+}

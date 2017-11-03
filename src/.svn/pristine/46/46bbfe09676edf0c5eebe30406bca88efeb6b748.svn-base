@@ -1,0 +1,18 @@
+define([],function () {
+	requirejs.config({
+		baseUrl:"./../../js",
+		//路径
+		paths: {
+			"jquery": "lib/jquery.min",
+			"index":"index/index",
+			"swipper" : "lib/swiper-3.4.2.min"
+		},
+		//非amd依赖
+		skim:{
+			"swipper": {
+				deps: ['jquery'],
+				exports: 'Swiper'
+			}
+		}
+	});
+})

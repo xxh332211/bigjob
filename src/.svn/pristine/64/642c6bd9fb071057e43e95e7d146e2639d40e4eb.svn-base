@@ -1,0 +1,106 @@
+define(["jquery",'common'],function($,common){
+	//轮播图
+	var banner_center = {
+		slide: ".banner_center .banner_pics .slide_part",
+		single: ".banner_center .banner_pics .slide_part .single",
+		tip: ".banner_center .banner_index .main_index .indexs .index",
+		index: 0,
+		pic_width: 742,
+		move_func : function () {
+			var index = banner_center.index;
+			var width = banner_center.pic_width;
+			$(banner_center.slide)
+			.animate({left: -index*width+"px"}, "fast");
+		},
+		addindex: function () {
+			var index = banner_center.index;
+			var limit = $(banner_center.tip).length
+			banner_center.index = ++index;
+			if(banner_center.index>limit){
+				banner_center.index = 0;
+			}
+
+		},
+		tip_hover_in: function () {
+			clearInterval(banner_center.timer1);
+			banner_center.index = $(this).index();
+			banner_center.move_func();
+		},
+		tip_hover_out: function () {
+			banner_center.timer1 = setInterval(function (){
+				banner_center.addindex();
+				banner_center.move_func();
+			}, 2000);
+		},
+		init: function () {
+			banner_center.timer1 = setInterval(function (){
+				banner_center.addindex();
+				banner_center.move_func();
+			}, 2000);
+			$(banner_center.tip).hover(banner_center.tip_hover_in,banner_center.tip_hover_out);
+		}
+	};
+	//banner右侧
+	var banner_right = {
+		title: ".banner_right .apply_guide_step .guide_step_content .step .step_title",
+		pic: ".step_content",
+		step: ".banner_right .apply_guide_step .guide_step_content .step",
+		active_func: function () {
+			$(this).parents(".step").addClass('active').siblings('.step').removeClass('active');
+		},
+		init: function () {
+			$(banner_right.title).hover(banner_right.active_func);
+		}
+	};
+	// var today_sell = {
+	// 	part: ".today .today_nav .part",
+	// 	page: ".today .today_content .content_product",
+	// 	index: 0,
+	// 	setindex: function (index) {
+	// 		today_sell.index = index;
+	// 	},
+	// 	setactive: function () {
+	// 		var index = today_sell.index;
+	// 		$(today_sell.part).eq(index).addClass('active').siblings('.part').removeClass('active');
+	// 		(today_sell.page).eq(index).addClass('active').siblings('.content_product').removeClass('active');
+	// 	},
+	// 	addindex: function () {
+	// 		today_sell.index = today_sell.index + 1;
+	// 	},
+	// 	reduceindex: function () {
+	// 		today_sell.index = today_sell.index - 1;
+	// 	},
+	// 	index_cheack: function () {
+	// 		var limit = $(today_sell.part).length;
+	// 		var index = today_sell.index;
+	// 		if(index>limit){
+	// 			today_sell.index = limit;
+	// 		}
+	// 		if(index<0){
+	// 			today_sell.index = 0;
+	// 		}
+	// 	},
+	// 	init: function () {
+	// 		today_sell.setactive();
+	// 	}
+	// };
+
+	//实例化弹窗
+		//阿里通协议弹窗
+		var apply_open = new modal([
+			{name:"水电费地方",type:"title",content:"这是一个标题"},
+			{name:"xx23h",type:"alert",content: "ssss"},
+			{name:"xx23h",type:"note",content:"data.words"},
+			{name:"x1xh",text:"这里标题",type: "input",holder:"请输入你想输入的"},
+			{name:"username",text:"这里标题",type: "fullinput",holder:"请输入你想输入的",icon:"&#xe61f;"},
+			{name:"password",text:"这里标题",type: "fullinput",holder:"请输入密码",icon:"&#xe624;"},
+			{name:"co儿li",text:"这里标题",type: "fullinput",holder:"请输入你想输入的",icon:"&#xe622;"},
+			{name:"co儿li",text:"这里标题",type: "fullinput",holder:"请输入你想输入的",icon:"&#xe622;"},
+			{name:"co儿li",text:"这里标题",type: "fullinput",holder:"请输入你想输入的",icon:"&#xe622;"},
+			{name:"co儿li",type: "option",sub:"cancel,sure"},
+			{name:"col融入i",type: "option",sub:"big"},
+		]);
+	apply_open.showmodal();
+	banner_center.init();
+	banner_right.init();
+})

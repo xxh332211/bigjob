@@ -1,0 +1,249 @@
+<div class="user_main_header">
+    <div class="main_header_l fl">
+        <div class="logo_pic fl"></div>
+        <div class="user_info fl">
+            <p>123123123</p>
+            <p>欢迎来到用户中心</p>
+        </div>
+    </div>
+    <div class="main_header_center fl">
+        <div class="topay">
+            <div class="pic">
+                <img src="..." alt="">
+            </div>
+            <div class="words">
+                <span>
+					<a href="#">待支付</a>
+				</span>
+                <b>0</b>
+            </div>
+        </div>
+        <div class="tosend">
+            <div class="pic">
+                <img src="..." alt="">
+            </div>
+            <div class="words">
+                <span>
+								<a href="#">待发货</a>
+							</span>
+                <b>0</b>
+            </div>
+        </div>
+        <div class="toget">
+            <div class="pic">
+                <img src="..." alt="">
+            </div>
+            <div class="words">
+                <span>
+								<a href="#">待收货</a>
+							</span>
+                <b>0</b>
+            </div>
+        </div>
+        <div class="already_done">
+            <div class="pic">
+                <img src="..." alt="">
+            </div>
+            <div class="words">
+                <span>
+								<a href="#">已完成</a>
+							</span>
+                <b>0</b>
+            </div>
+        </div>
+    </div>
+    <div class="main_header_r fl">
+        <p>可用余额</p>
+        <div class="money">
+            <span>0.00</span>
+            <b>元</b>
+        </div>
+    </div>
+</div>
+<div class="mystuff">
+    <div class="stuff_title">
+        <span>我的货物</span>
+    </div>
+    <div class="stuff_content">
+        <div class="order_floor clearfix">
+            <div class="pics">
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+            </div>
+            <div class="order_info">
+                <div class="get_btn">
+                    <input type="button" value="确认收货">
+                </div>
+                <div class="order_no">
+                    <span>订单编号</span>
+                    <b>123123123123123</b>
+                </div>
+            </div>
+        </div>
+        <div class="order_floor clearfix">
+            <div class="pics">
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+            </div>
+            <div class="order_info">
+                <div class="get_btn">
+                    <input type="button" value="确认收货">
+                </div>
+                <div class="order_no">
+                    <span>订单编号</span>
+                    <b>123123123123123</b>
+                </div>
+            </div>
+        </div>
+        <div class="order_floor clearfix">
+            <div class="pics">
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                </div>
+            </div>
+            <div class="order_info">
+                <div class="get_btn">
+                    <input type="button" value="确认收货">
+                </div>
+                <div class="order_no">
+                    <span>订单编号</span>
+                    <b>123123123123123</b>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="guss_u_like">
+    <div class="guss_title">
+        <span>平台推荐,猜你喜欢</span>
+    </div>
+    <div class="guss_content clearfix">
+        <div class="guss_single">
+            <div class="pic">
+                <img src="...." alt="">
+            </div>
+            <div class="guss_info">
+                <p class="price">
+                    <span>&yen;</span>
+                    <b>2.20</b>
+                </p>
+                <p class="guss_single_title">
+                    <a href="#">是的发送到发送到发送到发斯蒂芬水电费水电费水电费</a>
+                </p>
+            </div>
+        </div>
+        <div class="guss_single">
+            <div class="pic">
+                <img src="...." alt="">
+            </div>
+            <div class="guss_info">
+                <p class="price">
+                    <span>&yen;</span>
+                    <b>2.20</b>
+                </p>
+                <p class="guss_single_title">
+                    <a href="#">是的发送到发送到发送到发斯蒂芬水电费水电费水电费</a>
+                </p>
+            </div>
+        </div>
+        <div class="guss_single">
+            <div class="pic">
+                <img src="...." alt="">
+            </div>
+            <div class="guss_info">
+                <p class="price">
+                    <span>&yen;</span>
+                    <b>2.20</b>
+                </p>
+                <p class="guss_single_title">
+                    <a href="#">是的发送到发送到发送到发斯蒂芬水电费水电费水电费</a>
+                </p>
+            </div>
+        </div>
+        <div class="guss_single">
+            <div class="pic">
+                <img src="...." alt="">
+            </div>
+            <div class="guss_info">
+                <p class="price">
+                    <span>&yen;</span>
+                    <b>2.20</b>
+                </p>
+                <p class="guss_single_title">
+                    <a href="#">是的发送到发送到发送到发斯蒂芬水电费水电费水电费</a>
+                </p>
+            </div>
+        </div>
+        <div class="guss_single">
+            <div class="pic">
+                <img src="...." alt="">
+            </div>
+            <div class="guss_info">
+                <p class="price">
+                    <span>&yen;</span>
+                    <b>2.20</b>
+                </p>
+                <p class="guss_single_title">
+                    <a href="#">是的发送到发送到发送到发斯蒂芬水电费水电费水电费</a>
+                </p>
+            </div>
+        </div>
+        <div class="guss_single">
+            <div class="pic">
+                <img src="...." alt="">
+            </div>
+            <div class="guss_info">
+                <p class="price">
+                    <span>&yen;</span>
+                    <b>2.20</b>
+                </p>
+                <p class="guss_single_title">
+                    <a href="#">是的发送到发送到发送到发斯蒂芬水电费水电费水电费</a>
+                </p>
+            </div>
+        </div>
+        <div class="guss_single">
+            <div class="pic">
+                <img src="...." alt="">
+            </div>
+            <div class="guss_info">
+                <p class="price">
+                    <span>&yen;</span>
+                    <b>2.20</b>
+                </p>
+                <p class="guss_single_title">
+                    <a href="#">是的发送到发送到发送到发斯蒂芬水电费水电费水电费</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

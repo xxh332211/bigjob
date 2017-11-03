@@ -1,0 +1,32 @@
+define(['jquery',"common"],function($) { 
+	function filterPage(page) {
+	    var urlPath = getUrlPath();
+	    var urlPaths = urlPath.split("-");
+	    var url = "";
+	    for(var i=0; i<urlPaths.length; i++) {
+	        if(i == 2) {
+	            url += page;
+	        } else {
+	            url += urlPaths[i];
+	        }
+	        if((i+1) != urlPaths.length) {
+	            url += "-";
+	        }
+	    }
+	    self.location = domain + url;
+	};
+
+	$(".page_sure").click(function () {
+	    var pageNumber = $("#pageNum").val();
+	    filterPage(pageNumber);
+	});
+	/*$(".page_prev").click(function(){
+	    filterPage($(this).data("pagenumber"));
+	});
+	$(".page_next").click(function(){
+	    filterPage($(this).data("pagenumber"));
+	});*/
+	$(".page_select").click(function(){
+	    filterPage($(this).data("pagenumber"));
+	});
+});

@@ -1,0 +1,176 @@
+define(['jquery','swipper','common'],function () {
+
+	var	bindclick = function (dom,callback) {
+		$('body').on('click', dom, callback);
+	};
+	var bindchange = function (dom,callback) {
+		$("body").on('change', dom,callback);
+	};
+	var add_selected = function () {
+		$(this).siblings().removeClass('selected')
+		if ($(this).hasClass('selected')) {
+			$(this).removeClass('selected');
+		}else if (!$(this).hasClass('selected')) {
+			$(this).addClass('selected');
+		}
+	}
+	var add_active = function () {
+		$(this).siblings().removeClass('selected')
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		}else if (!$(this).hasClass('active')) {
+			$(this).addClass('active');
+		}
+	}
+	var stoppop = function (dom) {
+		$("body").on('click', dom, function(event) {
+			event.stopPropagation();
+		});
+	}
+	//sku点击选择
+	bindclick(".sku_option .pic,.sku_option .single_option",add_selected);
+	bindclick(".share .download",add_active);
+	stoppop(".share .download span");
+	bindclick(".already_selected .selected_list",add_active);
+	stoppop(".already_selected .selected_list .selected_list_detail");
+
+	//数量选择
+	var num_set =  {
+		reduce: ".set_num .reduce",
+		num: '.set_num .num',
+		add: ".set_num .add",
+		clean: ".set_num .clean",
+		add_func: function () {
+			var temp = $(num_set.num).val();
+			temp++;
+			$(num_set.num).val(temp);
+		},
+		reduce_func: function () {
+			if ($(num_set.num).val()>0) {
+				var temp = $(num_set.num).val();
+				temp--;
+				$(num_set.num).val(temp);
+			}
+		},
+		num_check: function () {
+			var temp = $(num_set.num).val();
+			if(temp<0){
+				$(num_set.num).val(0)
+			}
+		},
+		clean_func: function () {
+			$(num_set.num).val(0);
+		},
+		get_num: function () {
+			return $(this.num).val();
+		},
+		init: function () {
+			bindclick(this.add,this.add_func);
+			bindclick(this.reduce,this.reduce_func);
+			bindchange(this.num,this.num_check);
+			bindclick(this.clean,this.clean_func);
+		}
+	};
+	//左侧图片
+	var left_pic = {
+		big_pic: ".show_pic .big_pic",
+		smallpic_pics: ".small_pics .pics ul li",
+		smallpic_ul: ".small_pics .pics ul",
+		left: ".small_pics .turn_left",
+		right: ".small_pics .turn_right",
+		index: 0,
+		view_mid: 2,
+		move_length: 65,
+		position: 0,
+		addindex: function () {
+			left_pic.index = ++left_pic.index;
+			left_pic.indexcheack();
+			
+			left_pic.showchange();
+			left_pic.move();
+		},
+		reduceindex: function () {
+			left_pic.index = --left_pic.index;
+			left_pic.indexcheack();
+			
+			left_pic.showchange();
+			left_pic.move();
+		},
+		setindex : function () {
+			left_pic.index = $(this).index();
+			left_pic.showchange();
+		},
+		indexcheack: function () {
+			if(left_pic.index < 0){
+				left_pic.index = 0;
+			}
+			if(left_pic.index > $(left_pic.smallpic_pics).length-1){
+				left_pic.index = $(left_pic.smallpic_pics).length-1;
+			}
+		},
+		showchange: function () {
+			//添加激活类名
+			$(left_pic.smallpic_pics).eq(left_pic.index).addClass('active').siblings().removeClass('active');
+			var src = $(left_pic.smallpic_pics).eq(left_pic.index).find('img').attr('src');
+			$(left_pic.big_pic).attr('src', src);
+		},
+		move: function () {
+			if(left_pic.index > left_pic.view_mid+2) {
+				left_pic.position = left_pic.position - left_pic.move_length;
+				left_pic.view_mid++;
+			}else if (left_pic.index < left_pic.view_mid-2) {
+				left_pic.position = left_pic.position + left_pic.move_length;
+				left_pic.view_mid--;
+			}
+			$(left_pic.smallpic_ul).css('left', left_pic.position+"px");
+		},
+		init: function () {
+			bindclick(this.right,this.addindex);
+			bindclick(this.left,this.reduceindex);
+			bindclick(this.smallpic_pics,this.setindex);
+		}
+	};
+	//右侧
+	var hot_sell = {
+		group: ".content_r .content_r_product .group",
+		left: ".content_r .content_right_controller .goleft",
+		right: ".content_r .content_right_controller .goright",
+		ctl_li: ".content_r .content_right_controller ul li",
+		index: 0,
+		addindex: function () {
+			hot_sell.index = ++hot_sell.index;
+			hot_sell.indexcheack();
+			hot_sell.showchange();
+		},
+		reduce: function () {
+			hot_sell.index = --hot_sell.index;
+			hot_sell.indexcheack();
+			hot_sell.showchange();
+		},
+		indexcheack : function () {
+			if(hot_sell.index < 0){
+				hot_sell.index = $(hot_sell.ctl_li).length-1;
+			}
+			if(hot_sell.index > $(hot_sell.ctl_li).length-1){
+				hot_sell.index = 0;
+			}
+		},
+		setindex : function () {
+			hot_sell.index = $(this).index();
+			hot_sell.showchange();
+		},
+		showchange : function () {
+			$(hot_sell.group).eq(hot_sell.index).addClass('showtop').siblings().removeClass('showtop');
+			$(hot_sell.ctl_li).eq(hot_sell.index).addClass('active').siblings().removeClass('active');
+		},
+		init : function () {
+			bindclick(hot_sell.ctl_li,hot_sell.setindex);
+			bindclick(hot_sell.left,hot_sell.reduce);
+			bindclick(hot_sell.right,hot_sell.addindex);
+		}
+	};
+	//初始化
+	left_pic.init();
+	num_set.init();
+	hot_sell.init();
+})

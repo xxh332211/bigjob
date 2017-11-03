@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="../../css/system/login.css">
+</head>
+<body>
+    <div class="login_head banxin">
+        <div class="pic">
+            <img src="..." alt="">
+        </div>
+        <div class="title">
+            <p>用户登录</p>
+        </div>
+    </div>
+    <div class="login_content">
+        <div class="login_center banxin">
+            <div class="pic fl">
+                <img src="../../img/pic/system/login.png" alt="">
+            </div>
+            <div class="login_form fr">
+                <div class="title">欢迎登录</div>
+                <div class="fullinput">
+                    <i class="iconfont">&#xe61f;</i>
+                    <input type="text" placeholder="请输入手机号码">
+                </div>
+                <div class="fullinput">
+                    <i class="iconfont">&#xe624;</i>
+                    <input type="password" placeholder="请输入密码">
+                </div>
+                <div class="fullinput">
+                    <i class="iconfont">&#xe622;</i>
+                    <input type="text" placeholder="验证码">
+                </div>
+                <div class="login_btn">
+                    <button>立即登录</button>
+                </div>
+                <div class="tag">
+                    <a href="#" class="fl">忘记登录密码?</a>
+                    <a href="#" class="fr">免费注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

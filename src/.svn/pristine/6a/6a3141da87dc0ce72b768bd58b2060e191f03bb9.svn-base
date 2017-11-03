@@ -1,0 +1,34 @@
+
+	requirejs.config({
+		urlArgs: 'ver=2.0.1',
+		baseUrl:"/resources/frontV1/js",
+		//路径
+		paths: {
+			"jquery": "lib/jquery.min",
+            "common": "common",
+			"index":"index/index",
+			"wjhs":"activity/wjhs",				//哇聚划算
+			"swipper" : "lib/swiper-3.4.2.min",
+			"laydate" : "lib/laydate/laydate",
+			"tpl": "tpl/template",
+			"activity":"activity/activity",
+			"list_page":'product/list_page',
+			"detail":"detail/detail",
+			"alitong_activity":"alitong/alitong_activity",
+			"alitong_guide":"alitong/alitong_guide"
+		},
+		//非amd依赖
+		skim:{
+			"swipper": {
+				deps: ['jquery'],
+				exports: 'Swiper'
+			}
+		}
+	});
+/*
+require(['jquery','tpl'],function ($,template) {
+	//头部三级导航模板渲染
+	// var headnav_tpl = template("./index/category",data);
+	// $('.second_cat').html(headnav_tpl);
+})
+*/

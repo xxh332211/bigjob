@@ -1,0 +1,205 @@
+define(["jquery",'common',"modals"],function($,common,modals){
+	var alitong_apply = modals.alitong_apply;
+	var alitong_protocol = modals.alitong_protocol;
+	var alitong_login = modals.alitong_login;
+	var alitong_register = modals.alitong_register;
+	var regist_protocol = modals.regist_protocol;
+	var regist_protocol_2 = modals.regist_protocol_2;
+
+	alitong_login.showmodal();
+	// regist_protocol.showmodal();
+	// alitong_register.showmodal();
+	//轮播图
+	var banner_center = {
+		slide: ".banner_center .banner_pics .slide_part",
+		single: ".banner_center .banner_pics .slide_part .single",
+		tip: ".banner_center .banner_index .main_index .indexs .index",
+		index: 0,
+		pic_width: 742,
+		move_func : function () {
+			var index = banner_center.index;
+			var width = banner_center.pic_width;
+			$(banner_center.slide)
+			.animate({left: -index*width+"px"}, "fast");
+		},
+		addindex: function () {
+			var index = banner_center.index;
+			var limit = $(banner_center.tip).length-1;
+			banner_center.index = ++index;
+			if(banner_center.index>limit){
+				banner_center.index = 0;
+			}
+
+		},
+		tip_hover_in: function () {
+			clearInterval(banner_center.timer1);
+			banner_center.index = $(this).index();
+			console.log(banner_center.index);
+			banner_center.move_func();
+		},
+		tip_hover_out: function () {
+			banner_center.timer1 = setInterval(function (){
+				banner_center.addindex();
+				banner_center.move_func();
+			}, 2000);
+		},
+		init: function () {
+			banner_center.timer1 = setInterval(function (){
+				banner_center.addindex();
+				banner_center.move_func();
+			}, 2000);
+			$(banner_center.tip).hover(banner_center.tip_hover_in,banner_center.tip_hover_out);
+		}
+	};
+	//banner右侧
+	var banner_right = {
+		title: ".banner_right .apply_guide_step .guide_step_content .step .step_title",
+		pic: ".step_content",
+		step: ".banner_right .apply_guide_step .guide_step_content .step",
+		active_func: function () {
+			$(this).parents(".step").addClass('active').siblings('.step').removeClass('active');
+		},
+		init: function () {
+			$(banner_right.title).hover(banner_right.active_func);
+		}
+	};
+	// var today_sell = {
+	// 	part: ".today .today_nav .part",
+	// 	page: ".today .today_content .content_product",
+	// 	index: 0,
+	// 	setindex: function (index) {
+	// 		today_sell.index = index;
+	// 	},
+	// 	setactive: function () {
+	// 		var index = today_sell.index;
+	// 		$(today_sell.part).eq(index).addClass('active').siblings('.part').removeClass('active');
+	// 		(today_sell.page).eq(index).addClass('active').siblings('.content_product').removeClass('active');
+	// 	},
+	// 	addindex: function () {
+	// 		today_sell.index = today_sell.index + 1;
+	// 	},
+	// 	reduceindex: function () {
+	// 		today_sell.index = today_sell.index - 1;
+	// 	},
+	// 	index_cheack: function () {
+	// 		var limit = $(today_sell.part).length;
+	// 		var index = today_sell.index;
+	// 		if(index>limit){
+	// 			today_sell.index = limit;
+	// 		}
+	// 		if(index<0){
+	// 			today_sell.index = 0;
+	// 		}
+	// 	},
+	// 	init: function () {
+	// 		today_sell.setactive();
+	// 	}
+	// };
+
+
+	//阿里通协议逻辑
+	alitong_protocol.cover.find('.big').click(function(event) {
+		if($(this).hasClass('disable')){
+			return;
+		}
+		if (!$(this).hasClass('disable')){
+			alitong_protocol.hidemodal()
+			alitong_apply.showmodal();
+		}
+	});
+
+	//阿里通表单逻辑
+	alitong_apply.cover.find('.sure').click(function(event) {
+		var cansend = alitong_apply.cansend();
+		var memberStore = alitong_apply.getresult();
+		console.log(cansend,"cansend");
+		console.log(memberStore,"memberStore");
+		if(alitong_apply.uptype=="yijianshangchuan"){
+			//一键上传提交
+			console.log("进入一键上传");
+			if (cansend) {
+			    //数据通过校验，转换数据格式进行ajax请求
+			    memberStore = JSON.stringify(memberStore);
+			    $.ajax({
+			        async: true,
+			        type: "POST",
+			        url: "/product/memberstoreadd",
+			        data: {"memberStore": memberStore},
+			        success: function (result) {
+			            //请求成功，跳转至阿里的铺货授权页面
+			            if (result.data) {
+			                window.location.href = "http://www.dawawang.com/services/alibaba.html";
+			            }
+			        }
+			    });
+			}
+			return;
+		}
+		if(alitong_apply.uptype=="yijiandaifa"){
+			//一键代发提交
+			if (cansend) {
+			    //数据通过校验，转换数据格式进行ajax请求
+			    memberStore = JSON.stringify(memberStore);
+			    $.ajax({
+			        async: true,
+			        type: "POST",
+			        url: "/product/memberstoreadd",
+			        data: {"memberStore": memberStore},
+			        success: function (result) {
+			            //请求成功，跳转至阿里的抓单授权页面
+			            if (result.data) {
+			                window.location.href = "http://www.dawawang.com/services/alibaba_product.html";
+			            }
+			        }
+			    });
+			}
+			return;
+		}
+	});
+
+	//登录逻辑
+	alitong_login.cover.find(".big").click(function(){
+		
+	});
+
+	//绑定业务逻辑
+	var  procedure = {
+		step_1 : ".guide_step_content .step:first-child .step_title",
+		step_2 : ".guide_step_content .step:last-child .step_title",
+		check_login: isUserLogin,
+		step_1_func: function () {
+			var _this = this;
+			var islogin = procedure.check_login();
+			if(islogin){ //已登录
+				alitong_apply.uptype = "yijianshangchuan"
+				alitong_protocol.showmodal();
+			}else {
+				alitong_login.showmodal();
+			}
+		},
+		step_2_func: function () {
+			var _this = this;
+			var islogin = procedure.check_login();
+			if(islogin){ //已登录
+				alitong_apply.uptype = "yijiandaifa";
+				alitong_protocol.showmodal();
+			}else {
+				alitong_login.showmodal();
+			}
+		},
+		init: function () {
+			$(procedure.step_1).click(procedure.step_1_func);
+			$(procedure.step_2).click(procedure.step_2_func);
+		}
+	};
+	procedure.init();
+	banner_center.init();
+	banner_right.init();
+
+	$(".search_btn").on('click',function () {
+		var keyword = $(".search").val();
+		window.location = domain  + "/" + "search.html?keyword=" + keyword +"&alitong=y";
+    });
+
+
+})
