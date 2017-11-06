@@ -19,21 +19,4 @@ define(["jquery", "common", "modal", "distpicker"], function ($, common, modal, 
         $(".single_nav .sub_title").removeClass("selected");
         $(this).addClass("selected");
     })
-
-    $("body").on('click',".dropdown_title .sub_title",function () {
-        var newsId = $(this).data("id");
-        $.ajax({
-            type:"GET",
-            dataType:"json",
-            url:domain + "/news/getnew/" + newsId + ".html",
-            success: function (data) {
-                if(data.success){
-
-                    $(".article_word h1").html(data.data.news.title)
-                    $(".article_word .content").html(data.data.news.content)
-                    console.log(data);
-                }
-            }
-        })
-    })
 });

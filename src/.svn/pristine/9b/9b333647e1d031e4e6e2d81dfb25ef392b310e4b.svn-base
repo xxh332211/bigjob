@@ -2474,14 +2474,13 @@ body {
 	left: 255px;
 	top: 2px;
 	cursor: pointer;
-	overflow: hidden;
 }
 
 .supplier_main .content .form_list .row .chosefile > input {
-	width: 200%;
-	height: 200%;
+	width: 100%;
+	height: 100%;
 	position: absolute;
-	top: -100%;
+	top: 0;
 	left: 0;
 	background: transparent;
 	opacity: 0;
