@@ -462,7 +462,7 @@ body {
 				&.index_sub {
 					height: 410px;
 					padding-top: 13px;
-					top: 50px;
+					top: 88px;
 					ul {
 						display: block;
 						li {

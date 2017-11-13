@@ -1,6 +1,5 @@
 @import '../../common/reset';
 @import '../../component/foot.scss';
-@import '../../component/head.scss';
 @import '../../common/base';
 @import '../../common/iconfont';
 @import '../../iconcss/icon_1';
@@ -44,8 +43,8 @@
 }
 
 .nav {
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 14px;
     color: #333333;
     a {

@@ -35,7 +35,9 @@
 			"inpaper":"quick_buy/inpaper",
 			"login":"system/login",
 			"supplier":"system/supplier",
-			"article": "system/article"
+			"article": "system/article",
+			"up_data": "system/updata",
+			"nano": 'component/jquery.nanoscroller'
 		},
 		//非amd依赖
 		shim:{
@@ -45,6 +47,10 @@
 			"swipper": {
 				deps: ['jquery'],
 				exports: 'Swiper'
+			},
+			"nano": {
+				deps: ['jquery'],
+				export: "nano"
 			},
 			"laydate2":{
 				deps:["jquery"],
@@ -71,5 +77,4 @@
 				exports:'jqueryzoom'
 			}
 		}
-
 	});
