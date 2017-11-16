@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/system/updata.css">
+    <title>上传进度查询</title>
+</head>
+<body>
+    <div class="updata">
+        <div class="updata_pic">
+            <img src="../../img/pic/system/updata_in.png" alt="">
+        </div>
+        <div class="updata_window">
+            <div class="title">
+                <span>款式</span>
+                <span>上传状态</span>
+                <span>上传时间</span>
+            </div>
+            <div id="about" class="nano">
+                <div class="nano-content">
+                    <ul>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="../../js/lib/require.js"></script>
+<script>
+    require(['../../js/main'], function () {
+        require(['up_data']);
+    })
+</script>
+</body>
+</html>

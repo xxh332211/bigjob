@@ -38,6 +38,10 @@ define(["jquery","common","modals","distpicker"],function ($,common,modals,distp
                 event.preventDefault();
                 /* Act on the event */
                 select_func.set_selected(that);
+                $('#transportType').val(5);
+                $("#shipfee").html("+ 0.00");
+                changeTransportFee();
+                countFee()
             });
         }
     };
@@ -161,7 +165,7 @@ define(["jquery","common","modals","distpicker"],function ($,common,modals,distp
     });
     //更换收货地址
     $("body").on('click',".main_part .replace .replace_address",function (event) {
-        if( $(".main_part .content.addressinfo.hide").length > 1){
+        if( $(".main_part .content.addressinfo.hide").length > 0){
             $(".main_part .content.addressinfo.hide").each(function (index, el) {
                 $(el).removeClass("hide");
             })
@@ -192,7 +196,12 @@ define(["jquery","common","modals","distpicker"],function ($,common,modals,distp
 //优惠券输入完成
     $('body').on('keyup',".middle_part .order_coupon  #couponNum",function (event) {
         checkMaxUseCoupon($(this));
-    })
+    });
+
+    //点击送货上门更改运费及总价
+   /* $("body").on('click',".gohomerow .select_dropdown li",function (event) {
+        $('#transportType').val(5);
+    })*/
 
 
     //提交订单
@@ -238,6 +247,7 @@ define(["jquery","common","modals","distpicker"],function ($,common,modals,distp
         $.ajax({
             type : "POST",
             url :  domain+"/order/calculateTransFee.html",
+
             data : {addressId:newAddressId,transportType:val},
             dataType : "json",
             success : function(data) {
@@ -616,6 +626,65 @@ define(["jquery","common","modals","distpicker"],function ($,common,modals,distp
     }
 
 
+    function changeTransportFee(){
+        var sendArea =$(".gohomerow .select_dropdown .selected").data("value");
+        var totalCartAmount = $('#totalCartAmount').val();
+        var box_amount = parseFloat(totalCartAmount/500).toFixed(2);
+        var arr_am = box_amount.split('.');
+        var t = parseFloat(arr_am[0]);
+        var transportFee = 0.00;
+        if(arr_am[1]>0){
+            t += 1;
+        }
+        //一区运费计算
+        if(sendArea==2){
+            transportFee = t*4;
+            if(transportFee<20){
+                transportFee = 20;
+            }
+            if(totalCartAmount >=1000){
+                transportFee = 0.00;
+            }
+        }
+        //二区运费计算
+        if(sendArea==3){
+            transportFee = t*4.5;
+            if(transportFee < 180){
+                transportFee = 180;
+            }
+            if(totalCartAmount >=5000){
+                transportFee = 0.00;
+            }
+        }
+        //三区运费计算
+        if(sendArea==4){
+            transportFee = t*5.5;
+            if(transportFee < 330){
+                transportFee = 330;
+            }
+            if(totalCartAmount >=20000){
+                transportFee = 0.00;
+            }
+        }
+        //四区运费计算
+        if(sendArea==5){
+            transportFee = t*5;
+            if(transportFee < 250){
+                transportFee = 250;
+            }
+            if(totalCartAmount >=20000){
+                transportFee = 0.00;
+            }
+        }
+        $('#sendArea1').val(sendArea);
+        //先将运费清0
+        $("#shipfee").html("+ " + transportFee);
+        countFee();
+    }
+
+
+
+
 //验证支付密码
     function checkBalancePwd(balancePwd){
         var correct = false;
@@ -979,6 +1048,8 @@ define(["jquery","common","modals","distpicker"],function ($,common,modals,distp
             $(".order_coupon").hide();
         }
     }
+
+
 
 
 })

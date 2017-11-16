@@ -87,9 +87,8 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
         return notic;
     })();
     protocol_interactive.init();
+
     //判断当前页面是登陆还是重置
-
-
     $("body").on('change',".register #userName",function () {
         if (!isphone($(this).val())) {
             notice("亲,请输入正确的手机号");
@@ -99,7 +98,6 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
                 notice("您好,此用户名已存在");
                 return;
             }
-
         }
     })
     $("body").on('change',".register #password",function () {
@@ -145,7 +143,6 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
             $("#dreferrer").val("");
         }
     }
-
     //点击重置
     $("#resetButton").click(function () {
         var params = $('#resetForm').serialize();
@@ -162,7 +159,8 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
                     });
                 } else {
                     alerts(data.message);
-                    refreshCode();//刷新验证码
+                    refreshCode();
+                    //刷新验证码
                 }
             }
         });
@@ -176,12 +174,11 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
 
     $("body").on('click',".login_btn  #registerButton",function () {
         var canRegister = true;
-        if($(this).parent().hasClass("disable")){
+        if($(this).parent().hasClass("disable")) {
             canRegister = false;
             notice("请阅读并勾选平台用户服务协议");
             return;
         }
-
         if(!$(".register #userName").val() || !isphone($(".register #userName").val())){
             canRegister = false;
             notice("请输入正确的手机号");
@@ -285,7 +282,7 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
                     notice("异常，请重试！");
                 }
             });
-    })
+    });
 
     //监听回车事件  不起作用
     function keyDownSubmit(e){
@@ -297,8 +294,6 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
     }
     document.onkeydown = keyDownSubmit;
 
-
-
     //获取手机验证码校验
     function getmobVerify(this_){
         var obj = $(this_);
@@ -308,7 +303,7 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
             return;
         }else{
             if(!isphone(userName)){
-                alerts("请输入正确的手机号码");
+                notice("请输入正确的手机号码");
                 return;
             }
         }
@@ -345,7 +340,6 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
             });
         }
     }
-
     //获取手机验证码校验
     function getResetMobVerify(this_){
         var obj = $(this_);
@@ -386,7 +380,6 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
             });
         }
     }
-
     //验证用户名是否已存在
     function nameIsNotExist(value){
         var nameIsNotExist = false;
@@ -407,8 +400,6 @@ define(["jquery", "common", "modal","modals", "distpicker"], function ($, common
 
         return nameIsNotExist;
     }
-
-
 })
 //刷新验证码
 function refreshCode(){

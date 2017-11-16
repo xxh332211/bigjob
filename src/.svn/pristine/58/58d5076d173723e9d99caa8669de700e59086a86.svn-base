@@ -1,0 +1,8 @@
+@import "../../common/reset.scss";
+@import "../../common/base.scss";
+.productquality {
+    width:958px;
+}
+.policy {
+    width: 958px;
+}

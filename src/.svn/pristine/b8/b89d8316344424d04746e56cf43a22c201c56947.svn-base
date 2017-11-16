@@ -1,0 +1,90 @@
+@import "../../common/reset.scss";
+@import "../../common/base.scss";
+@import "../../common/iconfont.scss";
+@import "../../common/nanoscroller.scss";
+.recruit {
+    width: 958px;
+    padding: 45px 56px;
+    background: pink;
+    .pic {
+        img {
+            float: left;
+        }
+    }
+    .title {
+        height: 92px;
+        background: #fff;
+        padding-top: 41px;
+        display: table;
+        width: 100%;
+        span {
+            display: table-cell;
+            text-align: center;
+        }
+    }
+    .cases {
+        .single {
+            .single_title {
+                width: 846px;
+                height: 33px;
+                background-color: #222222;
+                span {
+                    font-size: 16px;
+                    color: #ffffff;
+                    height: 33px;
+                    line-height: 33px;
+                    width: 155px;
+                    text-align: center;
+                    display: inline-block;
+                }
+            }
+            .single_content {
+                .single_single {
+                    position: relative;
+                    margin-bottom: 15px;
+                    .subtitle {
+                        width: 846px;
+                        height: 33px;
+                        background-color: #dddddd;
+                        cursor: pointer;
+                        span {
+                           font-size: 16px;
+                           color: #424242;
+                           display: inline-block;
+                           height: 33px;
+                           line-height: 33px;
+                           width: 155px;
+                           text-align: center;
+                        }
+                    }
+                    &>.icon{
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        &.open {
+                            .down {
+                                display: block;
+                            }
+                            .up {
+                                display: none;
+                            }
+                        }
+                        &.close {
+                            .down {
+                                display: none;
+                            }
+                            .up {
+                                display: block;
+                            }
+                        }
+                    }
+                    .words {
+                        width: 100%;
+                        height: 100px;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

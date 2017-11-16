@@ -1,6 +1,7 @@
 @import "../../common/reset.scss";
 @import "../../common/base.scss";
-@import "../../common/nanoscroller.scss";
+@import "../../common/iconfont.scss";
+// @import "../../common/nanoscroller.scss";
 .updata {
     margin: 0 auto;
     margin-top: 500px;
@@ -11,24 +12,31 @@
     .updata_pic {
         width: 136px;
         height: 122px;
-        background: black;
         cursor: pointer;
-        img {
-            background: black;
-        }
     }
     .updata_window {
-        width: 365px;
-        height: 267px;
+        width: 711px;
+        height: 490px;
         background: url('../../img/pic/system/updata_bac.png') top center;
         position: absolute;
-        left: -380px;
-        top: -280px;
+        left: -800px;
+        top: -500px;
         padding:7px;
         padding-top: 61px;
         padding-left: 15px;
+        display: none;
+        .close {
+            position: absolute;
+            top:20px;
+            right:16px;
+            cursor: pointer;
+            user-select: none;
+            i {
+                color: #fff;
+            }
+        }
         .title {
-            width: 318px;
+            width: 658px;
             height: 26px;
             background-color: #eeeeee;
             line-height: 26px;
@@ -38,37 +46,87 @@
                 display: inline-block;
                 font-size: 14px;
                 font-weight: 500;
+                text-align: center;
                 &:nth-child(1){
-                    margin-left: 30px;
-                    width: 75px;
-                }
-                &:nth-child(2) {
                     width: 100px;
                 }
+                &:nth-child(2) {
+                    width: 90px;
+                }
                 &:nth-child(3) {
+                    width: 150px;
+                }
+                &:nth-child(4) {
+                    width: 200px;
+                }
+                &:nth-child(5) {
                     width: 100px;
                 }
             }
         }
         .nano {
-            background: #bba;
-            width: 343px;
-            height: 166px;
+            width: 658px;
+            height: 330px;
             position: relative;
             .nano-content {
-                padding: 10px;
-                .hahaha {
-                    height: 1000px;
+                padding-top: 0;
+                ul {
+                    li {
+                        height: 33px;
+                        width: 658px;
+                        border-bottom: 1px solid #eee;
+                        line-height: 33px;
+                        background: #fff;
+                        span {
+                            font-size: 13px;
+                            font-weight: 500;
+                            text-align: left;
+                            color: #666666;
+                            display: inline-block;
+                            text-align: center;
+                            &:nth-child(1){
+                                overflow: hidden;
+                                text-overflow:ellipsis;
+                                white-space: nowrap;
+                                width :100px;
+                                vertical-align: middle;
+                            }
+                            &:nth-child(2){
+                                 width:90px;
+                            }
+                            &:nth-child(3) {
+                                width: 150px;
+                            }
+                            &:nth-child(4) {
+                                width: 200px;
+                                overflow: hidden;
+                                text-overflow:ellipsis;
+                                white-space: nowrap;
+                                vertical-align: middle;
+                                cursor: pointer;
+                            }
+                            &:nth-child(5) {
+                                width: 100px;
+                            }
+                        }
+                    }
                 }
             }
             .nano-pane {
                 position: absolute;
-                right: 20px;
-                background: #888;
+                right: 7px;
+                background: #eee;
                 .nano-slider {
-                    background: #111;
+                    background: #f8f8f8;
                 }
             }
+        }
+    }
+    .copywindow {
+        width: 365px;
+        height: 267px;
+        textarea {
+            
         }
     }
 }
