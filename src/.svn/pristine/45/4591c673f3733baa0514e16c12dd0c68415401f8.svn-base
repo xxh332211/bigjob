@@ -1,0 +1,47 @@
+@import '../../layout/quick_buy/ensure.scss';
+.pay_logo{
+    .pic {
+        background: transparent;
+    }
+}
+.pay_state {
+    border-top: 4px solid #ffb84e;
+}
+.qrcode {
+    margin-top: 30px; 
+    height: 500px;
+    position: relative;
+    padding-top: 34px;
+    padding-left: 223px;
+    background : #fff;
+    .title {
+        font-size:20px;
+        color:#4a4a4a;
+        position: absolute;
+        top: 27px;
+        left: 78px;
+    }
+    .code {
+        width: 300px;
+        float: left;
+        .code_pic {
+            width: 300px;
+            img {
+                width: 100%;
+            }
+        }
+        .tip {
+            width: 300px;
+            margin-top: 10px;
+            width: 100%;
+        }
+    }
+    .pic {
+        width: 305px;
+        float: left;
+        margin-left:57px;
+        img {
+            width: 100%;
+        }
+    }
+}

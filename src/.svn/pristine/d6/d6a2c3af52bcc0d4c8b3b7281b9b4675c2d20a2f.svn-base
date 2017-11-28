@@ -1,0 +1,181 @@
+@import '../../common/base';
+@import '../../common/reset';
+@import '../../component/head';
+@import '../../component/foot';
+body {
+    width: 100%;
+    height: 100%;
+}
+html {
+    width: 100%;
+    height: 100%;
+}
+.redpack {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    .cover {
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        background: #333;
+        filter: Alpha(opacity=5);
+        -moz-opacity:0.5;
+        opacity:0.5;
+        z-index: 998;
+    }
+    .center {
+        width: 374px;
+        height: 481px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-top: -240px;
+        margin-left: 0;
+        z-index: 999;
+        img {
+
+        }
+        .red_price {
+            position: absolute;
+            top: 290px;
+            left: 135px;
+            font-size: 50px;
+            font-weight: bold;
+            line-height: 1em;
+            letter-spacing: 0px;
+            color: #ffee51;
+        }
+        .getnow {
+            position: absolute;
+            display: block;
+            top: 386px;
+            left: 107px;
+            width: 158px;
+            height: 40px;
+        }
+        .close {
+            position: absolute;
+            top: 41px;
+            right: 38px;
+            cursor:pointer;
+        }
+    }
+}
+.getpack {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #333;
+        filter: Alpha(opacity=5);
+        -moz-opacity: 0.5;
+        opacity: 0.5;
+        z-index: 998;
+    }
+    .content {
+        width: 587px;
+        height: 523px;
+        position: absolute;
+        top:50%;
+        left:50%;
+        margin-top: -447px;
+        margin-left: -293px;
+        z-index: 999;
+        .close {
+            position: absolute;
+            top: 190px;
+            right: 105px;
+            cursor:pointer;
+        }
+        .discounts {
+            position: absolute;
+            top: 387px;
+            left: 130px;
+            .single {
+                width: 321px;
+                height: 92px;
+                position:relative;
+                &:nth-child(1){
+                    background: url('../../../frontV1/img/pic/component/priceback10.png') top center;
+                }
+                &:nth-child(2) {
+                    background: url('../../../frontV1/img/pic/component/priceback20.png') top center;
+                }
+                &:nth-child(3) {
+                    background: url('../../../frontV1/img/pic/component/priceback40.png') top center;
+                }
+                .usenow {
+                    width: 58px;
+                    height: 22px;
+                    border-radius: 10px;
+                    text-align: center;
+                    border: solid 2px #ef3219;
+                    font-size: 11px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    line-height: 19px;
+                    letter-spacing: 0px;
+                    color: #ef3219;
+                    position: absolute;
+                    right: 22px;
+                    top: 35px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .btns {
+            margin-top: 150px;
+            padding-left: 130px;
+            padding-right: 145px;
+            a {
+                width: 145px;
+                height: 46px;
+                background-color: #ffd800;
+                border-radius: 5px;
+                line-height: 46px;
+                text-align: center;
+                font-size: 17px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #e60012;
+            }
+            .buynow {
+                float:left;
+            }
+            .check {
+                float:right;
+        }
+        }
+        .notes {
+            margin-top: 11px;
+            padding-left: 130px;
+            padding-right: 145px;
+            font-size: 11px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 1.5em;
+            letter-spacing: 0px;
+            color: #e3e3e3;
+            a {
+                color: #ffd800;
+            }
+        }
+    }
+}

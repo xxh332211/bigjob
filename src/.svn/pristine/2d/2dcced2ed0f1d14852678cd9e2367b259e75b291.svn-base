@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/others/doubletwelve.css">
+</head>
+<body>
+    <div class="getpack">
+        <div class="cover"></div>
+        <div class="content">
+            <div class="close">
+                <img src="../../img/pic/component/close.png" alt="">
+            </div>
+            <img src="../../img/pic/component/transback.png" alt="">
+            <div class="discounts">
+                <div class="single"></div>
+                <div class="single"></div>
+                <div class="single"></div>
+            </div>
+            <div class="btns clearfix">
+                <a href="#" class="buynow">立即下单</a>
+                <a href="#" class="check">查看福利</a>
+            </div>
+            <div class="notes">
+
+            </div>
+        </div>
+    </div>
+<script src="../../js/lib/require.js"></script>
+<script>
+    require(['../../js/main'], function(){
+        require(['doubletwelve']);
+    });
+</script>
+</body>
+</html>

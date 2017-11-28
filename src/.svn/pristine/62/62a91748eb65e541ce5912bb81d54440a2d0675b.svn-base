@@ -1,0 +1,80 @@
+@import '../../common/base';
+@import '../../common/reset';
+@import '../../component/head';
+@import '../../component/foot';
+body {
+    background: #efeff1;
+}
+
+.forseo {
+    height: 0;
+    visibility: hidden;
+    text-indent: -100000px;
+    overflow: hidden;
+}
+
+.banner {
+    position: relative;
+    height: 541px;
+    width: 100%;
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -270px;
+        margin-left: -960px;
+    }
+}
+
+.banxin {
+    background: #fff;
+}
+
+.box {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    &:nth-child(1) {
+        padding-top: 80px;
+        padding-bottom: 180px;
+    }
+    &:nth-child(2) {
+        padding-bottom: 116px;
+    }
+    &:nth-child(3) {
+        padding-bottom: 198px;
+    }
+    a {
+        display: block;
+        position: absolute;
+        background: black;
+        &.getnow {
+            width: 195px;
+            height: 50px;
+            top: 317px;
+            left: 642px;
+        }
+        &.ordernow {
+            width: 145px;
+            height: 48px;
+            top: 455px;
+            left: 433px;
+        }
+        &.fornewgay {
+            width: 182px;
+            height: 48px;
+            top: 455px;
+            left: 602px;
+        }
+        &.line_1 {
+            width: 88px;
+            height: 29px;
+            top: 201px
+        }
+        &.line_2 {
+            width: 88px;
+            height: 29px;
+            top: 341px
+        }
+    }
+}

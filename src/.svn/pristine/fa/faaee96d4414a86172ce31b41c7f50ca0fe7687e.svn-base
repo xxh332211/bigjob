@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/others/doubletwelve.css">
+</head>
+<body>
+    <div class="getpack">
+        <div class="cover"></div>
+        <div class="content">
+            <div class="close">
+                <img src="../../img/pic/component/close.png">
+            </div>
+            <img src="../../img/pic/component/transback.png">
+            <div class="discounts">
+                <div class="single">
+                    <a class="usenow">立即使用</a>
+                </div>
+                <div class="single">
+                    <a class="usenow">立即使用</a>
+                </div>
+                <div class="single">
+                    <a class="usenow">立即使用</a>
+                </div>
+            </div>
+            <div class="btns clearfix">
+                <a href="#" class="buynow">立即下单</a>
+                <a href="#" class="check">查看福利</a>
+            </div>
+            <div class="notes">
+                 因系统有延迟，若账户没有代金券请刷新尝试，若有问题请联 系客服：4008-456-002 <a href="#">活动说明></a>
+            </div>
+        </div>
+    </div>
+<script src="../../js/lib/require.js"></script>
+<script>
+    require(['../../js/main'], function(){
+        require(['doubletwelve']);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@import '../../common/base';
+@import '../../common/reset';
+@import '../../component/head';
+@import '../../component/foot';
+.banxin {
+    width: 1200px;
+}
+body {
+    background: #fff;
+}
+.buyer {
+    background: #fff;
+    .pic1 {
+        height: 260px;
+    }
+    .pic2 {
+        padding-top: 51px;
+        padding-left: 36px;
+        height: 223px;
+        background-color: #f7f7f7;
+        &>div {
+            .pic {
+                margin-right: 37px;
+            }
+            .content {
+                dl {
+                    dt {
+                        font-size: 18px;
+                        font-weight: bold;
+                        line-height: 1em;
+                        text-align: justify;
+                        color: #595959;
+                        margin-top: 12px;
+                        span {
+                            color: #42a931;
+                        }
+                    }
+                    dd {
+                        font-size: 16px;
+                        line-height: 1em;
+                        text-align: justify;
+                        color: #595959;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+        .pic2_right {
+            margin-left: 185px;
+        }
+    }
+    .content_bar {
+        margin-top: 40px;
+        .title {
+            .word {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1em;
+                text-align: justify;
+                color: #3b892e;
+                margin-bottom: 14px;
+            }
+            .line {
+                height: 1px;
+                width: 100%;
+                border-bottom: 1px dotted #5b5b5b;
+            }
+        }
+        .subnotice {
+            padding-left: 200px;
+            position: relative;
+            .notice_title {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 1em;
+                text-align: justify;
+                color: #3b892e;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .notice_content {
+                width: 573px;
+                font-size: 16px;
+                line-height: 1.5em;
+                text-align: justify;
+                color: #595959;
+            }
+            &:nth-child(2) {
+                margin-bottom: 32px;
+                margin-top: 21px;
+            }
+        }
+        .flow {
+            padding-top: 41px;
+            padding-left: 133px;
+            padding-bottom: 20px;
+            .single {
+                width: 120px;
+                height: 53px;
+                padding-top: 20px;
+                background-color: #fff4ea;
+                text-align: center;
+                box-shadow: 0.1px 1px 3px 0 rgba(174, 68, 10, 0.56);
+                float: left;
+                font-size: 16px;
+                font-weight: 500;
+                color: #ff8e1f;
+                line-height: 1em;
+                &.twoline {
+                    padding-top: 11px;
+                }
+            }
+            .subline {
+                height: 53px;
+                width: 62px;
+                position: relative;
+                float: left;
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    margin-top: -1px;
+                }
+            }
+        }
+        .questions {
+            margin-top: 20px;
+            padding-bottom: 76px;
+            ul {
+                li {
+                    a {
+                        font-size: 16px;
+                        line-height: 1.5;
+                        color: #595959;
+                    }
+                }
+            }
+            .pic {
+                margin-left: 214px;
+            }
+        }
+    }
+}

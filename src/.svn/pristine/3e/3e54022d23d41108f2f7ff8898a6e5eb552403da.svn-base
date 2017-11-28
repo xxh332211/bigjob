@@ -1,0 +1,107 @@
+@import '../../common/base';
+@import '../../common/reset';
+@import '../../component/head';
+@import '../../component/foot';
+.container {
+    .nav1 {
+        padding-left: 26px;
+        margin-bottom: 40px;
+        .title {
+            font-size:28px;
+            font-weight: bold;
+            color:#333;
+            margin-bottom: 23px;
+        }
+        .content {     
+            padding-top: 23px;
+            padding-left:27px;
+            padding-bottom:10px;
+            border:1px solid #333;
+            dl {
+                dt {
+                    font-size: 20px;
+                    color: #333;
+                    margin-bottom: 10px;
+                    line-height: 1em;
+                    font-weight: bold;
+                }
+                dd {
+                    font-size:14px;
+                    line-height:1em;
+                    color: #bdbdbd;
+                    float:left;
+                    margin-right:16px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .nav2 {
+        padding-left: 26px;
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 23px;
+        }
+        .content {
+            padding-top: 23px;
+            padding-left: 27px;
+            padding-bottom:10px;
+            border: 1px solid #333;
+            dl {
+                dt {
+                    font-size: 14px;
+                    color: #333;
+                    margin-bottom: 10px;
+                    line-height: 1em;
+                    font-weight: bold;
+                }
+                dd {
+                    font-size: 14px;
+                    line-height: 1em;
+                    color: #bdbdbd;
+                    float: left;
+                    margin-right: 16px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .nav3 {
+        padding-left: 26px;
+        margin-bottom: 40px;
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 23px;
+        }
+        .content {
+            padding-top: 23px;
+            padding-left: 27px;
+            padding-bottom: 10px;
+            border: 1px solid #333;
+            dl {
+                dt {
+                    font-size: 14px;
+                    color: #333;
+                    margin-bottom: 10px;
+                    margin-right: 16px;
+                    line-height: 1em;
+                    float:left; 
+                }
+                dd {
+                    font-size: 14px;
+                    line-height: 1em;
+                    color: #bdbdbd;
+                    float: left;
+                    margin-right: 16px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

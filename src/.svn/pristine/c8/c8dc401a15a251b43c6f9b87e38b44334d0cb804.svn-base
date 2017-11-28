@@ -1,0 +1,16 @@
+@import '../../common/base';
+@import '../../common/reset';
+@import '../../component/head';
+@import '../../component/foot';
+.banxin {
+    width: 1110px;
+}
+.buyer {
+    .pic1 {
+        height: 260px;
+    }
+    .pic2{
+        height: 223px;
+        background-color: #f7f7f7;
+    }
+}

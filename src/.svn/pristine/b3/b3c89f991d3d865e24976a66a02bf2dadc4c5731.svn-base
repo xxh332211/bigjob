@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/others/supplier_pic.css">
+</head>
+<body>
+    <div class="supplier_pic banxin">
+        <div class="banner_pic">
+            <img src="../../img/pic/others/banner.png"alt="">
+        </div>
+        <div class="tag clearfix">
+            <div class="single">
+                <div class="top">
+                    <img src="../../img/pic/others/all_way.png">
+                </div>
+                <div class="bottom">
+                    <h4>全渠道覆盖</h4>
+                    <p>大袜网所覆盖的的实体渠道、电子商务渠道和移动电子商务渠道，帮助供应商快速打通所有销售通路。</p>
+                </div>
+            </div>
+            <div class="single">
+                <div class="top">
+                    <img src="../../img/pic/others/bigdata.png" alt="">
+                </div>
+                <div class="bottom">
+                    <h4>大数据应用</h4>
+                    <p>精准指导产业链各环节，以数据为驱动，通过反向定制、以销定产、帮助供应商快速找到市场定位，直接引导科学生产。</p>
+                </div>
+            </div>
+            <div class="single">
+                <div class="top">
+                    <img src="../../img/pic/others/stock.png" alt="">
+                </div>
+                <div class="bottom">
+                    <h4>智能袜云仓</h4>
+                    <p>专业解决全渠道袜业的、仓储、二次加工、一件代发等全供应链服务的智能网仓平台。</p>
+                </div>
+            </div>
+        </div>
+        <div class="main_name clearfix">
+            <div class="pic fl">
+                <img src="../../img/pic/others/logo.png" alt="">
+            </div>
+            <div class="content fl">
+                <h2>互联网产品——大袜阿里通</h2>
+                <div class="checks">
+                    <span>
+                        <img src="../../img/pic/others/check.png" alt="">
+                        <i>快速打开渠道</i>
+                    </span>
+                    <span>
+                        <img src="../../img/pic/others/check.png" alt="">
+                        <i>丰富商品品类</i>
+                    </span>
+                    <span>
+                        <img src="../../img/pic/others/check.png" alt="">
+                        <i>打造自有品牌</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="subtitle">
+                <i></i>
+                招商对象
+            </div>
+            <div class="content clearfix">
+                <div class="content_l fl">
+                    <img src="../../img/pic/others/b_p.png">
+                </div>
+                <div class="content_r words fl">
+                    <span>
+                        <img src="../../img/pic/others/check.png">
+                        <i>自身拥有工厂或者有合作工厂</i>
+                    </span>
+                    <span>
+                        <img src="../../img/pic/others/check.png">
+                        <i>能提供具有市场竞争力的商品</i>
+                    </span>
+                    <span>
+                        <img src="../../img/pic/others/check.png">
+                        <i>有持续供货能力</i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="subtitle">
+                <i></i>
+                供应商入驻
+            </div>
+            <div class="content clearfix">
+                <div class="content_l words fl">
+                    <span>
+                        <img src="../../img/pic/others/check.png">
+                        <i>免费入驻</i>
+                    </span>
+                    <span>
+                        <img src="../../img/pic/others/check.png">
+                        <i>库存管理服务</i>
+                    </span>
+                    <span>
+                        <img src="../../img/pic/others/check.png">
+                        <i>运营管理服务</i>
+                    </span>
+                </div>
+                <div class="content_r fl">
+                    <img src="../../img/pic/others/supplier_in.png">
+                </div>
+            </div>
+        </div>
+        <div class="welcome">
+            <div class="welcome_title">
+                <div class="line fl"></div>
+                <div class="title_content">
+                    <h6><span>欢迎</span>您的加入</h6>
+                    <h4>供应商入驻流程</h4>
+                </div>
+                <div class="line fr"></div>
+            </div>
+            <!-- <div class="welcome_content clearfix">
+                <span>供应商选款申请入驻</span>
+                <img src="..." alt="">
+                <span>大袜网 新品评审</span>
+                <img src="..." alt="">
+                <span>评审通过商 品签订合同</span>
+                <img src="..." alt="">
+                <span>大袜网建立 供应商信息、 商品信息</span>
+                <img src="..." alt="">
+                <span>视觉安排拍 摄、详情页 制作</span>
+                <img src="..." alt="">
+                <span>商品入仓 商城上架</span>
+            </div> -->
+            <table class="welcome_content">
+                <tr>
+                    <td><span>供应商选款<br/>申请入驻</span></td>
+                    <td class="pic"><img src="../../img/pic/others/yellow_right.png"></td>
+                    <td><span>大袜网<br/>新品评审</span></td>
+                    <td class="pic"><img src="../../img/pic/others/yellow_right.png"></td>
+                    <td><span>评审通过商<br/>品签订合同</span></td>
+                    <td class="pic"><img src="../../img/pic/others/yellow_right.png"></td>
+                    <td><span>大袜网建立<br/>供应商信息、<br/>商品信息</span></td>
+                    <td class="pic"><img src="../../img/pic/others/yellow_right.png"></td>
+                    <td><span>视觉安排拍<br/>摄、详情页<br/>制作</span></td>
+                    <td class="pic"><img src="../../img/pic/others/yellow_right.png"></td>
+                    <td><span>商品入仓<br/>商城上架</span></td>
+                </tr>
+            </table>
+        </div>
+        <div class="box">
+            <div class="subtitle">
+                <i></i>
+                联系我们
+            </div>
+            <div class="content clearfix">
+                <div class="phone">
+                    <span class="fl">马经理：139-5735-9310</span>
+                    <span class="fr">全国热线：4008—456—002</span>
+                </div>
+                <div class="adress">
+                    <dl> 
+                        <dt>公司地址：</dt>
+                        <dd>公司总部：浙江杭州市滨江区江南大道1088号中南国际大厦9楼</dd>
+                        <dd>仓配中心：浙江省诸暨市城西开发区千禧路20号</dd>
+                        <dd>上海研发中心：上海市闵行区沪闵路宁谷国际1203室</dd>
+                        <dd>海宁办事处：浙江省嘉兴海宁市马桥经编园区总部大楼1007</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
