@@ -1,4 +1,4 @@
-define(["jquery","common","modals","distpicker","user_center"],function ($,common,modals,distpicker,usercenter) {
+define(["jquery","common","modals","distpicker"],function ($,common,modals,distpicker) {
 
     var alerts = modals.alerts;
     var select_func = {
@@ -221,7 +221,7 @@ define(["jquery","common","modals","distpicker","user_center"],function ($,commo
 
     function countCoupon(obj){
         if(!$(".order_coupon_select .selected").data("value")){
-            // $("#couponNum").val(0);
+            $("#couponNum").val(0);
             alerts("请选择需要使用的优惠券类型");
         }else{
             var obj = $(".order_coupon_select .selected");
@@ -489,21 +489,6 @@ define(["jquery","common","modals","distpicker","user_center"],function ($,commo
 
     //提交订单
     function submitOrder(){
-        //如果用户勾选了使用优惠券,判断是否有选择优惠券类型和数量
-        if($(".middle_part .content .order_coupon").hasClass('selected')){
-            if(!$(".order_coupon_select .selected").data("value")){
-                alerts("请选择需要使用的优惠券类型");
-                return;
-            }else{
-                //设置优惠券使用信息
-                $("#coupon").val($("#couponNum").val());
-            }
-        }
-
-        //如果用户勾选了使用点券,判断是否有输入正确的点券数量
-
-
-
         //为用户提示说明要选择一种配送方式，不要选错了。
         var userTip = $(".main_part .peisong .selected").data("value");
         var sendType = $("#sendType").val();
@@ -612,7 +597,8 @@ define(["jquery","common","modals","distpicker","user_center"],function ($,commo
             //设置为1代表次订单为二次加工订单，后台做特殊处理
             $("#tzm_twoJG").val("1");
         }
-
+        //设置优惠券使用信息
+        $("#coupon").val($("#couponNum").val());
         //设置点券使用数量订单备注
         //设置支付方式
         $("#paymentCode").val($(".main_part .payment_code .selected").data("code"));
