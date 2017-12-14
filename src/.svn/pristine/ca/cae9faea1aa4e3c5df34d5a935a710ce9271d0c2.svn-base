@@ -1,7 +1,0 @@
-@import '../../common/reset';
-@import '../../component/foot.scss';
-@import '../../component/head.scss';
-@import '../../common/base';
-@import '../../common/iconfont';
-@import '../../iconcss/icon_1';
-

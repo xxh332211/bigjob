@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘宝通</title>
+    <link rel="stylesheet" href="../../css/taobao_tong/taobao_index.css">
+</head>
+
+<body>
+    <div class="taobao_index">
+        <div class="taobao_head">
+            <div class="banxin thead_center">
+                <div class="fr">
+                    <div class="logistics fl">
+                        <i class="iconfont">&#xe609;</i>
+                        <span>物流介绍</span>
+                    </div>
+                    <div class="order fl">
+                        <i class="iconfont">&#xe604;</i>
+                        <span>商品订单</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="taobao_logo banxin">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

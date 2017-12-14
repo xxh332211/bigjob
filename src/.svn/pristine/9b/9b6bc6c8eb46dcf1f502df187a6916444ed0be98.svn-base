@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘宝通</title>
+    <link rel="stylesheet" href="../../css/taobao_tong/taobao_index.css">
+</head>
+
+<body>
+    <div class="taobao_index">
+        <!-- header -s -->
+        <div class="taobao_head">
+            <div class="banxin thead_center">
+                <div class="fr">
+                    <div class="logistics fl">
+                        <i class="iconfont">&#xe609;</i>
+                        <span>物流介绍</span>
+                    </div>
+                    <div class="order fl">
+                        <i class="iconfont">&#xe604;</i>
+                        <span>商品订单</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header -s -->
+        <!-- logo -s -->
+        <div class="taobao_logo banxin">
+            <div class="taobao_logopic fl">
+                <img src="../../img/pic/taobao_tong/logo.png">
+            </div>
+            <ul class="taobao_nav fl">
+                <li>
+                    <a href="#">隐形袜</a>
+                </li>
+                <li>
+                    <a href="#">船袜</a>
+                </li>
+                <li>
+                    <a href="#">中筒袜</a>
+                </li>
+                <li>
+                    <a href="#">羊毛袜</a>
+                </li>
+                <li>
+                    <a href="#">毛圈袜</a>
+                </li>
+                <li>
+                    <a href="#">丝袜</a>
+                </li>
+                <li>
+                    <a href="#">裤袜</a>
+                </li>
+                <li>
+                    <a href="#">童袜</a>
+                </li>
+            </ul>
+            <div class="taobao_search fr">
+                <input type="text">
+                <button>
+                    <i class="iconfont">&#xe651;</i>
+                </button>
+            </div>
+        </div>
+        <!-- logo -e -->
+        <!-- banner区 -s -->
+        <div class="taobao_banner banxin">
+            <div class="banner_nav fl">
+                <ul>
+                    <li>
+                        <span>适用人群</span>
+                        <div class="tips_box">
+                            <dl class="clearfix">
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <span>价格区间</span>
+                        <i class="iconfont fr">&#xe626;</i>
+                        <div class="tips_box">
+                            <dl class="clearfix">
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <span>品牌分类</span>
+                        <i class="iconfont fr">&#xe626;</i>
+                        <div class="tips_box">
+                            <dl class="clearfix">
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <span>特卖专区</span>
+                        <i class="iconfont fr">&#xe626;</i>
+                        <div class="tips_box">
+                            <dl class="clearfix">
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <span>风格</span>
+                        <i class="iconfont fr">&#xe626;</i>
+                        <div class="tips_box">
+                            <dl class="clearfix">
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <span>品类</span>
+                        <i class="iconfont fr">&#xe626;</i>
+                        <div class="tips_box">
+                            <dl class="clearfix">
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <span>季节</span>
+                        <i class="iconfont fr">&#xe626;</i>
+                        <div class="tips_box">
+                            <dl class="clearfix">
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <span>筒高</span>
+                        <i class="iconfont fr">&#xe626;</i>
+                        <div class="tips_box">
+                            <dl class="clearfix">
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <span>厚薄</span>
+                        <i class="iconfont fr">&#xe626;</i>
+                        <div class="tips_box">
+                            <dl class="clearfix">
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                    <li>
+                        <span>专业需求</span>
+                        <i class="iconfont fr">&#xe626;</i>
+                        <div class="tips_box">
+                            <dl class="clearfix">
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                                <dd>
+                                    <a href="#">男士</a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider_box fl">
+                <div class="go_left">
+                    <img src="../../img/icon_1/turnleft_btn_click.png" alt="">
+                </div>
+                <div class="go_right">
+                    <img src="../../img/icon_1/turnright_btn_click.png" alt="">
+                </div>
+                <div class="slide_nav clearfix">
+                    <ul class="fr">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="slides clearfix">
+                    <div class="slide" style="background:black;">1</div>
+                    <div class="slide" style="background:pink;">2</div>
+                    <div class="slide" style="background:green;">3</div>
+                    <div class="slide" style="background:blue;">4</div>
+                    <div class="slide" style="background:gray;">5</div>
+                    <div class="slide" style="background:#FF5001;">6</div>
+                </div>
+            </div>
+        </div>
+        <!-- banner区 -e -->
+        <!-- 精选区 -s -->
+        <div class="taobao_choice banxin">
+            <div class="choice_title clearfix">
+                <div class="title_head fl">
+                    <img src="../../img/pic/taobao_tong/img_00.png" alt="">
+                    <span>精选</span>
+                </div>
+                <ul class="fl">
+                    <li class="active">
+                        <img src="../../img/pic/taobao_tong/img_01.png" alt="">
+                        <span>羊毛袜</span>
+                    </li>
+                    <li>
+                        <img src="../../img/pic/taobao_tong/img_02.png" alt="">
+                        <span>棉袜</span>
+                    </li>
+                    <li>
+                        <img src="../../img/pic/taobao_tong/img_03.png" alt="">
+                        <span>裤袜</span>
+                    </li>
+                    <li>
+                        <img src="../../img/pic/taobao_tong/img_04.png" alt="">
+                        <span>丝袜</span>
+                    </li>
+                    <li>
+                        <img src="../../img/pic/taobao_tong/img_05.png" alt="">
+                        <span>隐形袜</span>
+                    </li>
+                    <li>
+                        <img src="../../img/pic/taobao_tong/img_06.png" alt="">
+                        <span>船袜</span>
+                    </li>
+                    <li>
+                        <img src="../../img/pic/taobao_tong/img_07.png" alt="">
+                        <span>高端袜</span>
+                    </li>
+                    <li>
+                        <img src="../../img/pic/taobao_tong/img_08.png" alt="">
+                        <span>新品</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="products">
+                <div class="main_box">
+                    <div class="box">
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 精选区 -e -->
+
+        <!-- 明星单品 -s -->
+        <div class="taobao_stars banxin">
+            <div class="star_title">精选明星单品</div>
+            <div class="control clearfix">
+                <div class="left">
+                    <i class="iconfont">&#xe61e;</i>
+                </div>
+                <div class="right">
+                    <i class="iconfont">&#xe626;</i>
+                </div>
+            </div>
+            <div class="star_product">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="single">
+                            <div class="color_wrap" style="background:red;"></div>
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">水电费水电费水电费水电费水电费水电费水电费斯蒂芬斯蒂芬</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="color_wrap" style="background:red;"></div>
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">水电费水电费水电费水电费水电费水电费水电费斯蒂芬斯蒂芬</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="color_wrap" style="background:red;"></div>
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">水电费水电费水电费水电费水电费水电费水电费斯蒂芬斯蒂芬</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="color_wrap" style="background:red;"></div>
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">水电费水电费水电费水电费水电费水电费水电费斯蒂芬斯蒂芬</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="color_wrap" style="background:red;"></div>
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">水电费水电费水电费水电费水电费水电费水电费斯蒂芬斯蒂芬</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="single">
+                            <div class="color_wrap" style="background:red;"></div>
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">水电费水电费水电费水电费水电费水电费水电费斯蒂芬斯蒂芬</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="color_wrap" style="background:red;"></div>
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">水电费水电费水电费水电费水电费水电费水电费斯蒂芬斯蒂芬</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="color_wrap" style="background:red;"></div>
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">水电费水电费水电费水电费水电费水电费水电费斯蒂芬斯蒂芬</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                        <div class="single">
+                            <div class="color_wrap" style="background:red;"></div>
+                            <div class="pic">
+                                <img src="..." alt="">
+                                <div class="updata">
+                                    <span>上传到阿里</span>
+                                    <span>下载数据包</span>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <a href="#">水电费水电费水电费水电费水电费水电费水电费斯蒂芬斯蒂芬</a>
+                            </div>
+                            <div class="price">
+                                <span>&yen;</span>2.20
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 明星单品 -e -->
+
+        <!-- 灰色区域 -s -->
+        <div class="gray_container">
+            <div class="taobao_mainproduct pro_1 banxin">
+                <div class="title">本月新款</div>
+                <div class="control clearfix">
+                    <div class="left">
+                        <i class="iconfont">&#xe61e;</i>
+                    </div>
+                    <div class="right">
+                        <i class="iconfont">&#xe626;</i>
+                    </div>
+                </div>
+                <div class="products clearfix">
+                    <div class="big_pic"></div>
+                    <div class="product_box clearfix">
+                        <div class="slides">
+                            <div class="slide">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="taobao_mainproduct pro_2 banxin">
+                <div class="title">本月新款</div>
+                <div class="control clearfix">
+                    <div class="left">
+                        <i class="iconfont">&#xe61e;</i>
+                    </div>
+                    <div class="right">
+                        <i class="iconfont">&#xe626;</i>
+                    </div>
+                </div>
+                <div class="products clearfix">
+                    <div class="big_pic"></div>
+                    <div class="product_box clearfix">
+                        <div class="slides">
+                            <div class="slide">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                                <div class="single">
+                                    <div class="pic">
+                                        <img src="..." alt="">
+                                        <div class="updata">
+                                            <span>上传到阿里</span>
+                                            <span>下载数据包</span>
+                                        </div>
+                                    </div>
+                                    <div class="title">
+                                        <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                                    </div>
+                                    <div class="price">
+                                        <span>&yen;</span>2.20
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 灰色区域 -e -->
+
+        <!-- 精选畅销品牌 -s -->
+        <div class="taobao_brand banxin">
+            <div class="title">精选畅销品牌</div>
+            <div class="pics clearfix">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="normal">
+                        <div class="back"></div>
+                        <div class="content">
+                            <div class="normal_title">
+                                精品女装
+                            </div>
+                            <div class="subtitle">
+                                秋冬纯色 休闲舒适
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover_show">
+                        <div class="back"></div>
+                        <div class="content">
+                            <div class="title">
+                                商务男装
+                            </div>
+                            <a href="#">
+                                <div class="btn">点击进入</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="normal">
+                        <div class="back"></div>
+                        <div class="content">
+                            <div class="normal_title">
+                                精品女装
+                            </div>
+                            <div class="subtitle">
+                                秋冬纯色 休闲舒适
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover_show">
+                        <div class="back"></div>
+                        <div class="content">
+                            <div class="title">
+                                商务男装
+                            </div>
+                            <a href="#">
+                                <div class="btn">点击进入</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="normal">
+                        <div class="back"></div>
+                        <div class="content">
+                            <div class="normal_title">
+                                精品女装
+                            </div>
+                            <div class="subtitle">
+                                秋冬纯色 休闲舒适
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover_show">
+                        <div class="back"></div>
+                        <div class="content">
+                            <div class="title">
+                                商务男装
+                            </div>
+                            <a href="#">
+                                <div class="btn">点击进入</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="normal">
+                        <div class="back"></div>
+                        <div class="content">
+                            <div class="normal_title">
+                                精品女装
+                            </div>
+                            <div class="subtitle">
+                                秋冬纯色 休闲舒适
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hover_show">
+                        <div class="back"></div>
+                        <div class="content">
+                            <div class="title">
+                                商务男装
+                            </div>
+                            <a href="#">
+                                <div class="btn">点击进入</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="brands clearfix">
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+                <div class="brand"></div>
+            </div>
+        </div>
+        <!-- 精选畅销品牌 -e -->
+    </div>
+
+    <script src="../../js/lib/require.js"></script>
+    <script>
+        require(['../../js/main'], function() {
+            require(['taobao_index']);
+        })
+    </script>
+</body>
+
+</html>

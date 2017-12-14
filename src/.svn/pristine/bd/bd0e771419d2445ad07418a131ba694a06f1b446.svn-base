@@ -1,7 +1,0 @@
-define(['jquery','common','laydate'],function () {
-	$("body").on('click', '.tab_single', function(event) {
-		if(!$(this).hasClass('active')) {
-			$(this).addClass('active').siblings('.tab_single').removeClass('active')
-		}
-	});
-});

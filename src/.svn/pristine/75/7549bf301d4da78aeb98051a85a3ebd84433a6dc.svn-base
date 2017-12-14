@@ -1,6 +1,0 @@
-define(["common","jquery"],function(common,$){
-    $(".pay_content .row").on("click",function(){
-        var _this = $(this);
-            _this.addClass("selected").siblings().removeClass("selected");
-    })
-})

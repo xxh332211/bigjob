@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/taobao_tong/taobao_list.css">
+</head>
+
+<body>
+    <div class="taobao_list">
+        <!-- header -s -->
+        <div class="taobao_head">
+            <div class="banxin thead_center">
+                <div class="fr">
+                    <div class="logistics fl">
+                        <i class="iconfont">&#xe609;</i>
+                        <span>物流介绍</span>
+                    </div>
+                    <div class="order fl">
+                        <i class="iconfont">&#xe604;</i>
+                        <span>商品订单</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header -s -->
+        <!-- logo -s -->
+        <div class="taobao_logo banxin">
+            <div class="taobao_logopic fl">
+                <img src="../../img/pic/taobao_tong/logo.png">
+            </div>
+            <ul class="taobao_nav fl">
+                <li>
+                    <a href="#">隐形袜</a>
+                </li>
+                <li>
+                    <a href="#">船袜</a>
+                </li>
+                <li>
+                    <a href="#">中筒袜</a>
+                </li>
+                <li>
+                    <a href="#">羊毛袜</a>
+                </li>
+                <li>
+                    <a href="#">毛圈袜</a>
+                </li>
+                <li>
+                    <a href="#">丝袜</a>
+                </li>
+                <li>
+                    <a href="#">裤袜</a>
+                </li>
+                <li>
+                    <a href="#">童袜</a>
+                </li>
+            </ul>
+            <div class="taobao_search fr">
+                <input type="text">
+                <button>
+                    <i class="iconfont">&#xe651;</i>
+                </button>
+            </div>
+        </div>
+        <!-- logo -e -->
+
+        <!-- filter -s -->
+        <div class="status_filter banxin">
+            <div class="status_filter_top clearfix">
+                <dl class="fl">
+                    <dd class="selected">综合排序</dd>
+                    <dd>新品</dd>
+                    <dd>
+                        最近7天销量
+                        <i class="iconfont icon-xia"></i>
+                        <i class="iconfont icon-shang"></i>
+                    </dd>
+                    <dd>近30天销量</dd>
+                    <dd>新品</dd>
+                </dl>
+                <div class="price fl">
+                    <input type="text" placeholder="¥请输入"> -
+                    <input type="text" placeholder="¥请输入">
+                    <div class="confirm_log hide">
+                        <input type="button" class="search_cancel" value="清空">
+                        <input type="button" class="search_sure" value="确定">
+                    </div>
+                </div>
+                <div class="search fr">
+                    <input type="text" class="search_input" placeholder="搜索商品"><input type="button" class="search_btn" value="搜索">
+                </div>
+            </div>
+        </div>
+        <!-- filter -e -->
+
+        <!-- taobaolist_content -s -->
+        <div class="taobaolist_content banxin clearfix">
+            <div class="single">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="updata">
+                        <span>上传到阿里</span>
+                        <span>下载数据包</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                </div>
+                <div class="price">
+                    <span>&yen;</span>2.20
+                </div>
+            </div>
+            <div class="single">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="updata">
+                        <span>上传到阿里</span>
+                        <span>下载数据包</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                </div>
+                <div class="price">
+                    <span>&yen;</span>2.20
+                </div>
+            </div>
+            <div class="single">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="updata">
+                        <span>上传到阿里</span>
+                        <span>下载数据包</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                </div>
+                <div class="price">
+                    <span>&yen;</span>2.20
+                </div>
+            </div>
+            <div class="single">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="updata">
+                        <span>上传到阿里</span>
+                        <span>下载数据包</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                </div>
+                <div class="price">
+                    <span>&yen;</span>2.20
+                </div>
+            </div>
+            <div class="single">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="updata">
+                        <span>上传到阿里</span>
+                        <span>下载数据包</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                </div>
+                <div class="price">
+                    <span>&yen;</span>2.20
+                </div>
+            </div>
+            <div class="single">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="updata">
+                        <span>上传到阿里</span>
+                        <span>下载数据包</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                </div>
+                <div class="price">
+                    <span>&yen;</span>2.20
+                </div>
+            </div>
+            <div class="single">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="updata">
+                        <span>上传到阿里</span>
+                        <span>下载数据包</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                </div>
+                <div class="price">
+                    <span>&yen;</span>2.20
+                </div>
+            </div>
+            <div class="single">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="updata">
+                        <span>上传到阿里</span>
+                        <span>下载数据包</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                </div>
+                <div class="price">
+                    <span>&yen;</span>2.20
+                </div>
+            </div>
+            <div class="single">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="updata">
+                        <span>上传到阿里</span>
+                        <span>下载数据包</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                </div>
+                <div class="price">
+                    <span>&yen;</span>2.20
+                </div>
+            </div>
+            <div class="single">
+                <div class="pic">
+                    <img src="..." alt="">
+                    <div class="updata">
+                        <span>上传到阿里</span>
+                        <span>下载数据包</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <a href="#">2016新款C.M.31010裸袜仿手仿手仿手仿手仿手仿手仿手仿手</a>
+                </div>
+                <div class="price">
+                    <span>&yen;</span>2.20
+                </div>
+            </div>
+        </div>
+        <!-- taobaolist_content -e -->
+    </div>
+</body>
+
+</html>

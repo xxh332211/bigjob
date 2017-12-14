@@ -1,3 +1,0 @@
-define(["jquery", "common", "modals", "distpicker"], function ($, common, modals, distpicker) {
-    
-})

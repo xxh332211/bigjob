@@ -1,0 +1,54 @@
+@import '../../common/reset';
+@import '../../common/base';
+@import '../../component/head.scss';
+.taobao_index {
+    &>.taobao_head {
+        height: 40px;
+        background: #333333;
+        .thead_center {
+            height: 40px;
+            background: #333333;
+            .logistics {
+                height: 40px;
+                color: #fff;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 40px;
+                cursor: pointer;
+                vertical-align: text-bottom;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2)
+                }
+                .iconfont {
+                    font-size: 18px;
+                    height: 18px;
+                    width: 24px;
+                    color: #fff;
+                    font-size: 24px;
+                }
+            }
+            .order {
+                height: 40px;
+                color: #fff;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 40px;
+                cursor: pointer;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2)
+                }
+                .iconfont {
+                    width: 17px;
+                    height: 20px;
+                    font-size: 17px;
+                    color: #fff;
+                    font-size: 24px;
+                    vertical-align: text-bottom;
+                }
+            }
+        }
+    }
+    &>.taobao_logo {
+        height: 40px;
+    }
+}
