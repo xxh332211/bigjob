@@ -1,0 +1,147 @@
+@import '../../common/reset';
+@import '../../common/base';
+@import '../../component/head.scss';
+@import '../../component/foot.scss';
+.taobao_guide {
+    &>.taobao_head {
+        height: 40px;
+        background: #333333;
+        .thead_center {
+            height: 40px;
+            background: #333333;
+            .logistics {
+                height: 40px;
+                color: #fff;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 40px;
+                cursor: pointer;
+                vertical-align: text-bottom;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2)
+                }
+                .iconfont {
+                    font-size: 18px;
+                    height: 18px;
+                    width: 24px;
+                    color: #fff;
+                    font-size: 24px;
+                }
+            }
+            .order {
+                height: 40px;
+                color: #fff;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 40px;
+                cursor: pointer;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2)
+                }
+                .iconfont {
+                    width: 17px;
+                    height: 20px;
+                    font-size: 17px;
+                    color: #fff;
+                    font-size: 24px;
+                    vertical-align: text-bottom;
+                }
+            }
+        }
+    }
+    &>.taobao_logo {
+        height: 91px;
+        line-height: 91px;
+        &>.taobao_logopic {
+            height: 91px;
+            line-height: 91px;
+            margin-right: 50px;
+            img {
+                vertical-align: middle;
+            }
+        }
+        &>.taobao_nav {
+            li {
+                float: left;
+                margin-right: 30px;
+                a {
+                    font-size: 16px;
+                    color: #333333;
+                    &:hover {
+                        font-size: 16px;
+                        color: #ff5001;
+                    }
+                }
+            }
+        }
+        &>.taobao_search {
+            &>input {
+                background: #ffffff;
+                border: 1px solid #e0e0e0;
+                width: 294px;
+                height: 50px;
+                text-indent: 13px;
+                &:focus {
+                    border-color: #ff7e18;
+                    &+button {
+                        background: #ff7e18;
+                        border-color: #ff7e18;
+                        color: #fff;
+                    }
+                }
+            }
+            &>button {
+                background: #ffffff;
+                border: 1px solid #e0e0e0;
+                border-radius: 2px;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 47px;
+                color: #616161;
+                outline: none;
+                cursor: pointer;
+                &:active {
+                    background: #ff7e18;
+                    border-color: #ff7e18;
+                    color: #fff;
+                }
+                .iconfont {
+                    font-size: 25px;
+                    margin-right: 0;
+                    vertical-align: middle;
+                }
+            }
+        }
+        &>.taobao_links {
+            ul {
+                height: 91px;
+                line-height: 91px;
+                li {
+                    margin-left: 50px;
+                    float: left;
+                    a {
+                        font-size: 16px;
+                        color: #333333;
+                        &:hover {
+                            color: #ff7e18;
+                        }
+                        &:active {
+                            color: #ff7e18;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &>.guide_content {
+        .left {
+            width: 240px;
+            height: 969px;
+        }
+        .right {
+            width: 960px;
+            height: 969px;
+        }
+    }
+}

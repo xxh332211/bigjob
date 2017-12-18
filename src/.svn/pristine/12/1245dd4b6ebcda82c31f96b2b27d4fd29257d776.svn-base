@@ -1,0 +1,425 @@
+@import '../../common/reset';
+@import '../../common/base';
+@import '../../component/head.scss';
+@import '../../component/foot.scss';
+body {
+    background: #fff;
+    user-select: none;
+}
+
+.taobao_introduce {
+    &>.taobao_head {
+        height: 40px;
+        background: #333333;
+        .thead_center {
+            height: 40px;
+            background: #333333;
+            .logistics {
+                height: 40px;
+                color: #fff;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 40px;
+                cursor: pointer;
+                vertical-align: text-bottom;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2)
+                }
+                .iconfont {
+                    font-size: 18px;
+                    height: 18px;
+                    width: 24px;
+                    color: #fff;
+                    font-size: 24px;
+                }
+            }
+            .order {
+                height: 40px;
+                color: #fff;
+                padding-left: 20px;
+                padding-right: 20px;
+                line-height: 40px;
+                cursor: pointer;
+                &:hover {
+                    background: rgba(255, 255, 255, 0.2)
+                }
+                .iconfont {
+                    width: 17px;
+                    height: 20px;
+                    font-size: 17px;
+                    color: #fff;
+                    font-size: 24px;
+                    vertical-align: text-bottom;
+                }
+            }
+        }
+    }
+    &>.taobao_logo {
+        height: 91px;
+        line-height: 91px;
+        &>.taobao_logopic {
+            height: 91px;
+            line-height: 91px;
+            margin-right: 50px;
+            img {
+                vertical-align: middle;
+            }
+        }
+        &>.taobao_nav {
+            li {
+                float: left;
+                margin-right: 30px;
+                a {
+                    font-size: 16px;
+                    color: #333333;
+                    &:hover {
+                        font-size: 16px;
+                        color: #ff5001;
+                    }
+                }
+            }
+        }
+        &>.taobao_search {
+            &>input {
+                background: #ffffff;
+                border: 1px solid #e0e0e0;
+                width: 294px;
+                height: 50px;
+                text-indent: 13px;
+                &:focus {
+                    border-color: #ff7e18;
+                    &+button {
+                        background: #ff7e18;
+                        border-color: #ff7e18;
+                        color: #fff;
+                    }
+                }
+            }
+            &>button {
+                background: #ffffff;
+                border: 1px solid #e0e0e0;
+                border-radius: 2px;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 47px;
+                color: #616161;
+                outline: none;
+                cursor: pointer;
+                &:active {
+                    background: #ff7e18;
+                    border-color: #ff7e18;
+                    color: #fff;
+                }
+                .iconfont {
+                    font-size: 25px;
+                    margin-right: 0;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    &>.introduce_banner {
+        height: 482px;
+        background: black;
+        padding-top: 1px;
+        max-width: 1920px;
+        min-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        .banner_nav_wrap {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-bottom: -53px;
+            margin-left: -450px;
+            height: 106px;
+            width: 901px;
+            display: inline-block;
+            .banner_nav {
+                background: #fff;
+                box-shadow: 0 2px 4px 0 rgba(178, 178, 178, 0.50);
+                border-radius: 4px;
+                width: 901px;
+                height: 106px;
+                .line {
+                    float: left;
+                    border: 1px solid #cfcfcf;
+                    width: 2px;
+                    height: 33px;
+                    margin-top: 40px;
+                }
+                span {
+                    display: block;
+                    float: left;
+                    padding-left: 112px;
+                    padding-right: 100px;
+                    height: 106px;
+                    line-height: 106px;
+                    a {
+                        font-size: 20px;
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+    &>.introduce_maintitle {
+        margin-top: 143px;
+        text-align: center;
+        .title {
+            font-size: 40px;
+            color: #333333;
+            line-height: 1em;
+        }
+        .subtitle {
+            font-size: 20px;
+            color: #666666;
+            line-height: 1em;
+            margin-top: 24px;
+        }
+        .singles {
+            margin-top: 45px;
+            .single {
+                float: left;
+                background: #f7f7f7;
+                border-radius: 4px;
+                width: 290px;
+                height: 360px;
+                text-align: center;
+                margin-right: 13px;
+                &:last-child {
+                    margin-right: 0;
+                }
+                .pic {
+                    width: 290px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .single_title {
+                    font-size: 20px;
+                    color: #333333;
+                    margin-top: 36px;
+                    line-height: 1em;
+                }
+                .subword_1 {
+                    margin-top: 20px;
+                    font-size: 18px;
+                    color: #666666;
+                }
+                .subword_2 {
+                    margin-top: 10px;
+                    font-size: 18px;
+                    color: #666666;
+                }
+            }
+        }
+    }
+    &>.features {
+        margin-top: 100px;
+        &>.title {
+            font-size: 40px;
+            color: #333333;
+            text-align: center;
+        }
+        .singles {
+            margin-top: 96px;
+            .single {
+                width: 340px;
+                height: 240px;
+                float: left;
+                margin-right: 85px;
+                margin-bottom: 30px;
+                &.nomargin {
+                    margin-right: 0;
+                }
+                &:first-child+li+li {
+                    margin-right: 0;
+                }
+                .icon_pic {
+                    width: 70px;
+                    height: 70px;
+                    margin: 0 auto;
+                    img {
+                        width: 100%;
+                    }
+                }
+                &>.title {
+                    font-size: 20px;
+                    color: #333333;
+                    text-align: center;
+                    line-height: 1em;
+                    margin-top: 20px;
+                    font-weight: bold;
+                }
+                &>ul {
+                    margin-top: 20px;
+                    padding-right: 30px;
+                    padding-left: 30px;
+                    li {
+                        font-size: 16px;
+                        color: #888888;
+                        padding-left: 16px;
+                        position: relative;
+                        padding-bottom: 10px;
+                        &:before {
+                            content: "";
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 100%;
+                            display: block;
+                            position: absolute;
+                            top: 6px;
+                            left: 0;
+                            background: #666;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &>.taobao_process {
+        max-width: 1600px;
+        min-width: 1200px;
+        background: #f5f5f5;
+        margin: 0 auto;
+        margin-top: 83px;
+        padding-top: 70px;
+        .title {
+            text-align: center;
+            line-height: 1em;
+            font-size: 40px;
+            color: #333333;
+        }
+        .content {
+            margin-top: 57px;
+            padding-bottom: 20px;
+            .single {
+                width: 240px;
+                height: 214px;
+                float: left;
+                margin-right: 80px;
+                margin-bottom: 50px;
+                &.nomargin {
+                    margin-right: 0;
+                }
+                .pic {
+                    width: 100px;
+                    height: 100px;
+                    margin: 0 auto;
+                }
+                .num {
+                    font-size: 24px;
+                    color: #333333;
+                    margin-top: 10px;
+                    text-align: center;
+                }
+                .line {
+                    font-size: 24px;
+                    color: #333333;
+                    text-align: center;
+                    line-height: 1em;
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+    &>.logistics {
+        margin-top: 100px;
+        .title {
+            font-size: 40px;
+            color: #333333;
+            text-align: center;
+            margin-bottom: 56px;
+        }
+        table {
+            width: 1200px;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            color: #333333;
+            border: 1px solid #e5e5e5;
+            tr {
+                height: 70px;
+                &.even {
+                    background: #f5f5f5;
+                }
+                &.odd {
+                    background: #fff;
+                }
+            }
+            thead {
+                tr {
+                    th {
+                        font-weight: normal;
+                        border-right: 1px solid #e5e5e5;
+                        &.position {
+                            width: 160px;
+                        }
+                        &.province {
+                            width: 555px;
+                        }
+                        &.day {
+                            width: 170px;
+                        }
+                        &.price {
+                            width: 200px;
+                        }
+                        &.price2 {
+                            width: 166px;
+                            border: none;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        &:first-child {
+                            text-align: center;
+                            &+td {
+                                text-align: left;
+                                &+td {
+                                    text-align: center;
+                                    &+td {
+                                        text-align: center;
+                                        &+td {
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            tfoot {
+                tr {
+                    td {
+                        padding-left: 54px;
+                    }
+                }
+            }
+        }
+    }
+    .taobao_open {
+        background: #ffffff;
+        border: 1px solid #979797;
+        border-radius: 6px;
+        width: 303px;
+        height: 54px;
+        text-align: center;
+        line-height: 54px;
+        font-size: 24px;
+        color: #333333;
+        margin: 0 auto;
+        margin-top: 150px;
+    }
+    .introduce_foot {
+        background: #1d1b2a;
+        height: 100px;
+        margin-top: 70px;
+    }
+}

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淘宝通介绍页</title>
+    <link rel="icon" href="../img/ico/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../../css/taobao_tong/taobao_introduce.css">
+</head>
+
+<body>
+    <div class="taobao_introduce">
+        <!-- header -s -->
+        <div class="taobao_head">
+            <div class="banxin thead_center">
+                <div class="fr">
+                    <div class="logistics fl">
+                        <i class="iconfont">&#xe609;</i>
+                        <span>物流介绍</span>
+                    </div>
+                    <div class="order fl">
+                        <i class="iconfont">&#xe604;</i>
+                        <span>商品订单</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header -s -->
+        <!-- logo -s -->
+        <div class="taobao_logo banxin">
+            <div class="taobao_logopic fl">
+                <img src="../../img/pic/taobao_tong/logo.png">
+            </div>
+            <ul class="taobao_nav fl">
+                <li>
+                    <a href="#">隐形袜</a>
+                </li>
+                <li>
+                    <a href="#">船袜</a>
+                </li>
+                <li>
+                    <a href="#">中筒袜</a>
+                </li>
+                <li>
+                    <a href="#">羊毛袜</a>
+                </li>
+                <li>
+                    <a href="#">毛圈袜</a>
+                </li>
+                <li>
+                    <a href="#">丝袜</a>
+                </li>
+                <li>
+                    <a href="#">裤袜</a>
+                </li>
+                <li>
+                    <a href="#">童袜</a>
+                </li>
+            </ul>
+            <div class="taobao_search fr">
+                <input type="text">
+                <button>
+                    <i class="iconfont">&#xe651;</i>
+                </button>
+            </div>
+        </div>
+        <!-- logo -e -->
+
+        <!-- banner区 -s -->
+        <div class="introduce_banner" style="background:url(../../img/pic/taobao_tong/introduce/banner.png) top center no-repeat;">
+            <div class="banner_nav_wrap">
+                <div class="banner_nav">
+                    <span><a href="#">申请开通</a></span>
+                    <div class="line"></div>
+                    <span><a href="#">操作说明</a></span>
+                    <div class="line"></div>
+                    <span><a href="#">联系客服</a></span>
+                </div>
+            </div>
+        </div>
+        <!-- banner区 -e -->
+
+        <!-- introduce_maintitle -s -->
+        <div class="introduce_maintitle banxin">
+            <div class="title">大袜淘宝通</div>
+            <div class="subtitle">将大袜网与淘宝、天猫平台无缝对接，成为淘宝天猫袜业垂直领域用户的供应链赋能者，大幅度提升交易效率。</div>
+            <div class="singles clearfix">
+                <div class="single">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part1_img01.png" alt="">
+                    </div>
+                    <div class="single_title">拍照选款</div>
+                    <div class="subword_1">选款拍照太麻烦？</div>
+                    <div class="subword_2">一键铺货到店铺！</div>
+                </div>
+                <div class="single">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part1_img02.png" alt="">
+                    </div>
+                    <div class="single_title">拍照选款</div>
+                    <div class="subword_1">选款拍照太麻烦？</div>
+                    <div class="subword_2">一键铺货到店铺！</div>
+                </div>
+                <div class="single">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part1_img03.png" alt="">
+                    </div>
+                    <div class="single_title">拍照选款</div>
+                    <div class="subword_1">选款拍照太麻烦？</div>
+                    <div class="subword_2">一键铺货到店铺！</div>
+                </div>
+                <div class="single">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part1_img04.png" alt="">
+                    </div>
+                    <div class="single_title">拍照选款</div>
+                    <div class="subword_1">选款拍照太麻烦？</div>
+                    <div class="subword_2">一键铺货到店铺！</div>
+                </div>
+            </div>
+        </div>
+        <!-- introduce_maintitle -e -->
+
+        <!-- features -s -->
+        <div class="features banxin">
+            <div class="title">产品特色</div>
+            <div class="singles clearfix">
+                <div class="single">
+                    <div class="icon_pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part2_img01.png" alt="">
+                    </div>
+                    <div class="title">一键铺货</div>
+                    <ul>
+                        <li>用简单、可视化操作完成淘宝 卖家在大袜网平台的选款。
+                        </li>
+                        <li>支持单个、批量上传，批量改价。</li>
+                    </ul>
+                </div>
+                <div class="single">
+                    <div class="icon_pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part2_img02.png" alt="">
+                    </div>
+                    <div class="title">一件代发</div>
+                    <ul>
+                        <li>
+                            完美嫁接大袜网完整仓配物流能力，成交订单进入大袜网系统后会自动下推云仓进行发货操作。
+                        </li>
+                    </ul>
+                </div>
+                <div class="single nomargin">
+                    <div class="icon_pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part2_img03.png" alt="">
+                    </div>
+                    <div class="title">库存共享</div>
+                    <ul>
+                        <li>
+                            用平台库存共享解决淘宝卖家最大的库存成本问题。
+                        </li>
+                        <li>
+                            用平台库存共享解决淘宝卖家最大的库存成本问题。
+                        </li>
+                    </ul>
+                </div>
+                <div class="single">
+                    <div class="icon_pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part2_img04.png" alt="">
+                    </div>
+                    <div class="title">个性化订单支持</div>
+                    <ul>
+                        <li>
+                            订单流过程中实时截单。
+                        </li>
+                        <li>
+                            订单拆分，支持多仓订单处理。
+                        </li>
+                    </ul>
+                </div>
+                <div class="single">
+                    <div class="icon_pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part2_img05.png" alt="">
+                    </div>
+                    <div class="title">信息实时同步</div>
+                    <ul>
+                        <li>
+                            店铺库存无需管理，由系统实时更新同步。
+                        </li>
+                        <li>
+                            订单处理过程的状态实时回传至阿里店铺。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- features -e -->
+
+        <!-- process -s -->
+        <div class="taobao_process">
+            <div class="title banxin">业务流程</div>
+            <div class="content banxin clearfix">
+                <div class="single">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part3_01.png" alt="">
+                    </div>
+                    <div class="num">01</div>
+                    <div class="line">申请为大袜淘宝通用户</div>
+                    <div class="line">淘宝店铺授权对接</div>
+                </div>
+                <div class="single">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part3_02.png" alt="">
+                    </div>
+                    <div class="num">02</div>
+                    <div class="line">大袜网平台选择商品</div>
+                </div>
+                <div class="single">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part3_03.png" alt="">
+                    </div>
+                    <div class="num">03</div>
+                    <div class="line">一键铺货、库存同步</div>
+                </div>
+                <div class="single nomargin">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part3_04.png" alt="">
+                    </div>
+                    <div class="num">04</div>
+                    <div class="line">淘宝订单成交</div>
+                    <div class="line">系统抓取订单</div>
+                </div>
+                <div class="single">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part3_05.png" alt="">
+                    </div>
+                    <div class="num">05</div>
+                    <div class="line">用户付款结算</div>
+                </div>
+                <div class="single">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part3_06.png" alt="">
+                    </div>
+                    <div class="num">06</div>
+                    <div class="line">云仓履单发货</div>
+                </div>
+                <div class="single">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part3_07.png" alt="">
+                    </div>
+                    <div class="num">07</div>
+                    <div class="line">发货、物流信息回传</div>
+                    <div class="line">订单交易完成</div>
+                </div>
+                <div class="single nomargin">
+                    <div class="pic">
+                        <img src="../../img/pic/taobao_tong/introduce/part3_08.png" alt="">
+                    </div>
+                    <div class="num">08</div>
+                    <div class="line">结算报表</div>
+                    <div class="line">异常处理</div>
+                </div>
+            </div>
+        </div>
+        <!-- process -e -->
+
+        <!-- logistics -s -->
+        <div class="logistics banxin" id="logistics">
+            <div class="title">
+                物流介绍
+            </div>
+            <table width="100%" border="0" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th class="position">区域</th>
+                        <th class="province">省份</th>
+                        <th class="day">时效(天)</th>
+                        <th class="price">首重价格（1KG/元）</th>
+                        <th class="price2">续重价格（元）</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="even">
+                        <td>一区</td>
+                        <td>江苏 浙江 上海 安徽</td>
+                        <td>1 ~ 2</td>
+                        <td>3.5</td>
+                        <td>0.8</td>
+                    </tr>
+                    <tr class="odd">
+                        <td>二区</td>
+                        <td>北京 天津 广东 福建 河南 湖南 湖北 河北 江西 山东</td>
+                        <td>2 ~ 3</td>
+                        <td>3.5</td>
+                        <td>3</td>
+                    </tr>
+                    <tr class="even">
+                        <td>三区</td>
+                        <td>黑龙江 辽宁 山西 陕西 吉林 甘肃 重庆 四川 广西 贵州 云南</td>
+                        <td>3 ~ 4</td>
+                        <td>3.5</td>
+                        <td>4.5</td>
+                    </tr>
+                    <tr class="odd">
+                        <td>四区</td>
+                        <td>宁夏 内蒙 海南 青海</td>
+                        <td>2 ~ 4</td>
+                        <td>3.5</td>
+                        <td>10</td>
+                    </tr>
+                    <tr class="even">
+                        <td>五区</td>
+                        <td>新疆 西藏</td>
+                        <td>2 ~ 4</td>
+                        <td>3.5</td>
+                        <td>15</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">备注：发货地址“浙江省诸暨市陶朱街道千禧路20号”</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!-- logistics -e -->
+
+        <!-- open -s -->
+        <a href="#">
+            <div class="taobao_open">
+                立即开通
+            </div>
+        </a>
+        <!-- open -e -->
+
+        <!-- introduce_foot -s -->
+        <div class="introduce_foot"></div>
+        <!-- introduce_foot -e -->
+    </div>
+</body>
+
+</html>

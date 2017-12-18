@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/taobao_tong/taobao_guide.css">
+</head>
+
+<body>
+    <div class="taobao_guide">
+        <!-- header -s -->
+        <div class="taobao_head">
+            <div class="banxin thead_center">
+                <div class="fr">
+                    <div class="logistics fl">
+                        <i class="iconfont">&#xe609;</i>
+                        <span>物流介绍</span>
+                    </div>
+                    <div class="order fl">
+                        <i class="iconfont">&#xe604;</i>
+                        <span>商品订单</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header -s -->
+        <!-- logo -s -->
+        <div class="taobao_logo banxin">
+            <div class="taobao_logopic fl">
+                <img src="../../img/pic/taobao_tong/logo.png">
+            </div>
+            <!-- <ul class="taobao_nav fl">
+                <li>
+                    <a href="#">隐形袜</a>
+                </li>
+                <li>
+                    <a href="#">船袜</a>
+                </li>
+                <li>
+                    <a href="#">中筒袜</a>
+                </li>
+                <li>
+                    <a href="#">羊毛袜</a>
+                </li>
+                <li>
+                    <a href="#">毛圈袜</a>
+                </li>
+                <li>
+                    <a href="#">丝袜</a>
+                </li>
+                <li>
+                    <a href="#">裤袜</a>
+                </li>
+                <li>
+                    <a href="#">童袜</a>
+                </li>
+            </ul>
+            <div class="taobao_search fr">
+                <input type="text">
+                <button>
+                    <i class="iconfont">&#xe651;</i>
+                </button>
+            </div> -->
+            <div class="taobao_links fr">
+                <ul class="clearfix">
+                    <li><a href="#">申请开通</a></li>
+                    <li><a href="#">产品介绍</a></li>
+                    <li><a href="#">操作指引</a></li>
+                    <li><a href="#">在线客服</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- logo -e -->
+
+        <!-- guide_content -s -->
+        <div class="guide_content banxin">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <!-- guide_content -e -->
+    </div>
+</body>
+
+</html>
